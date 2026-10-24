@@ -1,0 +1,470 @@
+/* GNOME Next. Colors here are for the dark shell style; the light style
+ * overrides them in light.css (install.sh generates stylesheet-dark.css and
+ * stylesheet-light.css from these two files). */
+
+/* ── Quick Settings editor ─────────────────────────────────────────── */
+
+.gn-editor {
+  spacing: 14px;
+}
+
+.gn-editor-header {
+  min-height: 34px;
+  padding-top: 2px;
+}
+
+.gn-editor-title {
+  font-weight: 800;
+  font-size: 1.15em;
+}
+
+.quick-settings .gn-editor-close.button {
+  width: 26px;
+  height: 26px;
+  min-height: 0;
+  padding: 0;
+  border-radius: 999px;
+}
+
+.gn-editor-close StIcon {
+  icon-size: 12px;
+}
+
+.gn-editor-content {
+  spacing: 18px;
+  padding-bottom: 4px;
+}
+
+.gn-editor-scroll.vfade {
+  -st-vfade-offset: 32px;
+}
+
+/* The badge sits on the tile's top-right corner, half of it above the tile:
+ * the tile is pushed down inside its wrapper to make room */
+.quick-toggle.gn-tile {
+  min-width: 0;
+  max-width: 100000px;
+  margin-top: 8px;
+}
+
+.gn-tile-label {
+  font-weight: bold;
+}
+
+.quick-toggle.gn-tile > StBoxLayout {
+  padding-right: 8px;
+}
+
+.quick-settings .gn-tile-badge.button {
+  width: 24px;
+  height: 24px;
+  min-width: 0;
+  min-height: 0;
+  padding: 0;
+  border-radius: 999px;
+  border: 2px solid rgba(0, 0, 0, 0.22);
+  background-color: #78787d;
+  color: #e4e4e6;
+}
+
+.quick-settings .gn-tile-badge.button:hover {
+  background-color: #88888d;
+}
+
+.quick-settings .gn-tile-badge.button:active {
+  background-color: #6a6a6f;
+}
+
+.gn-tile-badge StIcon {
+  icon-size: 14px;
+}
+
+.gn-editor-empty {
+  color: rgba(255, 255, 255, 0.6);
+  padding: 6px 0;
+}
+
+.quick-toggle-menu.gn-editor-catalog {
+  margin: 0;
+  padding: 6px 14px 18px;
+  spacing: 10px;
+  border-radius: 26px;
+}
+
+.gn-editor-category {
+  font-weight: bold;
+  padding: 12px 6px 0;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/* ── Pill sliders ──────────────────────────────────────────────────── */
+
+.gn-pill-slider .slider-bin {
+  padding: 0;
+  border-radius: 999px;
+}
+
+.gn-pill-slider .slider {
+  -barlevel-height: 34px;
+  -barlevel-background-color: rgba(255, 255, 255, 0.1);
+  -slider-handle-radius: 0;
+  min-height: 34px;
+}
+
+.quick-slider.gn-pill-slider .gn-slider-icon,
+.quick-slider.gn-pill-slider .gn-slider-menu {
+  padding: 0 10px;
+  margin: 0;
+  min-height: 34px;
+  border-radius: 999px;
+  background-color: transparent;
+  color: -st-accent-fg-color;
+}
+
+.quick-slider.gn-pill-slider .gn-slider-icon:hover,
+.quick-slider.gn-pill-slider .gn-slider-menu:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.quick-slider.gn-pill-slider .gn-slider-menu {
+  color: #ffffff;
+}
+
+.gn-slider-icon StIcon,
+.gn-slider-menu StIcon {
+  icon-size: 16px;
+}
+
+/* ── Collapsible Quick Settings / notifications ────────────────────── */
+
+.quick-toggle.gn-circle {
+  min-width: 48px;
+  max-width: 48px;
+  width: 48px;
+  height: 48px;
+  min-height: 0;
+  padding: 0;
+  border-radius: 999px;
+}
+
+.quick-toggle.gn-morph-ghost {
+  min-width: 0;
+  max-width: 100000px;
+  min-height: 0;
+  padding: 0;
+}
+
+.gn-morph-arrow {
+  border-radius: 0 999px 999px 0;
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.gn-morph-arrow:checked {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.gn-morph-arrow-icon {
+  icon-size: 16px;
+}
+
+.gn-circle-icon {
+  icon-size: 1.091em;
+}
+
+.gn-qs-section-box {
+  padding-top: 12px;
+  spacing: 12px;
+}
+
+.quick-settings .gn-pill.button {
+  padding: 5px 12px 5px 16px;
+  border-radius: 999px;
+  font-weight: bold;
+}
+
+.gn-pill-box {
+  spacing: 6px;
+}
+
+.gn-pill-icon {
+  icon-size: 12px;
+}
+
+.gn-notification-list {
+  spacing: 12px;
+}
+
+.gn-notification-stack {
+  height: 7px;
+  margin: 0 14px;
+  border-radius: 0 0 14px 14px;
+  background-color: rgba(255, 255, 255, 0.09);
+}
+
+.gn-notifications .gn-pill {
+  margin-top: 12px;
+}
+
+.quick-settings .gn-notification-clear.button {
+  margin-top: 12px;
+  padding: 5px 16px;
+  border-radius: 999px;
+  font-weight: bold;
+}
+
+/* Media player */
+
+.message.gn-media {
+  padding: 12px;
+  border-radius: 24px;
+}
+
+.gn-media-row {
+  spacing: 12px;
+}
+
+.gn-media-cover {
+  icon-size: 72px;
+}
+
+.gn-media-cover.placeholder {
+  icon-size: 32px;
+  padding: 20px;
+}
+
+.gn-media.compact .gn-media-cover {
+  icon-size: 40px;
+}
+
+.gn-media.compact .gn-media-cover.placeholder {
+  icon-size: 24px;
+  padding: 8px;
+}
+
+.gn-media-title {
+  font-weight: bold;
+}
+
+.gn-media-artist {
+  font-size: 0.9em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.gn-media-controls {
+  spacing: 6px;
+  padding-top: 8px;
+}
+
+.gn-media-controls.compact {
+  padding-top: 0;
+}
+
+.quick-settings .gn-media-button.button {
+  padding: 9px;
+  border-radius: 999px;
+}
+
+.quick-settings .gn-media-button.button.play {
+  padding: 9px 22px;
+}
+
+.gn-media.compact .gn-media-button.play {
+  padding: 9px;
+}
+
+.gn-media-button StIcon {
+  icon-size: 16px;
+}
+
+.gn-media-progress {
+  height: 3px;
+  margin-top: 12px;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.gn-media-progress-fill {
+  height: 3px;
+  border-radius: 2px;
+  background-color: -st-accent-color;
+}
+
+/* ── Calendar popover ──────────────────────────────────────────────── */
+
+.gn-calendar-popover {
+  padding: 4px;
+}
+
+.gn-cal-left {
+  width: 15.5em;
+  margin-right: 10px;
+  padding: 10px 6px 6px 10px;
+  spacing: 14px;
+}
+
+.gn-cal-left:rtl {
+  margin-right: 0;
+  margin-left: 10px;
+  padding: 10px 10px 6px 6px;
+}
+
+.gn-cal-right {
+  spacing: 6px;
+}
+
+.gn-cal-header {
+  border-radius: 8px;
+}
+
+.gn-cal-weekday {
+  font-size: 1.15em;
+  font-weight: bold;
+}
+
+.gn-cal-date {
+  font-size: 1.45em;
+  font-weight: 800;
+}
+
+.gn-events {
+  spacing: 6px;
+}
+
+.gn-events-empty {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.gn-event {
+  padding: 2px 0;
+  border-radius: 6px;
+}
+
+.gn-event:hover .gn-event-summary {
+  text-decoration: underline;
+}
+
+.gn-event-time {
+  font-weight: bold;
+  font-feature-settings: "tnum";
+  min-width: 3.4em;
+  margin-right: 10px;
+}
+
+.gn-event-time:rtl {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.world-clocks-button.gn-clocks {
+  padding: 12px;
+}
+
+.gn-clock-rows {
+  spacing: 10px;
+}
+
+.gn-clocks.compact .gn-clock-rows {
+  spacing: 8px;
+}
+
+.gn-clock-row {
+  spacing: 10px;
+}
+
+.gn-analog-clock {
+  width: 32px;
+  height: 32px;
+}
+
+.gn-clocks.compact .gn-analog-clock {
+  width: 20px;
+  height: 20px;
+}
+
+.gn-clock-city {
+  font-weight: bold;
+}
+
+.gn-clock-time {
+  font-size: 0.9em;
+  font-feature-settings: "tnum";
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.gn-page-dots {
+  spacing: 4px;
+  padding-top: 10px;
+}
+
+.gn-page-dot {
+  padding: 3px;
+  border-radius: 999px;
+}
+
+.gn-page-dot-mark {
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+.gn-page-dot:checked .gn-page-dot-mark {
+  background-color: #ffffff;
+}
+
+.weather-button.gn-weather {
+  padding: 10px 12px;
+}
+
+.gn-weather.flat {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.gn-weather-box {
+  spacing: 12px;
+}
+
+.gn-weather-icon {
+  icon-size: 32px;
+}
+
+.gn-weather-icon.sunny {
+  color: #f6d32d;
+}
+
+.gn-weather-summary {
+  font-weight: bold;
+}
+
+.gn-weather-temps {
+  font-size: 0.9em;
+  font-feature-settings: "tnum";
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.world-clocks-button.gn-calendar-card {
+  padding: 6px 4px;
+}
+
+/* ── Smooth state changes ──────────────────────────────────────────── */
+
+.gn-circle,
+.gn-tile,
+.gn-tile-badge,
+.gn-pill,
+.gn-media-button,
+.gn-notification-clear,
+.gn-editor-close,
+.gn-slider-icon,
+.gn-slider-menu,
+.gn-page-dot-mark,
+.gn-event,
+.gn-media,
+.gn-clocks,
+.gn-weather {
+  transition-duration: 180ms;
+}

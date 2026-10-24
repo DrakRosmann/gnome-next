@@ -1,0 +1,10 @@
+{
+  "uuid": "gnome-next@gui",
+  "name": "GNOME Next",
+  "description": "Implements GNOME design mockups: customizable Quick Settings with an edit mode (and the accessibility toggles moved into it), a single entry point where Quick Settings and notifications collapse into each other with a media player, and a calendar popover that scales with its content (events, world clocks and weather).",
+  "shell-version": ["50", "51"],
+  "settings-schema": "org.gnome.shell.extensions.gnome-next",
+  "gettext-domain": "gnome-next@gui",
+  "url": "https://github.com/DrakRosmann/gnome-next",
+  "version": 1
+}

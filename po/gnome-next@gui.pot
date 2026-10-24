@@ -1,0 +1,225 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-next package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-next\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-20 15:23-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: prefs.js:21 lib/customization.js:250
+msgid "Quick Settings"
+msgstr ""
+
+#: prefs.js:26
+msgid "Customization"
+msgstr ""
+
+#: prefs.js:27
+msgid "Add an edit button to add and remove quick settings"
+msgstr ""
+
+#: prefs.js:31
+msgid "Hide Accessibility Menu"
+msgstr ""
+
+#: prefs.js:32
+msgid "Accessibility toggles can be added to Quick Settings instead"
+msgstr ""
+
+#: prefs.js:38
+msgid "Default Layout"
+msgstr ""
+
+#: prefs.js:39
+msgid "Restore the quick settings that were removed or added"
+msgstr ""
+
+#: prefs.js:42
+msgid "Reset"
+msgstr ""
+
+#: prefs.js:53
+msgid "Pill Sliders"
+msgstr ""
+
+#: prefs.js:54
+msgid "Thick sliders with the icon inside the filled part"
+msgstr ""
+
+#: prefs.js:57
+msgid "Notifications in Quick Settings"
+msgstr ""
+
+#: prefs.js:58
+msgid ""
+"Quick Settings and notifications collapse into each other, with a media "
+"player"
+msgstr ""
+
+#: prefs.js:60
+msgid "Calendar"
+msgstr ""
+
+#: prefs.js:64
+msgid "Adaptive Calendar"
+msgstr ""
+
+#: prefs.js:65
+msgid "A calendar popover that scales with events, world clocks and weather"
+msgstr ""
+
+#: prefs.js:70
+msgid "Layout"
+msgstr ""
+
+#: prefs.js:71
+msgid ""
+"Two columns always shows the date, weather and events next to the calendar"
+msgstr ""
+
+#: prefs.js:72
+msgid "Adaptive"
+msgstr ""
+
+#: prefs.js:72
+msgid "Two Columns"
+msgstr ""
+
+#: prefs.js:88
+msgid "Show Events"
+msgstr ""
+
+#: prefs.js:89
+msgid "Show the remaining events of the day next to the calendar"
+msgstr ""
+
+#: lib/calendar.js:229
+msgid "Go to today"
+msgstr ""
+
+#: lib/calendar.js:352
+#, javascript-format
+msgid "Until %s"
+msgstr ""
+
+#: lib/calendar.js:365
+msgid "%-d %B %Y"
+msgstr ""
+
+#: lib/calendar.js:408
+msgid "No more events today"
+msgstr ""
+
+#: lib/calendar.js:408
+msgid "No events"
+msgstr ""
+
+#: lib/clocks.js:88
+msgid "World Clocks"
+msgstr ""
+
+#: lib/clocks.js:226
+#, javascript-format
+msgid "Page %d"
+msgstr ""
+
+#: lib/collapsible.js:112
+msgid "Expand Settings"
+msgstr ""
+
+#: lib/customization.js:58
+msgid "Edit Quick Settings"
+msgstr ""
+
+#: lib/customization.js:257
+msgid "Done"
+msgstr ""
+
+#: lib/customization.js:319
+msgid "Add quick settings from the list below"
+msgstr ""
+
+#: lib/customization.js:405
+#, javascript-format
+msgid "Remove %s"
+msgstr ""
+
+#: lib/customization.js:406
+#, javascript-format
+msgid "Add %s"
+msgstr ""
+
+#: lib/notifications.js:69
+msgid "Clear"
+msgstr ""
+
+#: lib/notifications.js:72
+msgid "Clear all notifications"
+msgstr ""
+
+#: lib/notifications.js:237
+#, javascript-format
+msgid "%d More Notification"
+msgid_plural "%d More Notifications"
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/toggles.js:18
+msgid "Connectivity"
+msgstr ""
+
+#: lib/toggles.js:19
+msgid "Device"
+msgstr ""
+
+#: lib/toggles.js:20
+msgid "Personalization"
+msgstr ""
+
+#: lib/toggles.js:21
+msgid "Privacy"
+msgstr ""
+
+#: lib/toggles.js:22
+msgid "Accessibility"
+msgstr ""
+
+#: lib/toggles.js:23
+msgid "Extensions"
+msgstr ""
+
+#: lib/toggles.js:59
+msgid "Screenshot"
+msgstr ""
+
+#: lib/toggles.js:84
+msgid "Battery Health"
+msgstr ""
+
+#: lib/toggles.js:167
+msgid "Camera"
+msgstr ""
+
+#: lib/toggles.js:176
+msgid "Location"
+msgstr ""
+
+#: lib/toggles.js:184
+msgid "Screen Lock"
+msgstr ""
+
+#: lib/toggles.js:192
+msgid "Microphone"
+msgstr ""

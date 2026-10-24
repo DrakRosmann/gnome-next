@@ -1,0 +1,26 @@
+name: Build
+
+on:
+  push:
+    branches: [master]
+    tags: ['v*']
+  pull_request:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update && sudo apt-get install -y gettext libglib2.0-bin zip
+      - run: ./install.sh pack
+      - uses: actions/upload-artifact@v4
+        with:
+          name: gnome-next@gui
+          path: gnome-next@gui.zip
+      - if: startsWith(github.ref, 'refs/tags/')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "$GITHUB_REF_NAME" gnome-next@gui.zip --title "$GITHUB_REF_NAME" --generate-notes

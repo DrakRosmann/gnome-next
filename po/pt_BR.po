@@ -1,0 +1,165 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-next\n"
+"PO-Revision-Date: 2026-10-20 12:00-0300\n"
+"Last-Translator: DrakRosmann\n"
+"Language-Team: Portuguese (Brazil)\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "A calendar popover that scales with events, world clocks and weather"
+msgstr "Um calendário que se adapta aos eventos, relógios mundiais e clima"
+
+msgid "Accessibility"
+msgstr "Acessibilidade"
+
+msgid "Accessibility toggles can be added to Quick Settings instead"
+msgstr "Os controles de acessibilidade podem ser adicionados às Configurações rápidas"
+
+msgid "Adaptive Calendar"
+msgstr "Calendário adaptável"
+
+msgid "Add an edit button to add and remove quick settings"
+msgstr "Adiciona um botão de edição para adicionar e remover configurações rápidas"
+
+msgid "Add quick settings from the list below"
+msgstr "Adicione configurações rápidas da lista abaixo"
+
+#, javascript-format
+msgid "Add %s"
+msgstr "Adicionar %s"
+
+msgid "Battery Health"
+msgstr "Saúde da bateria"
+
+msgid "Calendar"
+msgstr "Calendário"
+
+msgid "Camera"
+msgstr "Câmera"
+
+msgid "Clear"
+msgstr "Limpar"
+
+msgid "Clear all notifications"
+msgstr "Limpar todas as notificações"
+
+msgid "Connectivity"
+msgstr "Conectividade"
+
+msgid "Customization"
+msgstr "Personalização do menu"
+
+msgid "%-d %B %Y"
+msgstr "%-d de %B de %Y"
+
+msgid "Default Layout"
+msgstr "Layout padrão"
+
+msgid "Device"
+msgstr "Dispositivo"
+
+msgid "Done"
+msgstr "Concluído"
+
+msgid "Edit Quick Settings"
+msgstr "Editar configurações rápidas"
+
+msgid "Expand Settings"
+msgstr "Expandir configurações"
+
+msgid "Extensions"
+msgstr "Extensões"
+
+msgid "Go to today"
+msgstr "Ir para hoje"
+
+msgid "Hide Accessibility Menu"
+msgstr "Ocultar menu de acessibilidade"
+
+msgid "Location"
+msgstr "Localização"
+
+msgid "Microphone"
+msgstr "Microfone"
+
+msgid "Notifications in Quick Settings"
+msgstr "Notificações nas Configurações rápidas"
+
+#, javascript-format
+msgid "Page %d"
+msgstr "Página %d"
+
+msgid "Personalization"
+msgstr "Aparência"
+
+msgid "Privacy"
+msgstr "Privacidade"
+
+msgid "Quick Settings"
+msgstr "Configurações rápidas"
+
+msgid "Quick Settings and notifications collapse into each other, with a media player"
+msgstr "Configurações rápidas e notificações se recolhem uma na outra, com um player de mídia"
+
+#, javascript-format
+msgid "Remove %s"
+msgstr "Remover %s"
+
+msgid "Reset"
+msgstr "Restaurar"
+
+msgid "Restore the quick settings that were removed or added"
+msgstr "Restaura as configurações rápidas removidas ou adicionadas"
+
+msgid "Screen Lock"
+msgstr "Bloqueio de tela"
+
+msgid "Screenshot"
+msgstr "Captura de tela"
+
+msgid "Show Events"
+msgstr "Mostrar eventos"
+
+msgid "Show the remaining events of the day next to the calendar"
+msgstr "Mostra os próximos eventos do dia ao lado do calendário"
+
+#, javascript-format
+msgid "Until %s"
+msgstr "Até %s"
+
+msgid "World Clocks"
+msgstr "Relógios mundiais"
+
+#, javascript-format
+msgid "%d More Notification"
+msgid_plural "%d More Notifications"
+msgstr[0] "Mais %d notificação"
+msgstr[1] "Mais %d notificações"
+
+msgid "Pill Sliders"
+msgstr "Sliders em pílula"
+
+msgid "Thick sliders with the icon inside the filled part"
+msgstr "Sliders largos com o ícone dentro da parte preenchida"
+
+msgid "No more events today"
+msgstr "Nenhum outro evento hoje"
+
+msgid "No events"
+msgstr "Nenhum evento"
+
+msgid "Layout"
+msgstr "Layout"
+
+msgid "Two columns always shows the date, weather and events next to the calendar"
+msgstr "Duas colunas sempre mostra a data, o clima e os eventos ao lado do calendário"
+
+msgid "Adaptive"
+msgstr "Adaptável"
+
+msgid "Two Columns"
+msgstr "Duas colunas"

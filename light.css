@@ -1,0 +1,61 @@
+
+/* ── Light style overrides ─────────────────────────────────────────── */
+
+.gn-editor-empty,
+.gn-events-empty {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.gn-editor-category,
+.gn-media-artist,
+.gn-clock-time,
+.gn-weather-temps {
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.quick-settings .gn-tile-badge.button {
+  border-color: rgba(0, 0, 0, 0.1);
+  background-color: #c4c4c8;
+  color: #2e2e32;
+}
+
+.quick-settings .gn-tile-badge.button:hover {
+  background-color: #b4b4b8;
+}
+
+.gn-editor-category {
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.gn-media-progress {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+.gn-page-dot-mark {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.gn-page-dot:checked .gn-page-dot-mark {
+  background-color: #000000;
+}
+
+.gn-weather-icon.sunny {
+  color: #e5a50a;
+}
+
+.gn-pill-slider .slider {
+  -barlevel-background-color: rgba(0, 0, 0, 0.08);
+}
+
+.quick-slider.gn-pill-slider .gn-slider-menu {
+  color: #000000;
+}
+
+.quick-slider.gn-pill-slider .gn-slider-icon:hover,
+.quick-slider.gn-pill-slider .gn-slider-menu:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.gn-notification-stack {
+  background-color: rgba(0, 0, 0, 0.06);
+}

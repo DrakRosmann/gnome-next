@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="gnome-next@gui">
+  <schema id="org.gnome.shell.extensions.gnome-next" path="/org/gnome/shell/extensions/gnome-next/">
+    <key name="enable-customization" type="b">
+      <default>true</default>
+      <summary>Quick Settings customization</summary>
+      <description>Adds an edit button to Quick Settings to add and remove toggles.</description>
+    </key>
+    <key name="removed-toggles" type="as">
+      <default>[]</default>
+      <summary>Built-in toggles removed from Quick Settings</summary>
+    </key>
+    <key name="added-toggles" type="as">
+      <default>[]</default>
+      <summary>Extra toggles added to Quick Settings, in order</summary>
+    </key>
+    <key name="hide-accessibility-menu" type="b">
+      <default>true</default>
+      <summary>Hide the top bar accessibility menu</summary>
+      <description>The accessibility toggles are available in the Quick Settings editor instead.</description>
+    </key>
+    <key name="pill-sliders" type="b">
+      <default>true</default>
+      <summary>Pill-shaped sliders</summary>
+      <description>Thick sliders with the icon inside the filled part, as in the mockups.</description>
+    </key>
+    <key name="enable-collapsible" type="b">
+      <default>true</default>
+      <summary>Collapsible Quick Settings and notifications</summary>
+      <description>Shows notifications and the media player in Quick Settings. Only one of the two groups is expanded at a time.</description>
+    </key>
+    <key name="enable-calendar" type="b">
+      <default>true</default>
+      <summary>Calendar popover redesign</summary>
+      <description>A calendar popover without notifications that scales with its content.</description>
+    </key>
+    <key name="calendar-layout" type="s">
+      <choices>
+        <choice value="adaptive"/>
+        <choice value="two-columns"/>
+      </choices>
+      <default>'adaptive'</default>
+      <summary>Calendar popover layout</summary>
+      <description>"adaptive" adds the date and events column only when there are events; "two-columns" always shows it.</description>
+    </key>
+    <key name="show-events" type="b">
+      <default>true</default>
+      <summary>Show today's events next to the calendar</summary>
+    </key>
+  </schema>
+</schemalist>
