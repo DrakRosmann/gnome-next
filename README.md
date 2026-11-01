@@ -72,8 +72,11 @@ Also:
   cascades in when it opens; months and world clock pages slide; dismissed
   notifications slide out and close the gap; the calendar grows and shrinks
   when the events column appears. Moves use damped-spring physics, buttons and
-  toggles shrink slightly while pressed, colors fade between states, and the
-  media cover and play/pause icon spring in when they change. All of them
+  toggles shrink slightly while pressed, a toggle's icon springs when it turns
+  on or off, colors fade between states, and the media cover and play/pause
+  icon spring in when they change. In the editors, moving or resizing a tile
+  updates it in place, and the widget gallery opens at once and fills in its
+  live previews one by one, so no animation waits for heavy work. All of them
   follow the system "Animations" setting.
 
 ## Extra toggles in the catalog
