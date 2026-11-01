@@ -73,7 +73,9 @@ Also:
   notifications slide out and close the gap; the calendar grows and shrinks
   when the events column appears. Moves use damped-spring physics, buttons and
   toggles shrink slightly while pressed, a toggle's icon springs when it turns
-  on or off, colors fade between states, and the media cover and play/pause
+  on or off, small tiles morph between round and square (corners and color
+  together, not a cross-fade), dismissed notifications slide away while the
+  gap closes and stacks glide to the top when a new notification arrives, colors fade between states, and the media cover and play/pause
   icon spring in when they change. In the editors, moving or resizing a tile
   updates it in place, and the widget gallery opens at once and fills in its
   live previews one by one, so no animation waits for heavy work. All of them
