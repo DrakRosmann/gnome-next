@@ -5,18 +5,29 @@ A GNOME Shell 50/51 extension that implements three ideas from the
 
 | Mockup | What the extension does |
 |---|---|
-| [Quick Settings customization](https://gitlab.gnome.org/Teams/Design/os-mockups/-/blob/master/system-status/quick-settings/quick-toggles-customization-aday.png) | An **edit** (pencil) button in the Quick Settings system row. It closes the menu and reopens it as an editor: the top section shows the current toggles, which can be dragged into another order and clicked to make them small or large, with a **−** badge, and a categorized catalog below (Connectivity, Device, Personalization, Privacy, Accessibility, Extensions) shows the rest with a **+** badge. Toggles that are already in use appear dimmed. The top-bar accessibility menu is hidden, because the accessibility toggles can now be added to Quick Settings. |
+| [Quick Settings customization](https://gitlab.gnome.org/Teams/Design/os-mockups/-/blob/master/system-status/quick-settings/quick-toggles-customization-aday.png) | An **edit** (pencil) button in the Quick Settings system row. It closes the menu and reopens it as an editor: the top section shows the current controls (toggles, sliders, the media player) in the Quick Settings grid, which can be dragged into another order and resized, with a **−** badge, and a categorized catalog below (Connectivity, Device, Personalization, Privacy, Accessibility, Extensions) shows the rest with a **+** badge. Toggles that are already in use appear dimmed. The top-bar accessibility menu is hidden, because the accessibility toggles can now be added to Quick Settings. |
 | [Collapsible Quick Settings/Notifications](https://gitlab.gnome.org/Teams/Design/os-mockups/-/blob/master/system-status/quick-settings/quick-toggles-notifications-collapsible-mpris.png) | Notifications and the media player (MPRIS) live in Quick Settings. By default the settings are expanded and only the newest notification shows, with a **“N More Notifications”** pill. Expanding the notifications collapses the toggles into a row of circles, makes the player compact and shows **“Expand Settings”**. Only one group is expanded at a time. |
 | [Calendar menu concept](https://gitlab.gnome.org/Teams/Design/os-mockups/-/blob/master/calendar/calendar-popover.png) | A calendar popover without notifications that scales with its content: calendar only → + world clocks → + weather. When the selected day has upcoming events, a left column shows the date, the weather and the events (with the two-column layout and nothing left today, the events of the next days), and the popover height is still set by the calendar and clocks (the events scroll). With more than 4 clocks the list switches to a compact layout; with more than 6 it is paged. |
 
 Also:
 
-* **Small and large tiles, in your order** (as on Android and in the iOS
-  Control Center): in the Quick Settings editor, drag a tile to move it (the
-  others make room) and click it to switch between large (icon and name) and
-  small (icon only, half the width). **−** removes it; added tiles go last.
-  Right-click any tile with a menu to open it, like a long press on Android —
-  small tiles have no room for the arrow.
+* **A fully customizable panel** (as in the iOS 27 Control Center and One UI 9):
+  in the Quick Settings editor every control — toggles, the volume, microphone
+  and brightness sliders and the media player — can be moved, resized and
+  removed, and the editor shows them in the same grid as Quick Settings. Drag a
+  control to move it (the others make room); click it, or drag the corner
+  handle as on iOS, to change its size:
+  * toggles: large (icon and name) or small (icon only, a quarter of the width);
+  * sliders: wide, half width, tall or tower — the tall ones stand upright with
+    the icon at the bottom, like on One UI and iOS, and still open their menu;
+  * the media player: large, compact (one row) or square (half the width).
+
+  Smaller controls fill the gaps next to taller ones. **−** removes a control
+  and the catalog (with a new **Controls** section for sliders and the player)
+  adds it back; added controls go last. The editor's header has the extension
+  settings on one side and **Reset Layout** (default order and sizes) and
+  **Done** on the other. Right-click any tile with a menu to open it, like a
+  long press on Android — small tiles have no room for the arrow.
 * **Android style** (as in Android 16): taller rounded tiles with the icon in
   its own rounded square and the arrow inside the tile, small tiles that are
   round while off and turn into rounded squares when on, thicker sliders, and
@@ -147,9 +158,10 @@ sources the stock calendar uses.
 ```
 extension.js          turns each feature on/off from the settings
 lib/visibility.js     keeps shell actors hidden while the shell keeps toggling them
-lib/toggles.js        extra toggles, categories and toggle helpers
+lib/toggles.js        extra toggles, categories, toggle and control helpers
 lib/customization.js  Quick Settings editor
-lib/tiles.js          small and large tiles, tile order, right-click menus
+lib/grid.js           Quick Settings grid layout with sizes in units and rows
+lib/tiles.js          control sizes (small tiles, upright sliders), order, right-click menus
 lib/mixer.js          volume of each app in the volume slider menu
 lib/panel.js          top bar shortcuts (mute, brightness)
 lib/shape.js          round ⇄ square morph of small tiles

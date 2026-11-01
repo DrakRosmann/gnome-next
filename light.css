@@ -29,6 +29,15 @@
   color: rgba(0, 0, 0, 0.55);
 }
 
+.gn-tile-resize {
+  color: rgba(0, 0, 0, 0.35);
+}
+
+.gn-tile-resize:hover,
+.gn-tile-resize:active {
+  color: #000000;
+}
+
 .gn-page-dot-mark {
   background-color: rgba(0, 0, 0, 0.3);
 }

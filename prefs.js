@@ -61,6 +61,7 @@ export default class GnomeNextPreferences extends ExtensionPreferences {
             settings.reset('added-toggles');
             settings.reset('toggle-order');
             settings.reset('small-toggles');
+            settings.reset('control-sizes');
         });
         reset.add_suffix(resetButton);
         quickSettings.add(reset);

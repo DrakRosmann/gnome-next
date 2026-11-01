@@ -127,6 +127,79 @@
   color: rgba(255, 255, 255, 0.55);
 }
 
+/* Header buttons: panel settings on one side, reset and done on the other */
+.gn-editor-header-buttons {
+  spacing: 8px;
+}
+
+.quick-settings .gn-editor-close.button:insensitive {
+  opacity: 0.4;
+}
+
+/* Corner handle to resize a control, as on iOS */
+.gn-tile-resize {
+  width: 18px;
+  height: 18px;
+  margin: 0 1px 1px 0;
+  color: rgba(255, 255, 255, 0.45);
+  transition-duration: 150ms;
+}
+
+.gn-tile-resize:hover,
+.gn-tile-resize:active {
+  color: #ffffff;
+}
+
+/* Sliders and the player in the editor, drawn like the real ones */
+.quick-toggle.gn-slider-tile,
+.gn-android .quick-toggle.gn-slider-tile {
+  padding: 0;
+  border-radius: 999px;
+}
+
+.gn-slider-tile-fill {
+  border-radius: 999px;
+  background-color: -st-accent-color;
+}
+
+.gn-slider-tile .gn-tile-box {
+  padding: 0 16px;
+  spacing: 10px;
+}
+
+.gn-slider-tile.gn-size-tall .gn-tile-box,
+.gn-slider-tile.gn-size-tower .gn-tile-box {
+  padding: 0 0 16px;
+}
+
+.gn-slider-tile .quick-toggle-icon,
+.gn-android .gn-slider-tile .quick-toggle-icon {
+  padding: 0;
+  background-color: transparent;
+  color: -st-accent-fg-color;
+}
+
+.quick-toggle.gn-media-tile,
+.gn-android .quick-toggle.gn-media-tile {
+  border-radius: 24px;
+}
+
+.gn-media-tile .gn-tile-box {
+  padding: 10px 12px;
+}
+
+.gn-media-tile-row {
+  spacing: 10px;
+}
+
+.gn-media-tile-controls {
+  spacing: 22px;
+}
+
+.gn-media-tile-icon {
+  icon-size: 16px;
+}
+
 /* ── Pill sliders ──────────────────────────────────────────────────── */
 
 .gn-pill-slider .slider-bin {
@@ -163,6 +236,35 @@
 .gn-slider-icon StIcon,
 .gn-slider-menu StIcon {
   icon-size: 16px;
+}
+
+/* Upright sliders (tall and tower): the bar fills the width, rounded at
+ * both ends; the icon sits at the bottom */
+.quick-slider.gn-upright {
+  padding: 0;
+}
+
+.quick-slider.gn-upright .slider-bin {
+  padding: 0;
+  border-radius: 999px;
+}
+
+.quick-slider.gn-upright .gn-slider-icon,
+.quick-slider.gn-upright .gn-slider-menu {
+  padding: 0 18px;
+}
+
+/* Media player at half width: title, artist and controls */
+.message.gn-media.square .gn-media-box {
+  padding: 2px;
+}
+
+.gn-media.square .gn-media-controls {
+  spacing: 2px;
+}
+
+.quick-settings .gn-media.square .gn-media-button.button.play {
+  padding: 9px 14px;
 }
 
 /* ── Collapsible Quick Settings / notifications ────────────────────── */

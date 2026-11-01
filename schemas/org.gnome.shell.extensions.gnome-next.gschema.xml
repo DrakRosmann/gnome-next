@@ -16,13 +16,18 @@
     </key>
     <key name="toggle-order" type="as">
       <default>[]</default>
-      <summary>Order of the Quick Settings toggles</summary>
-      <description>Toggle ids in the order set in the editor. Toggles not listed go after these.</description>
+      <summary>Order of the Quick Settings controls</summary>
+      <description>Ids of toggles, sliders ("slider:…") and the media player ("media") in the order set in the editor. Controls not listed keep their place.</description>
     </key>
     <key name="small-toggles" type="as">
       <default>[]</default>
-      <summary>Toggles shown small</summary>
-      <description>Toggle ids shown as small tiles, half a column wide, with the icon only.</description>
+      <summary>Toggles shown small (replaced by control-sizes)</summary>
+      <description>Toggle ids shown as small tiles. Moved into control-sizes when the extension starts.</description>
+    </key>
+    <key name="control-sizes" type="as">
+      <default>[]</default>
+      <summary>Sizes of the Quick Settings controls</summary>
+      <description>Each entry is "id:size". Toggles are large or small; sliders wide, half, tall or tower; the media player large, compact or square. Controls not listed have their default size.</description>
     </key>
     <key name="hide-accessibility-menu" type="b">
       <default>true</default>
