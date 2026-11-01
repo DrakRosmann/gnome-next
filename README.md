@@ -28,6 +28,37 @@ Also:
   settings on one side and **Reset Layout** (default order and sizes) and
   **Done** on the other. Right-click any tile with a menu to open it, like a
   long press on Android — small tiles have no room for the arrow.
+* **More controls** in the editor's catalog:
+  * **App shortcuts** (as the app controls of iOS): your dash favorites are
+    offered in an *Apps* section, and Preferences → *App Shortcuts* adds any
+    installed app. Clicking one opens the app.
+  * **Custom commands**: toggles that run your own commands (Preferences →
+    *Custom Commands*), with a command to turn on, an optional one to turn off
+    and an optional one that tells whether it is on (exit status 0). Without
+    a command to turn off, the toggle is a button. A failure shows a
+    notification with what the command printed.
+  * **Extra sliders**: a microphone slider that stays (the shell's only shows
+    while an app records), Night Light warmth (moving it turns Night Light
+    on; the icon turns it on or off) and keyboard brightness (on keyboards
+    with a backlight). Like the other sliders, they can be wide, half, tall
+    or tower.
+  * **Timer**: click to start the last duration or stop it, the menu has
+    durations from 1 to 60 minutes and the stopwatch. A notification with a
+    sound comes when the time is up, even when it ran out while locked.
+* **Live activities** (as on iOS and in the live updates of Android 16): the
+  timer, the stopwatch, screen recordings and the progress apps report for
+  their icon (downloads in browsers, file copies, torrents — the Unity
+  LauncherEntry API docks use) show in an island in the middle of the top bar,
+  which grows out of the clock, shows the first one and how many more there
+  are, and opens a menu with all of them. They are also cards at the top of
+  Quick Settings, with a progress bar and buttons (pause, +1 minute, stop,
+  stop recording). The island takes the place of the shell's recording
+  indicator.
+* **Connection details** under the toggle names (as on One UI): the shell
+  names the Wi-Fi network and the Bluetooth device; this adds the speed of a
+  wired connection (“Connected · 1 Gb/s”), the battery of the Bluetooth
+  device and “Disconnected”, “Not Connected” or “No Devices” when nothing is
+  connected.
 * **Android style** (as in Android 16): taller rounded tiles with the icon in
   its own rounded square and the arrow inside the tile, small tiles that are
   round while off and turn into rounded squares when on, thicker sliders, and
@@ -65,6 +96,10 @@ Also:
   * **Controls** — your Quick Settings toggles as round buttons, in the order set
     in the editor (as in the iOS Control Center); clicking the card opens Quick Settings
   * **Note** — a sticky note, saved in the extension settings
+  * **Clipboard** — the text you copied lately; click an item to copy it again,
+    × to forget it. History is only kept while the widget is on the board,
+    skips what password managers copy, and is saved to a file only you can
+    read (`~/.cache/gnome-next/clipboard.json`); removing the widget clears it
   * **Photo** — a random picture from your Pictures folder, a new one each time
 * **Unread dot in Quick Settings:** with notifications in Quick Settings, the
   unread-notifications dot moves from the clock to the Quick Settings
@@ -163,6 +198,12 @@ lib/customization.js  Quick Settings editor
 lib/grid.js           Quick Settings grid layout with sizes in units and rows
 lib/tiles.js          control sizes (small tiles, upright sliders), order, right-click menus
 lib/mixer.js          volume of each app in the volume slider menu
+lib/extraSliders.js   microphone, Night Light and keyboard brightness sliders
+lib/shortcuts.js      app shortcut and custom command toggles
+lib/timers.js         timer and stopwatch (kept through a lock), timer toggle
+lib/live.js           live activities: island in the top bar, Quick Settings cards
+lib/subtitles.js      connection details under the toggle names
+lib/clipboard.js      clipboard history for the clipboard widget
 lib/panel.js          top bar shortcuts (mute, brightness)
 lib/shape.js          round ⇄ square morph of small tiles
 lib/wave.js           wavy media progress bar

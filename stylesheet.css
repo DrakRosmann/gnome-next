@@ -1682,3 +1682,203 @@
   color: #ffffff;
   -gn-track-color: rgba(255, 255, 255, 0.3);
 }
+
+/* ── App shortcuts ─────────────────────────────────────────────────── */
+
+/* App icons are in color; a little larger than the symbolic ones */
+.quick-toggle.gn-app-toggle .quick-toggle-icon {
+  icon-size: 20px;
+}
+
+.gn-android .quick-toggle.gn-app-toggle .quick-toggle-icon {
+  padding: 10px;
+}
+
+/* ── Live activities ───────────────────────────────────────────────── */
+
+/* The island in the top bar */
+#panel .panel-button.gn-island-button {
+  padding: 0 4px;
+  -natural-hpadding: 4px;
+  -minimum-hpadding: 4px;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.gn-island {
+  height: 22px;
+  padding: 0 10px 0 6px;
+  spacing: 6px;
+  border-radius: 999px;
+  background-color: #000000;
+  color: #ffffff;
+  transition-duration: 180ms;
+}
+
+#panel .panel-button.gn-island-button:hover .gn-island,
+#panel .panel-button.gn-island-button:active .gn-island,
+#panel .panel-button.gn-island-button:checked .gn-island {
+  background-color: #1e1e20;
+}
+
+.gn-island.recording .gn-island-icon {
+  color: #ff4f5e;
+}
+
+.gn-island-icon {
+  icon-size: 14px;
+  color: -st-accent-color;
+}
+
+.gn-island-label {
+  font-weight: bold;
+  font-feature-settings: "tnum";
+}
+
+.gn-island-more {
+  font-size: 0.85em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.gn-island-menu {
+  min-width: 340px;
+  padding: 8px;
+}
+
+.gn-live-list,
+.gn-live-section {
+  spacing: 8px;
+}
+
+.gn-live-section {
+  margin-bottom: 12px;
+}
+
+/* Cards, in the island's menu and at the top of Quick Settings */
+.gn-live-card {
+  padding: 12px 14px;
+  border-radius: 22px;
+  background-color: rgba(255, 255, 255, 0.08);
+  transition-duration: 180ms;
+}
+
+.gn-live-card:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.gn-live-row {
+  spacing: 12px;
+}
+
+.gn-live-icon {
+  icon-size: 18px;
+  padding: 9px;
+  border-radius: 999px;
+  color: -st-accent-fg-color;
+  background-color: -st-accent-color;
+}
+
+.gn-live-icon.app {
+  icon-size: 32px;
+  padding: 2px;
+  background-color: transparent;
+}
+
+.gn-live-icon.recording {
+  color: #ffffff;
+  background-color: #e01b24;
+}
+
+.gn-live-title {
+  font-weight: bold;
+}
+
+.gn-live-detail {
+  font-size: 1.3em;
+  font-weight: 800;
+  font-feature-settings: "tnum";
+}
+
+.gn-live-actions {
+  spacing: 6px;
+}
+
+.quick-settings .gn-live-action.button,
+.gn-island-menu .gn-live-action.button {
+  padding: 10px;
+  border-radius: 999px;
+  min-height: 0;
+}
+
+.gn-live-action StIcon {
+  icon-size: 16px;
+}
+
+.gn-live-progress {
+  height: 6px;
+  margin-top: 10px;
+  color: -st-accent-color;
+  -gn-track-color: rgba(255, 255, 255, 0.15);
+}
+
+/* ── Clipboard widget ──────────────────────────────────────────────── */
+
+.gn-clipboard-box {
+  spacing: 6px;
+}
+
+.gn-clipboard-header {
+  spacing: 6px;
+}
+
+.gn-clipboard-icon {
+  icon-size: 14px;
+  color: -st-accent-color;
+}
+
+.gn-clipboard-list {
+  spacing: 2px;
+}
+
+.gn-clipboard-row {
+  spacing: 2px;
+}
+
+.gn-clipboard-item.button {
+  padding: 6px 8px;
+  border-radius: 10px;
+  min-height: 0;
+  background-color: rgba(255, 255, 255, 0.06);
+  font-weight: normal;
+}
+
+.gn-clipboard-item.button:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.gn-clipboard-item.button:checked {
+  color: -st-accent-fg-color;
+  background-color: -st-accent-color;
+}
+
+.gn-clipboard-text {
+  font-size: 0.9em;
+}
+
+.gn-clipboard-clear.button,
+.gn-clipboard-remove.button {
+  padding: 4px;
+  min-height: 0;
+  border-radius: 999px;
+  background-color: transparent;
+}
+
+.gn-clipboard-clear.button:hover,
+.gn-clipboard-remove.button:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.gn-clipboard-clear StIcon,
+.gn-clipboard-remove StIcon {
+  icon-size: 12px;
+}

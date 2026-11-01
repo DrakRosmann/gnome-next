@@ -64,6 +64,26 @@
       <summary>Top bar shortcuts</summary>
       <description>Middle-click the volume icon to mute, and scroll over the battery icon to change the screen brightness.</description>
     </key>
+    <key name="command-toggles" type="as">
+      <default>[]</default>
+      <summary>Custom command toggles</summary>
+      <description>One JSON object per toggle: {"id", "name", "icon", "on", "off", "status"}. With "off" it switches on and off; with "status" (a command that exits with 0 while on) it shows the state.</description>
+    </key>
+    <key name="toggle-subtitles" type="b">
+      <default>true</default>
+      <summary>Connection details under the toggle titles</summary>
+      <description>The speed of a wired connection, the battery of the Bluetooth device and what is going on when nothing is connected, as on One UI.</description>
+    </key>
+    <key name="live-activities" type="b">
+      <default>true</default>
+      <summary>Live activities</summary>
+      <description>Timers, the stopwatch, screen recordings and the progress apps report show in an island in the top bar and at the top of Quick Settings.</description>
+    </key>
+    <key name="timer-state" type="s">
+      <default>'{}'</default>
+      <summary>Timer and stopwatch</summary>
+      <description>JSON state of the running timer and stopwatch, so they go on through a lock.</description>
+    </key>
     <key name="enable-collapsible" type="b">
       <default>true</default>
       <summary>Collapsible Quick Settings and notifications</summary>

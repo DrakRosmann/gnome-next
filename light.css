@@ -183,3 +183,19 @@
 .gn-wave-progress {
   -gn-track-color: rgba(0, 0, 0, 0.12);
 }
+
+.gn-live-card,
+.gn-clipboard-item.button {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+.gn-live-card:hover,
+.gn-clipboard-item.button:hover,
+.gn-clipboard-clear.button:hover,
+.gn-clipboard-remove.button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.gn-live-progress {
+  -gn-track-color: rgba(0, 0, 0, 0.12);
+}

@@ -12,6 +12,10 @@ import {AppVolume} from './lib/mixer.js';
 import {PanelShortcuts} from './lib/panel.js';
 import {ReminderScheduler} from './lib/reminders.js';
 import {PillSliders} from './lib/sliders.js';
+import {ClipboardHistory, setClipboardHistory} from './lib/clipboard.js';
+import {LiveActivities} from './lib/live.js';
+import {ToggleSubtitles} from './lib/subtitles.js';
+import {Timers, setTimers} from './lib/timers.js';
 import {VisibilityLock} from './lib/visibility.js';
 
 // Order matters: the editor hides whatever Collapsible added to the menu
@@ -24,6 +28,8 @@ const FEATURES = [
     {key: 'app-volume', Feature: AppVolume},
     {key: 'panel-shortcuts', Feature: PanelShortcuts},
     {key: 'android-tiles', Feature: AndroidStyle},
+    {key: 'toggle-subtitles', Feature: ToggleSubtitles},
+    {key: 'live-activities', Feature: LiveActivities},
 ];
 
 const READY_POLL_MS = 100;
@@ -35,6 +41,13 @@ export default class GnomeNextExtension extends Extension {
         this._active = new Map();
         this._reminders = new ReminderScheduler(this._settings);
         this._reminders.enable();
+        // Services the toggles, widgets and live activities share
+        this._timers = new Timers(this._settings);
+        this._timers.enable();
+        setTimers(this._timers);
+        this._clipboard = new ClipboardHistory(this._settings);
+        this._clipboard.enable();
+        setClipboardHistory(this._clipboard);
 
         // Quick Settings indicators are set up asynchronously at startup
         const ready = () => Boolean(Main.panel.statusArea.quickSettings?._system);
@@ -64,6 +77,12 @@ export default class GnomeNextExtension extends Extension {
 
         this._reminders.disable();
         this._reminders = null;
+        setTimers(null);
+        this._timers.disable();
+        this._timers = null;
+        setClipboardHistory(null);
+        this._clipboard.disable();
+        this._clipboard = null;
         this._lock.destroy();
         this._lock = null;
         this._settings = null;
