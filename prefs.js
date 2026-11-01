@@ -382,7 +382,7 @@ export default class GnomeNextPreferences extends ExtensionPreferences {
 
         const page = new Adw.PreferencesPage();
         const group = new Adw.PreferencesGroup({
-            description: _('Commands run with /bin/sh. Without a command to turn it off, the toggle is a button.'),
+            description: _('Commands run with /bin/sh. Without a command to turn it off, the toggle is a button. The command that checks the state exits with 0 while it is on.'),
         });
         page.add(group);
         const entry = (title, value) => {
@@ -394,7 +394,7 @@ export default class GnomeNextPreferences extends ExtensionPreferences {
         const icon = entry(_('Icon Name (e.g. network-vpn-symbolic)'), config?.icon);
         const on = entry(_('Command to Turn On or Run'), config?.on);
         const off = entry(_('Command to Turn Off (optional)'), config?.off);
-        const status = entry(_('Command to Check if On (optional, exit status 0 = on)'), config?.status);
+        const status = entry(_('Command to Check if On (optional)'), config?.status);
 
         const preview = new Gtk.Image({icon_name: config?.icon || 'utilities-terminal-symbolic'});
         icon.add_suffix(preview);

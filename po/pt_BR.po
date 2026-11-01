@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-next\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-01 18:24-0300\n"
+"POT-Creation-Date: 2026-11-01 18:27-0300\n"
 "PO-Revision-Date: 2026-10-20 12:00-0300\n"
 "Last-Translator: DrakRosmann\n"
 "Language-Team: Portuguese (Brazil)\n"
@@ -280,8 +280,8 @@ msgstr "Salvar"
 #: prefs.js:385
 msgid ""
 "Commands run with /bin/sh. Without a command to turn it off, the toggle is a "
-"button."
-msgstr "Os comandos rodam com /bin/sh. Sem um comando para desligar, o botão só executa o comando."
+"button. The command that checks the state exits with 0 while it is on."
+msgstr "Os comandos rodam com /bin/sh. Sem um comando para desligar, o botão só executa o comando. O comando que verifica o estado sai com 0 enquanto estiver ligado."
 
 #: prefs.js:393
 msgid "Name"
@@ -300,8 +300,8 @@ msgid "Command to Turn Off (optional)"
 msgstr "Comando para desligar (opcional)"
 
 #: prefs.js:397
-msgid "Command to Check if On (optional, exit status 0 = on)"
-msgstr "Comando para saber se está ligado (opcional, saída 0 = ligado)"
+msgid "Command to Check if On (optional)"
+msgstr "Comando para saber se está ligado (opcional)"
 
 #: lib/calendar.js:249
 msgid "Go to today"

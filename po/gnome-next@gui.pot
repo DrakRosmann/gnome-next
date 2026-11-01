@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-01 18:24-0300\n"
+"POT-Creation-Date: 2026-11-01 18:27-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -266,7 +266,7 @@ msgstr ""
 #: prefs.js:385
 msgid ""
 "Commands run with /bin/sh. Without a command to turn it off, the toggle is a "
-"button."
+"button. The command that checks the state exits with 0 while it is on."
 msgstr ""
 
 #: prefs.js:393
@@ -286,7 +286,7 @@ msgid "Command to Turn Off (optional)"
 msgstr ""
 
 #: prefs.js:397
-msgid "Command to Check if On (optional, exit status 0 = on)"
+msgid "Command to Check if On (optional)"
 msgstr ""
 
 #: lib/calendar.js:249
