@@ -6,6 +6,8 @@ import {Extension} from 'resource:///org/gnome/shell/extensions/extension.js';
 import {CalendarPopover} from './lib/calendar.js';
 import {Collapsible} from './lib/collapsible.js';
 import {Customization} from './lib/customization.js';
+import {DndMenu} from './lib/dnd.js';
+import {ReminderScheduler} from './lib/reminders.js';
 import {PillSliders} from './lib/sliders.js';
 import {VisibilityLock} from './lib/visibility.js';
 
@@ -15,6 +17,7 @@ const FEATURES = [
     {key: 'enable-customization', Feature: Customization},
     {key: 'enable-calendar', Feature: CalendarPopover},
     {key: 'pill-sliders', Feature: PillSliders},
+    {key: 'dnd-menu', Feature: DndMenu},
 ];
 
 const READY_POLL_MS = 100;
@@ -24,6 +27,8 @@ export default class GnomeNextExtension extends Extension {
         this._settings = this.getSettings();
         this._lock = new VisibilityLock();
         this._active = new Map();
+        this._reminders = new ReminderScheduler(this._settings);
+        this._reminders.enable();
 
         // Quick Settings indicators are set up asynchronously at startup
         const ready = () => Boolean(Main.panel.statusArea.quickSettings?._system);
@@ -51,6 +56,8 @@ export default class GnomeNextExtension extends Extension {
         [...this._active.keys()].reverse().forEach(key => this._stopFeature(key));
         this._active = null;
 
+        this._reminders.disable();
+        this._reminders = null;
         this._lock.destroy();
         this._lock = null;
         this._settings = null;

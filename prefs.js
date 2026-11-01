@@ -53,6 +53,10 @@ export default class GnomeNextPreferences extends ExtensionPreferences {
             _('Pill Sliders'),
             _('Thick sliders with the icon inside the filled part')));
 
+        quickSettings.add(switchRow(settings, 'dnd-menu',
+            _('Do Not Disturb Durations'),
+            _('Turn on Do Not Disturb for an hour, until the evening or until tomorrow')));
+
         quickSettings.add(switchRow(settings, 'enable-collapsible',
             _('Notifications in Quick Settings'),
             _('Quick Settings and notifications collapse into each other, with a media player')));
@@ -89,5 +93,46 @@ export default class GnomeNextPreferences extends ExtensionPreferences {
             _('Show the remaining events of the day next to the calendar'));
         popover.bind_property('active', events, 'sensitive', GObject.BindingFlags.SYNC_CREATE);
         calendar.add(events);
+
+        const widgets = switchRow(settings, 'enable-widgets',
+            _('Widgets'),
+            _('Weather, world clocks, events, media and more under the calendar'));
+        popover.bind_property('active', widgets, 'sensitive', GObject.BindingFlags.SYNC_CREATE);
+        calendar.add(widgets);
+
+        const resetWidgets = new Adw.ActionRow({
+            title: _('Default Widgets'),
+            subtitle: _('Restore the widgets that were added, removed or resized'),
+        });
+        const resetWidgetsButton = new Gtk.Button({
+            label: _('Reset'),
+            valign: Gtk.Align.CENTER,
+        });
+        resetWidgetsButton.connect('clicked', () => settings.reset('widgets'));
+        resetWidgets.add_suffix(resetWidgetsButton);
+        const syncResetWidgets = () => {
+            resetWidgets.sensitive = popover.active && widgets.active;
+        };
+        popover.connect('notify::active', syncResetWidgets);
+        widgets.connect('notify::active', syncResetWidgets);
+        syncResetWidgets();
+        calendar.add(resetWidgets);
+
+        // Shows the symbols the widget uses; stays unset until edited
+        const stocks = new Adw.EntryRow({
+            title: _('Stock Symbols (comma separated, e.g. PETR4.SA, AAPL, BTC-USD)'),
+            show_apply_button: true,
+        });
+        const symbolsText = () => settings.get_strv('stock-symbols').join(', ');
+        stocks.text = settings.get_user_value('stock-symbols') ? symbolsText() : '';
+        stocks.connect('apply', () => {
+            const symbols = stocks.text.split(/[,\s]+/).map(t => t.trim().toUpperCase()).filter(Boolean);
+            if (symbols.length)
+                settings.set_strv('stock-symbols', symbols);
+            else
+                settings.reset('stock-symbols');
+        });
+        widgets.bind_property('active', stocks, 'sensitive', GObject.BindingFlags.SYNC_CREATE);
+        calendar.add(stocks);
     }
 }

@@ -289,6 +289,11 @@
   background-color: -st-accent-color;
 }
 
+/* Unread dot, moved from the clock to the Quick Settings indicators */
+#panel .panel-status-indicators-box > .messages-indicator {
+  icon-size: 1.091em;
+}
+
 /* ── Calendar popover ──────────────────────────────────────────────── */
 
 .gn-calendar-popover {
@@ -450,6 +455,838 @@
   padding: 6px 4px;
 }
 
+/* ── Calendar widgets ──────────────────────────────────────────────── */
+
+.gn-board {
+  spacing: 6px;
+}
+
+.gn-board.editing {
+  spacing: 10px;
+}
+
+.gn-board-header {
+  spacing: 10px;
+  padding: 2px 2px 0;
+}
+
+.gn-board-hint {
+  font-size: 0.9em;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.gn-board-edit.button {
+  min-height: 0;
+  padding: 5px 14px;
+  margin-top: 2px;
+  border-radius: 999px;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.gn-board-done.button {
+  min-height: 0;
+  padding: 5px 16px;
+  border-radius: 999px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: -st-accent-color;
+}
+
+.gn-board-done.button:hover {
+  background-color: st-lighten(-st-accent-color, 6%);
+}
+
+.gn-widget.world-clocks-button {
+  margin: 0;
+  padding: 14px;
+  border-radius: 20px;
+}
+
+.gn-widget-slot.dragging .gn-widget {
+  box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.45);
+}
+
+.gn-widget-shield {
+  border-radius: 20px;
+}
+
+.gn-board.editing .gn-widget-shield:hover {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.gn-widget-badge.button {
+  width: 24px;
+  height: 24px;
+  min-height: 0;
+  min-width: 0;
+  padding: 0;
+  /* St has no negative margins: the badge sits just inside the corner */
+  margin: 6px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background-color: #5c5c62;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+}
+
+.gn-widget-badge.button:hover {
+  background-color: #6d6d73;
+}
+
+.gn-widget-badge.add.button {
+  background-color: #2ec27e;
+  border-color: transparent;
+}
+
+.gn-widget-badge.add.button:hover {
+  background-color: #33d17a;
+}
+
+.gn-widget-badge StIcon {
+  icon-size: 12px;
+}
+
+.gn-widget-size {
+  margin: 8px;
+  padding: 1px 7px;
+  border-radius: 999px;
+  font-size: 0.75em;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+.gn-widget-title {
+  font-size: 0.85em;
+  font-weight: bold;
+}
+
+.gn-widget-dim {
+  font-size: 0.85em;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.gn-widget-placeholder {
+  spacing: 6px;
+  padding: 0 6px;
+}
+
+.gn-widget-placeholder-icon {
+  icon-size: 24px;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.gn-widget-placeholder-text {
+  font-size: 0.85em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Weather */
+.gn-weather-widget.world-clocks-button {
+  color: #ffffff;
+  background-gradient-direction: vertical;
+  background-color: #2f6db5;
+  background-gradient-start: #3584e4;
+  background-gradient-end: #1f5ba6;
+}
+
+.gn-weather-widget.world-clocks-button:hover {
+  background-gradient-start: #3f8cec;
+  background-gradient-end: #2563b0;
+}
+
+.gn-weather-widget .gn-widget-dim,
+.gn-weather-widget .gn-widget-placeholder-text,
+.gn-weather-widget .gn-widget-placeholder-icon {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.gn-weather-content {
+  spacing: 8px;
+}
+
+.gn-weather-now {
+  font-size: 2.6em;
+  font-weight: 300;
+}
+
+.gn-weather-widget.small .gn-weather-now {
+  font-size: 2.2em;
+}
+
+.gn-weather-summary-box {
+  spacing: 1px;
+}
+
+.gn-weather-widget-icon {
+  icon-size: 22px;
+  color: #ffffff;
+}
+
+.gn-weather-conditions {
+  font-size: 0.85em;
+  font-weight: bold;
+}
+
+.gn-weather-hours {
+  spacing: 4px;
+}
+
+.gn-weather-hour {
+  spacing: 4px;
+}
+
+.gn-weather-hour-icon {
+  icon-size: 18px;
+  color: #ffffff;
+}
+
+.gn-weather-hour-temp {
+  font-size: 0.9em;
+  font-weight: bold;
+  font-feature-settings: "tnum";
+}
+
+.gn-weather-days {
+  spacing: 4px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.gn-weather-day {
+  spacing: 8px;
+}
+
+.gn-weather-day-name {
+  min-width: 3.4em;
+  font-weight: bold;
+}
+
+.gn-weather-day-icon {
+  icon-size: 16px;
+  color: #ffffff;
+}
+
+.gn-weather-day-temp {
+  min-width: 2.2em;
+  font-feature-settings: "tnum";
+  text-align: right;
+}
+
+.gn-weather-range {
+  height: 4px;
+  border-radius: 2px;
+  background-color: rgba(0, 0, 0, 0.18);
+}
+
+.gn-weather-range-fill {
+  height: 4px;
+  border-radius: 2px;
+  background-gradient-direction: horizontal;
+  background-gradient-start: #8ff0a4;
+  background-gradient-end: #f9f06b;
+}
+
+.gn-weather-widget-icon.sunny,
+.gn-weather-hour-icon.sunny,
+.gn-weather-day-icon.sunny {
+  color: #f9f06b;
+}
+
+/* World clocks */
+.gn-clocks-grid {
+  spacing: 8px;
+}
+
+.gn-clock-cell {
+  spacing: 4px;
+}
+
+.gn-clock-face {
+  width: 48px;
+  height: 48px;
+}
+
+.gn-clocks-widget.small .gn-clock-face {
+  width: 40px;
+  height: 40px;
+}
+
+.gn-clocks-widget.medium .gn-clock-face {
+  width: 54px;
+  height: 54px;
+}
+
+.gn-clocks-widget.large .gn-clock-face {
+  width: 38px;
+  height: 38px;
+}
+
+.gn-clock-cell-city {
+  font-size: 0.85em;
+  font-weight: bold;
+}
+
+.gn-clocks-widget.small .gn-clock-cell-city {
+  font-size: 0.75em;
+}
+
+.gn-clock-cell-offset {
+  font-size: 0.8em;
+  font-feature-settings: "tnum";
+}
+
+.gn-clock-list-row {
+  spacing: 10px;
+}
+
+.gn-clock-list-time {
+  font-size: 1.3em;
+  font-weight: 300;
+  font-feature-settings: "tnum";
+}
+
+/* Up next */
+.gn-events-widget > StBoxLayout {
+  spacing: 12px;
+}
+
+.gn-events-widget.small > StBoxLayout {
+  spacing: 6px;
+}
+
+.gn-events-date {
+  min-width: 3.6em;
+}
+
+.gn-events-weekday {
+  font-size: 0.85em;
+  font-weight: bold;
+  color: #ff7b63;
+}
+
+.gn-events-day {
+  font-size: 2.2em;
+  font-weight: 300;
+}
+
+.gn-events-list {
+  spacing: 6px;
+}
+
+.gn-events-row {
+  spacing: 8px;
+}
+
+.gn-events-bar {
+  width: 3px;
+  border-radius: 2px;
+  background-color: -st-accent-color;
+}
+
+.gn-events-title {
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.gn-events-section {
+  font-size: 0.75em;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.55);
+  padding-top: 4px;
+}
+
+/* Now playing */
+.gn-media-widget-box {
+  spacing: 10px;
+}
+
+.gn-media-widget-cover {
+  icon-size: 64px;
+  border-radius: 10px;
+}
+
+.gn-media-widget.medium .gn-media-widget-cover {
+  icon-size: 112px;
+}
+
+.gn-media-widget-cover.placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.gn-media-widget-app {
+  icon-size: 18px;
+}
+
+.gn-media-widget-title {
+  font-weight: bold;
+}
+
+.gn-media-widget-controls {
+  spacing: 4px;
+  padding-top: 4px;
+}
+
+.gn-media-widget .gn-media-button.button {
+  min-height: 0;
+  padding: 6px;
+  border-radius: 999px;
+}
+
+.gn-media-widget .gn-media-button.play.button {
+  padding: 8px;
+}
+
+/* System monitor */
+.gn-system-rings {
+  spacing: 8px;
+}
+
+.gn-system-meter {
+  spacing: 4px;
+}
+
+.gn-ring {
+  width: 54px;
+  height: 54px;
+  color: -st-accent-color;
+  -gn-ring-width: 6px;
+}
+
+.gn-ring.low {
+  color: #e01b24;
+}
+
+.gn-system-widget.small .gn-ring {
+  width: 50px;
+  height: 50px;
+}
+
+.gn-system-value {
+  font-size: 0.8em;
+  font-weight: bold;
+  font-feature-settings: "tnum";
+}
+
+.gn-system-name {
+  font-size: 0.75em;
+}
+
+.gn-system-network {
+  spacing: 6px;
+  min-width: 5.6em;
+}
+
+.gn-system-rate-row {
+  spacing: 4px;
+}
+
+.gn-system-rate-icon {
+  icon-size: 12px;
+  color: -st-accent-color;
+}
+
+.gn-system-rate {
+  font-size: 0.8em;
+  font-feature-settings: "tnum";
+}
+
+.gn-system-section {
+  padding-top: 8px;
+}
+
+.gn-sparkline {
+  height: 44px;
+  margin: 4px 0;
+  color: -st-accent-color;
+}
+
+.gn-system-details {
+  font-size: 0.8em;
+}
+
+/* Batteries */
+.gn-batteries-grid {
+  spacing: 8px;
+}
+
+.gn-battery-cell {
+  spacing: 4px;
+}
+
+.gn-batteries-widget .gn-ring {
+  width: 46px;
+  height: 46px;
+  color: #33d17a;
+  -gn-ring-width: 5px;
+}
+
+.gn-batteries-widget .gn-ring.low {
+  color: #e01b24;
+}
+
+.gn-battery-icon {
+  icon-size: 16px;
+}
+
+.gn-battery-percent {
+  font-size: 0.85em;
+  font-weight: bold;
+  font-feature-settings: "tnum";
+}
+
+.gn-battery-row {
+  spacing: 10px;
+}
+
+.gn-batteries-widget.large .gn-ring {
+  width: 36px;
+  height: 36px;
+  -gn-ring-width: 4px;
+}
+
+/* Note */
+.gn-notes-widget.world-clocks-button {
+  color: #2e2e32;
+  background-color: #f8e45c;
+}
+
+.gn-notes-widget.world-clocks-button:hover {
+  background-color: #f9e86e;
+}
+
+.gn-notes-title {
+  color: #9c6e03;
+  padding-bottom: 4px;
+}
+
+.gn-notes-entry {
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  color: #2e2e32;
+  background-color: transparent;
+  selected-color: #ffffff;
+  selection-background-color: #9c6e03;
+  caret-color: #2e2e32;
+}
+
+.gn-notes-entry:focus,
+.gn-notes-entry:hover {
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.gn-notes-entry StLabel.hint-text {
+  color: rgba(46, 46, 50, 0.5);
+}
+
+/* Photo */
+.gn-photo-widget.world-clocks-button {
+  padding: 0;
+  background-size: cover;
+}
+
+/* Weather in other cities */
+.gn-cities-grid {
+  spacing: 6px;
+}
+
+.gn-city-row {
+  spacing: 8px;
+}
+
+.gn-city-column {
+  spacing: 2px;
+}
+
+.gn-city-name {
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.gn-city-icon {
+  icon-size: 18px;
+  color: #ffffff;
+}
+
+.gn-cities-widget.medium .gn-city-icon {
+  icon-size: 26px;
+  padding: 4px 0;
+}
+
+.gn-city-icon.sunny {
+  color: #f9f06b;
+}
+
+.gn-city-temp {
+  font-weight: bold;
+  font-feature-settings: "tnum";
+  min-width: 2.2em;
+  text-align: right;
+}
+
+.gn-cities-widget.medium .gn-city-temp {
+  font-size: 1.4em;
+  font-weight: 300;
+  text-align: center;
+}
+
+.gn-city-range {
+  font-feature-settings: "tnum";
+}
+
+.gn-city-conditions {
+  font-size: 0.8em;
+}
+
+/* Reminders */
+.gn-reminders-box {
+  spacing: 6px;
+}
+
+.gn-reminders-title {
+  color: #ff9f40;
+}
+
+.gn-reminders-count {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #ff9f40;
+}
+
+.gn-reminders-list {
+  spacing: 6px;
+}
+
+.gn-reminder {
+  spacing: 8px;
+}
+
+.gn-reminder-check {
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  border: 2px solid rgba(255, 255, 255, 0.45);
+}
+
+.gn-reminder-check:hover {
+  border-color: #ff9f40;
+}
+
+.gn-reminder-check-icon {
+  icon-size: 10px;
+  color: transparent;
+}
+
+.gn-reminder-check:checked {
+  border-color: #ff9f40;
+  background-color: #ff9f40;
+}
+
+.gn-reminder-check:checked .gn-reminder-check-icon {
+  color: #ffffff;
+}
+
+.gn-reminder-text {
+  font-size: 0.9em;
+}
+
+.gn-reminder-text:checked {
+  text-decoration: line-through;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.gn-reminders-entry {
+  min-height: 0;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 0.85em;
+}
+
+.gn-reminders-add-icon {
+  icon-size: 12px;
+  padding-right: 4px;
+}
+
+/* Times of reminders: "Amanhã, 09:00" */
+.gn-reminder-due {
+  font-size: 0.75em;
+  font-feature-settings: "tnum";
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.gn-reminder-due.overdue,
+.gn-reminder-text.overdue {
+  color: #ff6a5c;
+}
+
+.gn-reminders-preview {
+  spacing: 4px;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #ff9f40;
+}
+
+.gn-reminders-preview-icon {
+  icon-size: 12px;
+}
+
+/* Stocks */
+.gn-stocks-list {
+  spacing: 4px;
+}
+
+.gn-stock-row {
+  padding: 3px 0;
+  border-radius: 8px;
+}
+
+.gn-stock-row > StBoxLayout {
+  spacing: 10px;
+}
+
+.gn-stock-symbol {
+  font-weight: bold;
+}
+
+.gn-stock-name {
+  font-size: 0.75em;
+}
+
+.gn-stock-chart {
+  width: 64px;
+  height: 26px;
+  margin: 0;
+}
+
+.gn-stock-big .gn-stock-chart {
+  width: 0;
+  height: 0;
+  margin: 6px 0;
+}
+
+.gn-stock-chart.up,
+.gn-stock-change.up {
+  color: #33d17a;
+}
+
+.gn-stock-chart.down,
+.gn-stock-change.down {
+  color: #ff6a5c;
+}
+
+.gn-stock-values {
+  spacing: 2px;
+  min-width: 5em;
+}
+
+.gn-stock-price {
+  font-weight: bold;
+  font-feature-settings: "tnum";
+}
+
+.gn-stock-big .gn-stock-price {
+  font-size: 1.3em;
+}
+
+.gn-stock-change {
+  font-size: 0.75em;
+  font-weight: bold;
+  font-feature-settings: "tnum";
+}
+
+.gn-stocks-status {
+  spacing: 5px;
+  padding-top: 4px;
+  font-size: 0.75em;
+}
+
+.gn-stocks-status-text,
+.gn-stocks-status-icon {
+  icon-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Gallery */
+.gn-gallery {
+  spacing: 4px;
+}
+
+.gn-gallery-title {
+  font-size: 1.3em;
+  font-weight: 800;
+}
+
+.gn-gallery-subtitle {
+  font-size: 0.9em;
+  color: rgba(255, 255, 255, 0.65);
+  padding-bottom: 6px;
+}
+
+.gn-gallery-list {
+  spacing: 22px;
+  padding: 6px 8px 12px 8px;
+}
+
+.gn-gallery-entry {
+  spacing: 6px;
+}
+
+.gn-gallery-entry-header {
+  spacing: 8px;
+}
+
+.gn-gallery-entry-icon {
+  icon-size: 16px;
+}
+
+.gn-gallery-entry-title {
+  font-weight: bold;
+}
+
+.gn-gallery-added {
+  font-size: 0.8em;
+  font-weight: bold;
+  color: -st-accent-color;
+}
+
+.gn-gallery-entry-description {
+  font-size: 0.85em;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.gn-size-chips {
+  spacing: 4px;
+}
+
+/* The gallery list is a scrolled view, which gives its children their
+ * minimum height: keep the chips from collapsing */
+.gn-size-chip.button {
+  min-height: 22px;
+  min-width: 26px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.gn-size-chip.button:checked {
+  color: #ffffff;
+  background-color: -st-accent-color;
+}
+
+.gn-gallery-preview {
+  margin-top: 4px;
+}
+
+.gn-calendar-popover.editing .gn-cal-left {
+  padding-top: 4px;
+}
+
 /* ── Smooth state changes ──────────────────────────────────────────── */
 
 .gn-circle,
@@ -463,6 +1300,13 @@
 .gn-slider-menu,
 .gn-page-dot-mark,
 .gn-event,
+.gn-board-edit,
+.gn-board-done,
+.gn-widget,
+.gn-widget-badge,
+.gn-size-chip,
+.gn-reminder-check,
+.gn-stock-row,
 .gn-media,
 .gn-clocks,
 .gn-weather {

@@ -24,6 +24,16 @@
       <summary>Pill-shaped sliders</summary>
       <description>Thick sliders with the icon inside the filled part, as in the mockups.</description>
     </key>
+    <key name="dnd-menu" type="b">
+      <default>true</default>
+      <summary>Do Not Disturb durations</summary>
+      <description>Give the Do Not Disturb toggle a menu to turn it on for an hour, until the evening or until tomorrow.</description>
+    </key>
+    <key name="dnd-until" type="x">
+      <default>0</default>
+      <summary>When Do Not Disturb turns itself off</summary>
+      <description>Unix time; 0 while it stays on until turned off.</description>
+    </key>
     <key name="enable-collapsible" type="b">
       <default>true</default>
       <summary>Collapsible Quick Settings and notifications</summary>
@@ -46,6 +56,30 @@
     <key name="show-events" type="b">
       <default>true</default>
       <summary>Show today's events next to the calendar</summary>
+    </key>
+    <key name="enable-widgets" type="b">
+      <default>true</default>
+      <summary>Widgets under the calendar</summary>
+      <description>Replaces the world clocks and weather cards under the calendar with customizable widgets.</description>
+    </key>
+    <key name="widgets" type="as">
+      <default>['world-clocks:medium', 'weather:medium']</default>
+      <summary>Widgets under the calendar, in order</summary>
+      <description>Each entry is "id:size", where size is small, medium or large.</description>
+    </key>
+    <key name="reminders" type="as">
+      <default>[]</default>
+      <summary>Reminders of the reminders widget, in order</summary>
+      <description>One JSON object per reminder: {"id", "text", "due" (Unix time, optional), "notified"}.</description>
+    </key>
+    <key name="stock-symbols" type="as">
+      <default>[]</default>
+      <summary>Symbols shown by the stocks widget</summary>
+      <description>Yahoo Finance symbols, e.g. "AAPL", "PETR4.SA", "^BVSP", "BTC-USD". While unset, a default list for the language region is used.</description>
+    </key>
+    <key name="note-text" type="s">
+      <default>''</default>
+      <summary>Text of the note widget</summary>
     </key>
   </schema>
 </schemalist>

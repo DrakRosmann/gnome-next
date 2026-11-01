@@ -11,6 +11,41 @@ A GNOME Shell 50/51 extension that implements three ideas from the
 
 Also:
 
+* **Widgets under the calendar** (as in macOS and Windows): a two-column
+  board of small (1×1), medium (2×1) and large (2×2) widgets. **Edit Widgets**
+  opens a gallery next to the board with a live preview of each widget and a
+  size picker; click a widget to add it. On the board, **−** removes a widget,
+  dragging moves it and clicking it cycles its size. Widgets with nothing to
+  show (no player, no batteries…) stay hidden until you edit. Available:
+  * **Weather** — conditions, the next hours and (large) the next days, from GNOME Weather
+  * **Weather in Other Cities** — the places saved in GNOME Weather (or the world clocks)
+  * **World Clocks** — day/night clock faces for the cities in GNOME Clocks
+  * **Up Next** — today's remaining events (and tomorrow's in the large size)
+  * **Reminders** — a to-do list kept in the extension settings: type to add, check to
+    complete. A time written with the text — "amanhã 9h", "sexta às 14:30", "em 20 min",
+    "dia 5", "25/12 de manhã", "tomorrow 9am", "in 2 hours" — is taken out of it and
+    brings up a notification then (with *Complete* and *Snooze 10 min*), also for
+    reminders that came due while logged out. Overdue reminders turn red
+  * **Stocks** — prices and today's chart from Yahoo Finance (the only widget that
+    uses the internet). Pick the symbols in Preferences, e.g. `PETR4.SA`, `AAPL`,
+    `^BVSP`, `USDBRL=X`, `BTC-USD`; until then a list for your language region is used.
+    Says when the market is closed, and keeps the last prices (marked offline) when
+    there is no connection
+  * **Now Playing** — cover and controls of the MPRIS player
+  * **System Monitor** — CPU, memory, disk and network (CPU history when large)
+  * **Batteries** — this computer and connected devices (mouse, headset…), via UPower
+  * **Note** — a sticky note, saved in the extension settings
+  * **Photo** — a random picture from your Pictures folder, a new one each time
+* **Unread dot in Quick Settings:** with notifications in Quick Settings, the
+  unread-notifications dot moves from the clock to the Quick Settings
+  indicators, and notifications count as seen once Quick Settings shows them.
+* **Notifications stacked by app:** in Quick Settings, notifications from the
+  same app pile up into one stack (GNOME's own notification groups). Clicking a
+  stack spreads it out; the button in its header folds it again.
+* **Do Not Disturb for a while:** the Do Not Disturb toggle gets a menu — for 1
+  hour, until this evening (19:00), until tomorrow (08:00) or until turned off.
+  The subtitle shows when it ends, and it turns itself off then, also after
+  logging out and back in.
 * **Pill sliders** (as in the mockups): volume and brightness become thick
   pills with the icon inside the filled part and the menu arrow inside the track.
 * **Animations:** toggles morph from pills into circles (and back) when the
@@ -81,7 +116,7 @@ sources the stock calendar uses.
 * It conflicts with other extensions that rebuild Quick Settings or the date
   menu (e.g. Sanket); enable only one of them.
 * Translations: `po/` (pt_BR included). Regenerate the template with
-  `xgettext --from-code=UTF-8 -L JavaScript -k_ -kngettext:1,2 -o po/gnome-next@gui.pot extension.js prefs.js lib/*.js`.
+  `xgettext --from-code=UTF-8 -L JavaScript -k_ -kngettext:1,2 -o po/gnome-next@gui.pot extension.js prefs.js lib/*.js lib/widgets/*.js`.
 
 ## Layout
 
@@ -95,6 +130,12 @@ lib/media.js          MPRIS player card
 lib/notifications.js  notification list for Quick Settings
 lib/calendar.js       calendar popover, weather card
 lib/clocks.js         world clocks with analog faces and paging
+lib/widgets/          widget board under the calendar:
+  board.js            grid, edit mode, drag and resize
+  gallery.js          widget gallery shown while editing
+  registry.js         the list of widgets and how they are saved
+  base.js, drawing.js widget base class, rings, clock faces, sparkline
+  *.js                one file per widget
 lib/sliders.js        pill-shaped sliders
 lib/animation.js      resize, fade, pop and FLIP animations
 lib/morph.js          pill ⇄ circle toggle morph

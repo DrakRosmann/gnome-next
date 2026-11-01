@@ -1,6 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-next\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-25 17:10-0300\n"
 "PO-Revision-Date: 2026-10-20 12:00-0300\n"
 "Last-Translator: DrakRosmann\n"
 "Language-Team: Portuguese (Brazil)\n"
@@ -10,8 +12,35 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
+msgid "%-d %B %Y"
+msgstr "%-d de %B de %Y"
+
+#, javascript-format
+msgid "%-d %b"
+msgstr "%-d de %b"
+
+msgid "%-d %b %Y"
+msgstr "%-d de %b de %Y"
+
+#, javascript-format
+msgid "%d More Notification"
+msgid_plural "%d More Notifications"
+msgstr[0] "Mais %d notificação"
+msgstr[1] "Mais %d notificações"
+
+#, javascript-format
+msgid "%s, %s h"
+msgstr "%s, %s h"
+
+#, javascript-format
+msgid "%s/s"
+msgstr "%s/s"
+
 msgid "A calendar popover that scales with events, world clocks and weather"
 msgstr "Um calendário que se adapta aos eventos, relógios mundiais e clima"
+
+msgid "A picture from your Pictures folder"
+msgstr "Uma imagem da sua pasta Imagens"
 
 msgid "Accessibility"
 msgstr "Acessibilidade"
@@ -19,21 +48,51 @@ msgstr "Acessibilidade"
 msgid "Accessibility toggles can be added to Quick Settings instead"
 msgstr "Os controles de acessibilidade podem ser adicionados às Configurações rápidas"
 
+msgid "Adaptive"
+msgstr "Adaptável"
+
 msgid "Adaptive Calendar"
 msgstr "Calendário adaptável"
-
-msgid "Add an edit button to add and remove quick settings"
-msgstr "Adiciona um botão de edição para adicionar e remover configurações rápidas"
-
-msgid "Add quick settings from the list below"
-msgstr "Adicione configurações rápidas da lista abaixo"
 
 #, javascript-format
 msgid "Add %s"
 msgstr "Adicionar %s"
 
+msgid "Add a time like “tomorrow 9am” to be notified; check to complete"
+msgstr "Escreva um horário como “amanhã 9h” para ser avisado; marque para concluir"
+
+msgid "Add an edit button to add and remove quick settings"
+msgstr "Adiciona um botão de edição para adicionar e remover configurações rápidas"
+
+msgid "Add cities in Clocks"
+msgstr "Adicione cidades no Relógios"
+
+msgid "Add cities in Weather"
+msgstr "Adicione cidades no app Clima"
+
+msgid "Add pictures to your Pictures folder"
+msgstr "Adicione imagens à sua pasta Imagens"
+
+msgid "Add quick settings from the list below"
+msgstr "Adicione configurações rápidas da lista abaixo"
+
+msgid "Added"
+msgstr "Adicionado"
+
+msgid "All Day"
+msgstr "Dia inteiro"
+
+msgid "Batteries"
+msgstr "Baterias"
+
 msgid "Battery Health"
 msgstr "Saúde da bateria"
+
+msgid "CPU"
+msgstr "CPU"
+
+msgid "CPU history"
+msgstr "Histórico da CPU"
 
 msgid "Calendar"
 msgstr "Calendário"
@@ -41,32 +100,66 @@ msgstr "Calendário"
 msgid "Camera"
 msgstr "Câmera"
 
+msgid "Charge of this computer and connected devices"
+msgstr "Carga deste computador e dos dispositivos conectados"
+
+msgid "Choose a location in Weather"
+msgstr "Escolha um local no app Clima"
+
 msgid "Clear"
 msgstr "Limpar"
 
 msgid "Clear all notifications"
 msgstr "Limpar todas as notificações"
 
+msgid "Complete"
+msgstr "Concluir"
+
+#, javascript-format
+msgid "Complete %s"
+msgstr "Concluir %s"
+
 msgid "Connectivity"
 msgstr "Conectividade"
+
+msgid "Control the music or video that is playing"
+msgstr "Controle a música ou o vídeo que está tocando"
+
+msgid "Current conditions and the forecast"
+msgstr "Condições atuais e a previsão"
 
 msgid "Customization"
 msgstr "Personalização do menu"
 
-msgid "%-d %B %Y"
-msgstr "%-d de %B de %Y"
-
 msgid "Default Layout"
 msgstr "Layout padrão"
+
+msgid "Default Widgets"
+msgstr "Widgets padrão"
 
 msgid "Device"
 msgstr "Dispositivo"
 
+msgid "Disk"
+msgstr "Disco"
+
+msgid "Do Not Disturb"
+msgstr "Não perturbe"
+
+msgid "Do Not Disturb Durations"
+msgstr "Durações do Não perturbe"
+
 msgid "Done"
 msgstr "Concluído"
 
+msgid "Drag to move, click to resize"
+msgstr "Arraste para mover, clique para redimensionar"
+
 msgid "Edit Quick Settings"
 msgstr "Editar configurações rápidas"
+
+msgid "Edit Widgets"
+msgstr "Editar widgets"
 
 msgid "Expand Settings"
 msgstr "Expandir configurações"
@@ -74,20 +167,86 @@ msgstr "Expandir configurações"
 msgid "Extensions"
 msgstr "Extensões"
 
+msgid "For 1 Hour"
+msgstr "Por 1 hora"
+
 msgid "Go to today"
 msgstr "Ir para hoje"
+
+#, javascript-format
+msgid "H:%s L:%s"
+msgstr "Máx.: %s Mín.: %s"
 
 msgid "Hide Accessibility Menu"
 msgstr "Ocultar menu de acessibilidade"
 
+msgid "Keep a quick note at hand"
+msgstr "Tenha uma anotação rápida à mão"
+
+msgid "L"
+msgstr "G"
+
+msgid "Large"
+msgstr "Grande"
+
+msgid "Layout"
+msgstr "Layout"
+
 msgid "Location"
 msgstr "Localização"
+
+msgid "M"
+msgstr "M"
+
+msgid "Market closed"
+msgstr "Mercado fechado"
+
+msgid "Medium"
+msgstr "Médio"
+
+msgid "Memory"
+msgstr "Memória"
+
+#, javascript-format
+msgid "Memory: %s of %s"
+msgstr "Memória: %s de %s"
 
 msgid "Microphone"
 msgstr "Microfone"
 
+msgid "New reminder"
+msgstr "Novo lembrete"
+
+msgid "New reminder, e.g. “tomorrow 9am”"
+msgstr "Novo lembrete, ex.: “amanhã 9h”"
+
+msgid "No batteries"
+msgstr "Nenhuma bateria"
+
+msgid "No events"
+msgstr "Nenhum evento"
+
+msgid "No more events today"
+msgstr "Nenhum outro evento hoje"
+
+msgid "Note"
+msgstr "Nota"
+
+msgid "Nothing to do"
+msgstr "Nada a fazer"
+
 msgid "Notifications in Quick Settings"
 msgstr "Notificações nas Configurações rápidas"
+
+msgid "Now"
+msgstr "Agora"
+
+msgid "Now Playing"
+msgstr "Tocando agora"
+
+#, javascript-format
+msgid "Offline · %s"
+msgstr "Sem conexão · %s"
 
 #, javascript-format
 msgid "Page %d"
@@ -96,14 +255,32 @@ msgstr "Página %d"
 msgid "Personalization"
 msgstr "Aparência"
 
+msgid "Photo"
+msgstr "Foto"
+
+msgid "Pick a size and click a widget to add it"
+msgstr "Escolha um tamanho e clique em um widget para adicioná-lo"
+
+msgid "Pill Sliders"
+msgstr "Sliders em pílula"
+
+msgid "Prices from Yahoo Finance (uses the internet); choose the symbols in Preferences"
+msgstr "Cotações do Yahoo Finance (usa a internet); escolha os símbolos nas Preferências"
+
 msgid "Privacy"
 msgstr "Privacidade"
+
+msgid "Processor, memory, disk and network use"
+msgstr "Uso de processador, memória, disco e rede"
 
 msgid "Quick Settings"
 msgstr "Configurações rápidas"
 
 msgid "Quick Settings and notifications collapse into each other, with a media player"
 msgstr "Configurações rápidas e notificações se recolhem uma na outra, com um player de mídia"
+
+msgid "Reminders"
+msgstr "Lembretes"
 
 #, javascript-format
 msgid "Remove %s"
@@ -114,6 +291,12 @@ msgstr "Restaurar"
 
 msgid "Restore the quick settings that were removed or added"
 msgstr "Restaura as configurações rápidas removidas ou adicionadas"
+
+msgid "Restore the widgets that were added, removed or resized"
+msgstr "Restaura os widgets que foram adicionados, removidos ou redimensionados"
+
+msgid "S"
+msgstr "P"
 
 msgid "Screen Lock"
 msgstr "Bloqueio de tela"
@@ -127,39 +310,115 @@ msgstr "Mostrar eventos"
 msgid "Show the remaining events of the day next to the calendar"
 msgstr "Mostra os próximos eventos do dia ao lado do calendário"
 
-#, javascript-format
-msgid "Until %s"
-msgstr "Até %s"
+msgid "Shows up when something plays"
+msgstr "Aparece quando algo estiver tocando"
 
-msgid "World Clocks"
-msgstr "Relógios mundiais"
+msgid "Small"
+msgstr "Pequeno"
 
-#, javascript-format
-msgid "%d More Notification"
-msgid_plural "%d More Notifications"
-msgstr[0] "Mais %d notificação"
-msgstr[1] "Mais %d notificações"
+msgid "Snooze 10 min"
+msgstr "Adiar 10 min"
 
-msgid "Pill Sliders"
-msgstr "Sliders em pílula"
+msgid "Stock Symbols (comma separated, e.g. PETR4.SA, AAPL, BTC-USD)"
+msgstr "Símbolos da bolsa (separados por vírgula, ex.: PETR4.SA, AAPL, BTC-USD)"
+
+msgid "Stock prices are unavailable"
+msgstr "Cotações indisponíveis"
+
+msgid "Stocks"
+msgstr "Bolsa"
+
+msgid "System"
+msgstr "Sistema"
+
+msgid "System Monitor"
+msgstr "Monitor do sistema"
+
+msgid "The places saved in Weather, side by side"
+msgstr "Os locais salvos no app Clima, lado a lado"
+
+msgid "The time in the cities from Clocks"
+msgstr "A hora nas cidades do Relógios"
 
 msgid "Thick sliders with the icon inside the filled part"
 msgstr "Sliders largos com o ícone dentro da parte preenchida"
 
-msgid "No more events today"
-msgstr "Nenhum outro evento hoje"
+msgid "This Computer"
+msgstr "Este computador"
 
-msgid "No events"
-msgstr "Nenhum evento"
+msgid "Today"
+msgstr "Hoje"
 
-msgid "Layout"
-msgstr "Layout"
+msgid "Tomorrow"
+msgstr "Amanhã"
+
+#, javascript-format
+msgid "Tomorrow, %s"
+msgstr "Amanhã, %s"
+
+msgid "Turn on Do Not Disturb for an hour, until the evening or until tomorrow"
+msgstr "Ativa o Não perturbe por uma hora, até a noite ou até amanhã"
+
+msgid "Two Columns"
+msgstr "Duas colunas"
 
 msgid "Two columns always shows the date, weather and events next to the calendar"
 msgstr "Duas colunas sempre mostra a data, o clima e os eventos ao lado do calendário"
 
-msgid "Adaptive"
-msgstr "Adaptável"
+#, javascript-format
+msgid "Until %s"
+msgstr "Até %s"
 
-msgid "Two Columns"
-msgstr "Duas colunas"
+msgid "Until I Turn It Off"
+msgstr "Até eu desativar"
+
+#, javascript-format
+msgid "Until This Evening (%s)"
+msgstr "Até esta noite (%s)"
+
+#, javascript-format
+msgid "Until Tomorrow (%s)"
+msgstr "Até amanhã (%s)"
+
+#, javascript-format
+msgid "Until tomorrow, %s"
+msgstr "Até amanhã, %s"
+
+#, javascript-format
+msgid "Up %d h %d min"
+msgstr "Ligado há %d h %d min"
+
+msgid "Up Next"
+msgstr "A seguir"
+
+#, javascript-format
+msgid "Updated at %s"
+msgstr "Atualizado às %s"
+
+msgid "Weather"
+msgstr "Clima"
+
+msgid "Weather in Other Cities"
+msgstr "Clima em outras cidades"
+
+msgid "Weather, world clocks, events, media and more under the calendar"
+msgstr "Clima, relógios mundiais, eventos, mídia e mais abaixo do calendário"
+
+msgid "Widgets"
+msgstr "Widgets"
+
+msgid "World Clocks"
+msgstr "Relógios mundiais"
+
+msgid "Write something…"
+msgstr "Escreva algo…"
+
+msgid "Yesterday"
+msgstr "Ontem"
+
+#, javascript-format
+msgid "Yesterday, %s"
+msgstr "Ontem, %s"
+
+msgid "Your upcoming events"
+msgstr "Seus próximos eventos"

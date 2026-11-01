@@ -59,3 +59,88 @@
 .gn-notification-stack {
   background-color: rgba(0, 0, 0, 0.06);
 }
+
+.gn-board-hint,
+.gn-widget-dim,
+.gn-gallery-subtitle,
+.gn-gallery-entry-description,
+.gn-widget-placeholder-text {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.gn-widget-placeholder-icon {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.gn-events-section {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.gn-events-weekday {
+  color: #e01b24;
+}
+
+.gn-media-widget-cover.placeholder {
+  color: rgba(0, 0, 0, 0.45);
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+.gn-board.editing .gn-widget-shield:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.gn-widget-badge.button {
+  border-color: rgba(0, 0, 0, 0.1);
+  background-color: #c4c4c8;
+  color: #2e2e32;
+}
+
+.gn-widget-badge.button:hover {
+  background-color: #b4b4b8;
+}
+
+.gn-widget-badge.add.button {
+  color: #ffffff;
+}
+
+.gn-widget-slot.dragging .gn-widget {
+  box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.2);
+}
+
+.gn-reminder-check {
+  border-color: rgba(0, 0, 0, 0.35);
+}
+
+.gn-reminder-text:checked {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.gn-reminders-title,
+.gn-reminders-count {
+  color: #e66100;
+}
+
+.gn-stock-chart.up,
+.gn-stock-change.up {
+  color: #1f8a4c;
+}
+
+.gn-stock-chart.down,
+.gn-stock-change.down {
+  color: #c01c28;
+}
+
+.gn-reminder-due,
+.gn-stocks-status-text,
+.gn-stocks-status-icon {
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.gn-reminder-due.overdue,
+.gn-reminder-text.overdue {
+  color: #c01c28;
+}
+
+.gn-reminders-preview {
+  color: #e66100;
+}
