@@ -51,6 +51,10 @@ export default class GnomeNextPreferences extends ExtensionPreferences {
         reset.add_suffix(resetButton);
         quickSettings.add(reset);
 
+        quickSettings.add(switchRow(settings, 'android-tiles',
+            _('Android Style Tiles'),
+            _('Taller rounded tiles with the icon in a rounded square, as on Android 16')));
+
         quickSettings.add(switchRow(settings, 'pill-sliders',
             _('Pill Sliders'),
             _('Thick sliders with the icon inside the filled part')));

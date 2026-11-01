@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-01 11:00-0300\n"
+"POT-Creation-Date: 2026-11-01 11:04-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,110 +46,119 @@ msgstr ""
 msgid "Restore the quick settings that were removed, added, moved or resized"
 msgstr ""
 
-#: prefs.js:42 prefs.js:118
+#: prefs.js:42 prefs.js:122
 msgid "Reset"
 msgstr ""
 
 #: prefs.js:55
-msgid "Pill Sliders"
+msgid "Android Style Tiles"
 msgstr ""
 
 #: prefs.js:56
-msgid "Thick sliders with the icon inside the filled part"
+msgid ""
+"Taller rounded tiles with the icon in a rounded square, as on Android 16"
 msgstr ""
 
 #: prefs.js:59
-msgid "Volume of Each App"
+msgid "Pill Sliders"
 msgstr ""
 
 #: prefs.js:60
+msgid "Thick sliders with the icon inside the filled part"
+msgstr ""
+
+#: prefs.js:63
+msgid "Volume of Each App"
+msgstr ""
+
+#: prefs.js:64
 msgid ""
 "The menu of the volume slider lists the apps playing sound, each with a "
 "slider"
 msgstr ""
 
-#: prefs.js:63
+#: prefs.js:67
 msgid "Top Bar Shortcuts"
 msgstr ""
 
-#: prefs.js:64
+#: prefs.js:68
 msgid ""
 "Middle-click the volume icon to mute; scroll over the battery icon to change "
 "the brightness"
 msgstr ""
 
-#: prefs.js:67
+#: prefs.js:71
 msgid "Do Not Disturb Durations"
 msgstr ""
 
-#: prefs.js:68
+#: prefs.js:72
 msgid "Turn on Do Not Disturb for an hour, until the evening or until tomorrow"
 msgstr ""
 
-#: prefs.js:71
+#: prefs.js:75
 msgid "Notifications in Quick Settings"
 msgstr ""
 
-#: prefs.js:72
+#: prefs.js:76
 msgid ""
 "Quick Settings and notifications collapse into each other, with a media "
 "player"
 msgstr ""
 
-#: prefs.js:74
+#: prefs.js:78
 msgid "Calendar"
 msgstr ""
 
-#: prefs.js:78
+#: prefs.js:82
 msgid "Adaptive Calendar"
 msgstr ""
 
-#: prefs.js:79
+#: prefs.js:83
 msgid "A calendar popover that scales with events, world clocks and weather"
 msgstr ""
 
-#: prefs.js:84
+#: prefs.js:88
 msgid "Layout"
 msgstr ""
 
-#: prefs.js:85
+#: prefs.js:89
 msgid ""
 "Two columns always shows the date, weather and events next to the calendar"
 msgstr ""
 
-#: prefs.js:86
+#: prefs.js:90
 msgid "Adaptive"
 msgstr ""
 
-#: prefs.js:86
+#: prefs.js:90
 msgid "Two Columns"
 msgstr ""
 
-#: prefs.js:102
+#: prefs.js:106
 msgid "Show Events"
 msgstr ""
 
-#: prefs.js:103
+#: prefs.js:107
 msgid "Show the remaining events of the day next to the calendar"
 msgstr ""
 
-#: prefs.js:108 lib/widgets/gallery.js:140
+#: prefs.js:112 lib/widgets/gallery.js:140
 msgid "Widgets"
 msgstr ""
 
-#: prefs.js:109
+#: prefs.js:113
 msgid "Weather, world clocks, events, media and more under the calendar"
 msgstr ""
 
-#: prefs.js:114
+#: prefs.js:118
 msgid "Default Widgets"
 msgstr ""
 
-#: prefs.js:115
+#: prefs.js:119
 msgid "Restore the widgets that were added, removed or resized"
 msgstr ""
 
-#: prefs.js:133
+#: prefs.js:137
 msgid "Stock Symbols (comma separated, e.g. PETR4.SA, AAPL, BTC-USD)"
 msgstr ""
 

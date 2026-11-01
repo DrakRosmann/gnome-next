@@ -1392,3 +1392,181 @@
   width: 40px;
   height: 40px;
 }
+
+/* ── Android style tiles ───────────────────────────────────────────── */
+
+/* Large tiles: taller rounded rectangles, one piece with the arrow */
+.gn-android .quick-toggle,
+.gn-android .quick-toggle-has-menu {
+  min-height: 60px;
+  border-radius: 22px;
+}
+
+.gn-android .quick-toggle:ltr > StBoxLayout {
+  padding-left: 8px;
+}
+
+.gn-android .quick-toggle:rtl > StBoxLayout {
+  padding-right: 8px;
+}
+
+.gn-android .quick-toggle > StBoxLayout {
+  spacing: 10px;
+}
+
+.gn-android .quick-toggle-has-menu .quick-toggle:ltr {
+  border-radius: 22px 0 0 22px;
+}
+
+.gn-android .quick-toggle-has-menu .quick-toggle:rtl {
+  border-radius: 0 22px 22px 0;
+}
+
+.gn-android .quick-toggle-has-menu .quick-toggle:last-child {
+  border-radius: 22px;
+}
+
+.gn-android .quick-toggle-has-menu .quick-toggle-separator {
+  width: 0;
+}
+
+.gn-android .quick-toggle-has-menu .quick-toggle-menu-button {
+  padding: 0 14px 0 4px;
+  background-color: st-mix(#ffffff, #36363a, 9%);
+}
+
+.gn-android .quick-toggle-has-menu .quick-toggle-menu-button:ltr {
+  border-radius: 0 22px 22px 0;
+}
+
+.gn-android .quick-toggle-has-menu .quick-toggle-menu-button:rtl {
+  border-radius: 22px 0 0 22px;
+  padding: 0 4px 0 14px;
+}
+
+.gn-android .quick-toggle-has-menu .quick-toggle-menu-button:hover {
+  background-color: st-lighten(st-mix(#ffffff, #36363a, 9%), 4%);
+}
+
+.gn-android .quick-toggle-has-menu .quick-toggle-menu-button:checked {
+  background-color: -st-accent-color;
+}
+
+.gn-android .quick-toggle-has-menu .quick-toggle-menu-button:checked:hover {
+  background-color: st-lighten(-st-accent-color, 4%);
+}
+
+.gn-android .quick-toggle-menu-button StIcon {
+  icon-size: 14px;
+}
+
+/* The icon sits in its own rounded square */
+.gn-android .quick-toggle .quick-toggle-icon {
+  padding: 12px;
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.gn-android .quick-toggle:checked .quick-toggle-icon {
+  background-color: rgba(255, 255, 255, 0.18);
+}
+
+/* Small tiles: round while off, a rounded square while on */
+.gn-android .quick-toggle.gn-small,
+.gn-android .quick-toggle-has-menu.gn-small,
+.gn-android .quick-toggle-has-menu.gn-small .quick-toggle,
+.gn-android .gn-editor-current .gn-tile.gn-small,
+.gn-android .quick-toggle.gn-circle {
+  border-radius: 999px;
+}
+
+.gn-android .quick-toggle.gn-small:checked,
+.gn-android .quick-toggle-has-menu.gn-small .quick-toggle:checked,
+.gn-android .quick-toggle.gn-circle:checked {
+  border-radius: 18px;
+}
+
+.gn-android .quick-toggle.gn-small .quick-toggle-icon,
+.gn-android .quick-toggle-has-menu.gn-small .quick-toggle-icon,
+.gn-android .gn-tile.gn-small .quick-toggle-icon,
+.gn-android .gn-circle .quick-toggle-icon {
+  padding: 0;
+  background-color: transparent;
+}
+
+/* Editor tiles keep the room their badge needs above them */
+.gn-android .quick-toggle.gn-tile {
+  min-height: 60px;
+}
+
+/* Thicker sliders */
+.gn-android .gn-pill-slider .slider {
+  -barlevel-height: 46px;
+  min-height: 46px;
+}
+
+.gn-android .quick-slider.gn-pill-slider .gn-slider-icon,
+.gn-android .quick-slider.gn-pill-slider .gn-slider-menu {
+  min-height: 46px;
+  padding: 0 16px;
+}
+
+.gn-android .gn-slider-icon StIcon,
+.gn-android .gn-slider-menu StIcon {
+  icon-size: 18px;
+}
+
+.gn-circle,
+.gn-android .quick-toggle,
+.gn-android .quick-toggle-menu-button,
+.gn-android .quick-toggle-icon {
+  transition-duration: 200ms;
+}
+
+/* Media card with the cover as its background (Android style) */
+.gn-android .message.gn-media.gn-artwork {
+  padding: 0;
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  background-size: cover;
+  background-position: center;
+}
+
+.gn-android .gn-media.gn-artwork .gn-media-box {
+  padding: 18px;
+  border-radius: 24px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.gn-android .gn-media.gn-artwork .gn-media-title {
+  font-size: 1.15em;
+  color: #ffffff;
+}
+
+.gn-android .gn-media.gn-artwork .gn-media-artist {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.gn-android .gn-media.gn-artwork .gn-media-button.button {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.14);
+}
+
+.gn-android .gn-media.gn-artwork .gn-media-button.button:hover {
+  background-color: rgba(255, 255, 255, 0.24);
+}
+
+.gn-android .gn-media.gn-artwork .gn-media-button.button.play {
+  border-radius: 16px;
+  color: -st-accent-fg-color;
+  background-color: -st-accent-color;
+}
+
+.gn-android .gn-media.gn-artwork .gn-media-progress {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.gn-android .gn-media.gn-artwork .gn-media-progress-fill {
+  background-color: #ffffff;
+}

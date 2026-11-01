@@ -7,6 +7,7 @@ import {CalendarPopover} from './lib/calendar.js';
 import {Collapsible} from './lib/collapsible.js';
 import {Customization} from './lib/customization.js';
 import {DndMenu} from './lib/dnd.js';
+import {AndroidStyle} from './lib/androidStyle.js';
 import {AppVolume} from './lib/mixer.js';
 import {PanelShortcuts} from './lib/panel.js';
 import {ReminderScheduler} from './lib/reminders.js';
@@ -22,6 +23,7 @@ const FEATURES = [
     {key: 'dnd-menu', Feature: DndMenu},
     {key: 'app-volume', Feature: AppVolume},
     {key: 'panel-shortcuts', Feature: PanelShortcuts},
+    {key: 'android-tiles', Feature: AndroidStyle},
 ];
 
 const READY_POLL_MS = 100;

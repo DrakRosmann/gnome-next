@@ -44,6 +44,11 @@
       <summary>When Do Not Disturb turns itself off</summary>
       <description>Unix time; 0 while it stays on until turned off.</description>
     </key>
+    <key name="android-tiles" type="b">
+      <default>true</default>
+      <summary>Android style tiles</summary>
+      <description>Taller rounded tiles with the icon in a rounded square, small tiles that turn from round to square when on, and thicker sliders, as on Android 16.</description>
+    </key>
     <key name="app-volume" type="b">
       <default>true</default>
       <summary>Volume of each app</summary>

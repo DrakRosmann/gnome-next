@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-next\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-01 11:00-0300\n"
+"POT-Creation-Date: 2026-11-01 11:04-0300\n"
 "PO-Revision-Date: 2026-10-20 12:00-0300\n"
 "Last-Translator: DrakRosmann\n"
 "Language-Team: Portuguese (Brazil)\n"
@@ -22,7 +22,9 @@ msgstr "Personalização do menu"
 
 #: prefs.js:27
 msgid "Add an edit button to add, remove, move and resize quick settings"
-msgstr "Adiciona um botão de edição para adicionar, remover, mover e redimensionar configurações rápidas"
+msgstr ""
+"Adiciona um botão de edição para adicionar, remover, mover e redimensionar "
+"configurações rápidas"
 
 #: prefs.js:31
 msgid "Hide Accessibility Menu"
@@ -39,53 +41,68 @@ msgstr "Layout padrão"
 
 #: prefs.js:39
 msgid "Restore the quick settings that were removed, added, moved or resized"
-msgstr "Restaura as configurações rápidas removidas, adicionadas, movidas ou redimensionadas"
+msgstr ""
+"Restaura as configurações rápidas removidas, adicionadas, movidas ou "
+"redimensionadas"
 
-#: prefs.js:42 prefs.js:118
+#: prefs.js:42 prefs.js:122
 msgid "Reset"
 msgstr "Restaurar"
 
 #: prefs.js:55
+msgid "Android Style Tiles"
+msgstr ""
+
+#: prefs.js:56
+msgid ""
+"Taller rounded tiles with the icon in a rounded square, as on Android 16"
+msgstr ""
+
+#: prefs.js:59
 msgid "Pill Sliders"
 msgstr "Sliders em pílula"
 
-#: prefs.js:56
+#: prefs.js:60
 msgid "Thick sliders with the icon inside the filled part"
 msgstr "Sliders largos com o ícone dentro da parte preenchida"
 
-#: prefs.js:59
+#: prefs.js:63
 msgid "Volume of Each App"
 msgstr "Volume de cada aplicativo"
 
-#: prefs.js:60
+#: prefs.js:64
 msgid ""
 "The menu of the volume slider lists the apps playing sound, each with a "
 "slider"
-msgstr "O menu do controle de volume lista os aplicativos que estão tocando som, cada um com seu controle"
+msgstr ""
+"O menu do controle de volume lista os aplicativos que estão tocando som, "
+"cada um com seu controle"
 
-#: prefs.js:63
+#: prefs.js:67
 msgid "Top Bar Shortcuts"
 msgstr "Atalhos na barra superior"
 
-#: prefs.js:64
+#: prefs.js:68
 msgid ""
 "Middle-click the volume icon to mute; scroll over the battery icon to change "
 "the brightness"
-msgstr "Botão do meio no ícone de volume deixa mudo; rolar sobre o ícone da bateria muda o brilho"
+msgstr ""
+"Botão do meio no ícone de volume deixa mudo; rolar sobre o ícone da bateria "
+"muda o brilho"
 
-#: prefs.js:67
+#: prefs.js:71
 msgid "Do Not Disturb Durations"
 msgstr "Durações do Não perturbe"
 
-#: prefs.js:68
+#: prefs.js:72
 msgid "Turn on Do Not Disturb for an hour, until the evening or until tomorrow"
 msgstr "Ativa o Não perturbe por uma hora, até a noite ou até amanhã"
 
-#: prefs.js:71
+#: prefs.js:75
 msgid "Notifications in Quick Settings"
 msgstr "Notificações nas Configurações rápidas"
 
-#: prefs.js:72
+#: prefs.js:76
 msgid ""
 "Quick Settings and notifications collapse into each other, with a media "
 "player"
@@ -93,62 +110,62 @@ msgstr ""
 "Configurações rápidas e notificações se recolhem uma na outra, com um player "
 "de mídia"
 
-#: prefs.js:74
+#: prefs.js:78
 msgid "Calendar"
 msgstr "Calendário"
 
-#: prefs.js:78
+#: prefs.js:82
 msgid "Adaptive Calendar"
 msgstr "Calendário adaptável"
 
-#: prefs.js:79
+#: prefs.js:83
 msgid "A calendar popover that scales with events, world clocks and weather"
 msgstr "Um calendário que se adapta aos eventos, relógios mundiais e clima"
 
-#: prefs.js:84
+#: prefs.js:88
 msgid "Layout"
 msgstr "Layout"
 
-#: prefs.js:85
+#: prefs.js:89
 msgid ""
 "Two columns always shows the date, weather and events next to the calendar"
 msgstr ""
 "Duas colunas sempre mostra a data, o clima e os eventos ao lado do calendário"
 
-#: prefs.js:86
+#: prefs.js:90
 msgid "Adaptive"
 msgstr "Adaptável"
 
-#: prefs.js:86
+#: prefs.js:90
 msgid "Two Columns"
 msgstr "Duas colunas"
 
-#: prefs.js:102
+#: prefs.js:106
 msgid "Show Events"
 msgstr "Mostrar eventos"
 
-#: prefs.js:103
+#: prefs.js:107
 msgid "Show the remaining events of the day next to the calendar"
 msgstr "Mostra os próximos eventos do dia ao lado do calendário"
 
-#: prefs.js:108 lib/widgets/gallery.js:140
+#: prefs.js:112 lib/widgets/gallery.js:140
 msgid "Widgets"
 msgstr "Widgets"
 
-#: prefs.js:109
+#: prefs.js:113
 msgid "Weather, world clocks, events, media and more under the calendar"
 msgstr "Clima, relógios mundiais, eventos, mídia e mais abaixo do calendário"
 
-#: prefs.js:114
+#: prefs.js:118
 msgid "Default Widgets"
 msgstr "Widgets padrão"
 
-#: prefs.js:115
+#: prefs.js:119
 msgid "Restore the widgets that were added, removed or resized"
 msgstr ""
 "Restaura os widgets que foram adicionados, removidos ou redimensionados"
 
-#: prefs.js:133
+#: prefs.js:137
 msgid "Stock Symbols (comma separated, e.g. PETR4.SA, AAPL, BTC-USD)"
 msgstr ""
 "Símbolos da bolsa (separados por vírgula, ex.: PETR4.SA, AAPL, BTC-USD)"

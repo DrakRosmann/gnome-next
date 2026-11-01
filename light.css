@@ -153,3 +153,19 @@
 .gn-app-volume-icon.button:checked {
   background-color: rgba(0, 0, 0, 0.05);
 }
+
+.gn-android .quick-toggle-has-menu .quick-toggle-menu-button {
+  background-color: st-mix(#222226, #fafafb, 12%);
+}
+
+.gn-android .quick-toggle-has-menu .quick-toggle-menu-button:hover {
+  background-color: st-darken(st-mix(#222226, #fafafb, 12%), 4%);
+}
+
+.gn-android .quick-toggle .quick-toggle-icon {
+  background-color: rgba(0, 0, 0, 0.07);
+}
+
+.gn-android .quick-toggle:checked .quick-toggle-icon {
+  background-color: rgba(255, 255, 255, 0.22);
+}
