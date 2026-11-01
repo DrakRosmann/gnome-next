@@ -51,12 +51,12 @@ msgstr "Restaurar"
 
 #: prefs.js:55
 msgid "Android Style Tiles"
-msgstr ""
+msgstr "Blocos no estilo do Android"
 
 #: prefs.js:56
 msgid ""
 "Taller rounded tiles with the icon in a rounded square, as on Android 16"
-msgstr ""
+msgstr "Blocos mais altos e arredondados, com o ícone num quadrado arredondado, como no Android 16"
 
 #: prefs.js:59
 msgid "Pill Sliders"

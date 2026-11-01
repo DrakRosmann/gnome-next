@@ -17,6 +17,11 @@ Also:
   small (icon only, half the width). **−** removes it; added tiles go last.
   Right-click any tile with a menu to open it, like a long press on Android —
   small tiles have no room for the arrow.
+* **Android style** (as in Android 16): taller rounded tiles with the icon in
+  its own rounded square and the arrow inside the tile, small tiles that are
+  round while off and turn into rounded squares when on, thicker sliders, and
+  the media player with the album cover as its background. It can be turned
+  off in Preferences to keep the GNOME look.
 * **Volume of each app** (as in the Windows mixer): the menu of the volume
   slider lists every app playing sound, each with its own slider; clicking the
   app's icon mutes it.
@@ -141,6 +146,7 @@ lib/customization.js  Quick Settings editor
 lib/tiles.js          small and large tiles, tile order, right-click menus
 lib/mixer.js          volume of each app in the volume slider menu
 lib/panel.js          top bar shortcuts (mute, brightness)
+lib/androidStyle.js   Android style tiles (the look is in the stylesheet)
 lib/collapsible.js    settings ⇄ notifications switching, circle toggles
 lib/media.js          MPRIS player card
 lib/notifications.js  notification list for Quick Settings
