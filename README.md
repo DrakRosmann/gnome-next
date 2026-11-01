@@ -5,12 +5,23 @@ A GNOME Shell 50/51 extension that implements three ideas from the
 
 | Mockup | What the extension does |
 |---|---|
-| [Quick Settings customization](https://gitlab.gnome.org/Teams/Design/os-mockups/-/blob/master/system-status/quick-settings/quick-toggles-customization-aday.png) | An **edit** (pencil) button in the Quick Settings system row. It closes the menu and reopens it as an editor: the top section shows the current toggles with a **−** badge, and a categorized catalog below (Connectivity, Device, Personalization, Privacy, Accessibility, Extensions) shows the rest with a **+** badge. Toggles that are already in use appear dimmed. The top-bar accessibility menu is hidden, because the accessibility toggles can now be added to Quick Settings. |
+| [Quick Settings customization](https://gitlab.gnome.org/Teams/Design/os-mockups/-/blob/master/system-status/quick-settings/quick-toggles-customization-aday.png) | An **edit** (pencil) button in the Quick Settings system row. It closes the menu and reopens it as an editor: the top section shows the current toggles, which can be dragged into another order and clicked to make them small or large, with a **−** badge, and a categorized catalog below (Connectivity, Device, Personalization, Privacy, Accessibility, Extensions) shows the rest with a **+** badge. Toggles that are already in use appear dimmed. The top-bar accessibility menu is hidden, because the accessibility toggles can now be added to Quick Settings. |
 | [Collapsible Quick Settings/Notifications](https://gitlab.gnome.org/Teams/Design/os-mockups/-/blob/master/system-status/quick-settings/quick-toggles-notifications-collapsible-mpris.png) | Notifications and the media player (MPRIS) live in Quick Settings. By default the settings are expanded and only the newest notification shows, with a **“N More Notifications”** pill. Expanding the notifications collapses the toggles into a row of circles, makes the player compact and shows **“Expand Settings”**. Only one group is expanded at a time. |
 | [Calendar menu concept](https://gitlab.gnome.org/Teams/Design/os-mockups/-/blob/master/calendar/calendar-popover.png) | A calendar popover without notifications that scales with its content: calendar only → + world clocks → + weather. When the selected day has upcoming events, a left column shows the date, the weather and the events, and the popover height is still set by the calendar and clocks (the events scroll). With more than 4 clocks the list switches to a compact layout; with more than 6 it is paged. |
 
 Also:
 
+* **Small and large tiles, in your order** (as on Android and in the iOS
+  Control Center): in the Quick Settings editor, drag a tile to move it (the
+  others make room) and click it to switch between large (icon and name) and
+  small (icon only, half the width). **−** removes it; added tiles go last.
+  Right-click any tile with a menu to open it, like a long press on Android —
+  small tiles have no room for the arrow.
+* **Volume of each app** (as in the Windows mixer): the menu of the volume
+  slider lists every app playing sound, each with its own slider; clicking the
+  app's icon mutes it.
+* **Top bar shortcuts:** middle-click the volume icon to mute, and scroll over
+  the battery icon to change the screen brightness.
 * **Widgets under the calendar** (as in macOS and Windows): a two-column
   board of small (1×1), medium (2×1) and large (2×2) widgets. **Edit Widgets**
   opens a gallery next to the board with a live preview of each widget and a
@@ -34,6 +45,8 @@ Also:
   * **Now Playing** — cover and controls of the MPRIS player
   * **System Monitor** — CPU, memory, disk and network (CPU history when large)
   * **Batteries** — this computer and connected devices (mouse, headset…), via UPower
+  * **Controls** — your Quick Settings toggles as round buttons, in the order set
+    in the editor (as in the iOS Control Center); clicking the card opens Quick Settings
   * **Note** — a sticky note, saved in the extension settings
   * **Photo** — a random picture from your Pictures folder, a new one each time
 * **Unread dot in Quick Settings:** with notifications in Quick Settings, the
@@ -125,6 +138,9 @@ extension.js          turns each feature on/off from the settings
 lib/visibility.js     keeps shell actors hidden while the shell keeps toggling them
 lib/toggles.js        extra toggles, categories and toggle helpers
 lib/customization.js  Quick Settings editor
+lib/tiles.js          small and large tiles, tile order, right-click menus
+lib/mixer.js          volume of each app in the volume slider menu
+lib/panel.js          top bar shortcuts (mute, brightness)
 lib/collapsible.js    settings ⇄ notifications switching, circle toggles
 lib/media.js          MPRIS player card
 lib/notifications.js  notification list for Quick Settings

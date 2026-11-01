@@ -14,6 +14,16 @@
       <default>[]</default>
       <summary>Extra toggles added to Quick Settings, in order</summary>
     </key>
+    <key name="toggle-order" type="as">
+      <default>[]</default>
+      <summary>Order of the Quick Settings toggles</summary>
+      <description>Toggle ids in the order set in the editor. Toggles not listed go after these.</description>
+    </key>
+    <key name="small-toggles" type="as">
+      <default>[]</default>
+      <summary>Toggles shown small</summary>
+      <description>Toggle ids shown as small tiles, half a column wide, with the icon only.</description>
+    </key>
     <key name="hide-accessibility-menu" type="b">
       <default>true</default>
       <summary>Hide the top bar accessibility menu</summary>
@@ -33,6 +43,16 @@
       <default>0</default>
       <summary>When Do Not Disturb turns itself off</summary>
       <description>Unix time; 0 while it stays on until turned off.</description>
+    </key>
+    <key name="app-volume" type="b">
+      <default>true</default>
+      <summary>Volume of each app</summary>
+      <description>Adds a slider for each app playing sound to the menu of the volume slider.</description>
+    </key>
+    <key name="panel-shortcuts" type="b">
+      <default>true</default>
+      <summary>Top bar shortcuts</summary>
+      <description>Middle-click the volume icon to mute, and scroll over the battery icon to change the screen brightness.</description>
     </key>
     <key name="enable-collapsible" type="b">
       <default>true</default>

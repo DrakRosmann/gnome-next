@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-25 17:10-0300\n"
+"POT-Creation-Date: 2026-11-01 11:00-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: prefs.js:21 lib/customization.js:274
+#: prefs.js:21 lib/customization.js:378
 msgid "Quick Settings"
 msgstr ""
 
@@ -27,7 +27,7 @@ msgid "Customization"
 msgstr ""
 
 #: prefs.js:27
-msgid "Add an edit button to add and remove quick settings"
+msgid "Add an edit button to add, remove, move and resize quick settings"
 msgstr ""
 
 #: prefs.js:31
@@ -43,93 +43,113 @@ msgid "Default Layout"
 msgstr ""
 
 #: prefs.js:39
-msgid "Restore the quick settings that were removed or added"
+msgid "Restore the quick settings that were removed, added, moved or resized"
 msgstr ""
 
-#: prefs.js:42 prefs.js:108
+#: prefs.js:42 prefs.js:118
 msgid "Reset"
 msgstr ""
 
-#: prefs.js:53
+#: prefs.js:55
 msgid "Pill Sliders"
 msgstr ""
 
-#: prefs.js:54
+#: prefs.js:56
 msgid "Thick sliders with the icon inside the filled part"
 msgstr ""
 
-#: prefs.js:57
+#: prefs.js:59
+msgid "Volume of Each App"
+msgstr ""
+
+#: prefs.js:60
+msgid ""
+"The menu of the volume slider lists the apps playing sound, each with a "
+"slider"
+msgstr ""
+
+#: prefs.js:63
+msgid "Top Bar Shortcuts"
+msgstr ""
+
+#: prefs.js:64
+msgid ""
+"Middle-click the volume icon to mute; scroll over the battery icon to change "
+"the brightness"
+msgstr ""
+
+#: prefs.js:67
 msgid "Do Not Disturb Durations"
 msgstr ""
 
-#: prefs.js:58
+#: prefs.js:68
 msgid "Turn on Do Not Disturb for an hour, until the evening or until tomorrow"
 msgstr ""
 
-#: prefs.js:61
+#: prefs.js:71
 msgid "Notifications in Quick Settings"
 msgstr ""
 
-#: prefs.js:62
+#: prefs.js:72
 msgid ""
 "Quick Settings and notifications collapse into each other, with a media "
 "player"
 msgstr ""
 
-#: prefs.js:64
+#: prefs.js:74
 msgid "Calendar"
 msgstr ""
 
-#: prefs.js:68
+#: prefs.js:78
 msgid "Adaptive Calendar"
 msgstr ""
 
-#: prefs.js:69
+#: prefs.js:79
 msgid "A calendar popover that scales with events, world clocks and weather"
 msgstr ""
 
-#: prefs.js:74
+#: prefs.js:84
 msgid "Layout"
 msgstr ""
 
-#: prefs.js:75
+#: prefs.js:85
 msgid ""
 "Two columns always shows the date, weather and events next to the calendar"
 msgstr ""
 
-#: prefs.js:76
+#: prefs.js:86
 msgid "Adaptive"
 msgstr ""
 
-#: prefs.js:76
+#: prefs.js:86
 msgid "Two Columns"
 msgstr ""
 
-#: prefs.js:92
+#: prefs.js:102
 msgid "Show Events"
 msgstr ""
 
-#: prefs.js:93
+#: prefs.js:103
 msgid "Show the remaining events of the day next to the calendar"
 msgstr ""
 
-#: prefs.js:98 lib/widgets/gallery.js:140
+#: prefs.js:108 lib/widgets/gallery.js:140
 msgid "Widgets"
 msgstr ""
 
-#: prefs.js:99
+#: prefs.js:109
 msgid "Weather, world clocks, events, media and more under the calendar"
 msgstr ""
 
-#: prefs.js:104
+#: prefs.js:114
 msgid "Default Widgets"
 msgstr ""
 
-#: prefs.js:105
+#: prefs.js:115
 msgid "Restore the widgets that were added, removed or resized"
 msgstr ""
 
-#: prefs.js:123
+#: prefs.js:133
 msgid "Stock Symbols (comma separated, e.g. PETR4.SA, AAPL, BTC-USD)"
 msgstr ""
 
@@ -137,24 +157,24 @@ msgstr ""
 msgid "Go to today"
 msgstr ""
 
-#: lib/calendar.js:490 lib/dnd.js:34 lib/widgets/events.js:124
+#: lib/calendar.js:491 lib/dnd.js:34 lib/widgets/events.js:124
 #, javascript-format
 msgid "Until %s"
 msgstr ""
 
-#: lib/calendar.js:503
+#: lib/calendar.js:504
 msgid "%-d %B %Y"
 msgstr ""
 
-#: lib/calendar.js:547 lib/widgets/events.js:99
+#: lib/calendar.js:548 lib/widgets/events.js:99
 msgid "No more events today"
 msgstr ""
 
-#: lib/calendar.js:547
+#: lib/calendar.js:548
 msgid "No events"
 msgstr ""
 
-#: lib/clocks.js:91 lib/widgets/clocks.js:38 lib/widgets/registry.js:36
+#: lib/clocks.js:91 lib/widgets/clocks.js:38 lib/widgets/registry.js:37
 msgid "World Clocks"
 msgstr ""
 
@@ -167,26 +187,40 @@ msgstr ""
 msgid "Expand Settings"
 msgstr ""
 
-#: lib/customization.js:59
+#: lib/customization.js:136
 msgid "Edit Quick Settings"
 msgstr ""
 
-#: lib/customization.js:281 lib/widgets/board.js:228
+#: lib/customization.js:385 lib/widgets/board.js:228
 msgid "Done"
 msgstr ""
 
-#: lib/customization.js:349
+#: lib/customization.js:452 lib/widgets/board.js:220
+msgid "Drag to move, click to resize"
+msgstr ""
+
+#: lib/customization.js:461
 msgid "Add quick settings from the list below"
 msgstr ""
 
-#: lib/customization.js:463 lib/widgets/board.js:182
+#: lib/customization.js:732 lib/customization.js:804 lib/widgets/board.js:182
 #, javascript-format
 msgid "Remove %s"
 msgstr ""
 
-#: lib/customization.js:464 lib/widgets/gallery.js:99
+#: lib/customization.js:733 lib/widgets/gallery.js:99
 #, javascript-format
 msgid "Add %s"
+msgstr ""
+
+#: lib/customization.js:782
+#, javascript-format
+msgid "Make %s larger"
+msgstr ""
+
+#: lib/customization.js:783
+#, javascript-format
+msgid "Make %s smaller"
 msgstr ""
 
 #: lib/dnd.js:35
@@ -214,6 +248,27 @@ msgstr ""
 
 #: lib/dnd.js:139
 msgid "Do Not Disturb"
+msgstr ""
+
+#: lib/mixer.js:39
+msgid "Unknown App"
+msgstr ""
+
+#: lib/mixer.js:62
+#, javascript-format
+msgid "Volume of %s"
+msgstr ""
+
+#: lib/mixer.js:78
+msgid "Unmute"
+msgstr ""
+
+#: lib/mixer.js:78
+msgid "Mute"
+msgstr ""
+
+#: lib/mixer.js:117
+msgid "Apps"
 msgstr ""
 
 #: lib/notifications.js:76
@@ -250,7 +305,7 @@ msgstr ""
 msgid "%-d %b %Y"
 msgstr ""
 
-#: lib/reminders.js:152 lib/widgets/registry.js:52 lib/widgets/reminders.js:25
+#: lib/reminders.js:152 lib/widgets/registry.js:53 lib/widgets/reminders.js:25
 #: lib/widgets/reminders.js:35
 msgid "Reminders"
 msgstr ""
@@ -315,7 +370,7 @@ msgstr ""
 msgid "This Computer"
 msgstr ""
 
-#: lib/widgets/batteries.js:51 lib/widgets/registry.js:84
+#: lib/widgets/batteries.js:51 lib/widgets/registry.js:93
 msgid "Batteries"
 msgstr ""
 
@@ -347,15 +402,11 @@ msgstr ""
 msgid "Large"
 msgstr ""
 
-#: lib/widgets/board.js:220
-msgid "Drag to move, click to resize"
-msgstr ""
-
 #: lib/widgets/board.js:259
 msgid "Edit Widgets"
 msgstr ""
 
-#: lib/widgets/cities.js:60 lib/widgets/registry.js:28
+#: lib/widgets/cities.js:60 lib/widgets/registry.js:29
 msgid "Weather in Other Cities"
 msgstr ""
 
@@ -384,7 +435,16 @@ msgstr ""
 msgid "Add cities in Clocks"
 msgstr ""
 
-#: lib/widgets/events.js:28 lib/widgets/registry.js:44
+#: lib/widgets/controls.js:21 lib/widgets/controls.js:28
+#: lib/widgets/registry.js:77
+msgid "Controls"
+msgstr ""
+
+#: lib/widgets/controls.js:48
+msgid "No controls"
+msgstr ""
+
+#: lib/widgets/events.js:28 lib/widgets/registry.js:45
 msgid "Up Next"
 msgstr ""
 
@@ -400,7 +460,7 @@ msgstr ""
 msgid "Pick a size and click a widget to add it"
 msgstr ""
 
-#: lib/widgets/media.js:17 lib/widgets/registry.js:60
+#: lib/widgets/media.js:17 lib/widgets/registry.js:61
 msgid "Now Playing"
 msgstr ""
 
@@ -408,7 +468,7 @@ msgstr ""
 msgid "Shows up when something plays"
 msgstr ""
 
-#: lib/widgets/notes.js:18 lib/widgets/notes.js:24 lib/widgets/registry.js:92
+#: lib/widgets/notes.js:18 lib/widgets/notes.js:24 lib/widgets/registry.js:101
 msgid "Note"
 msgstr ""
 
@@ -416,7 +476,7 @@ msgstr ""
 msgid "Write something…"
 msgstr ""
 
-#: lib/widgets/photo.js:111 lib/widgets/registry.js:100
+#: lib/widgets/photo.js:111 lib/widgets/registry.js:109
 msgid "Photo"
 msgstr ""
 
@@ -424,61 +484,65 @@ msgstr ""
 msgid "Add pictures to your Pictures folder"
 msgstr ""
 
-#: lib/widgets/registry.js:20
+#: lib/widgets/registry.js:21
 msgid "Weather"
 msgstr ""
 
-#: lib/widgets/registry.js:21
+#: lib/widgets/registry.js:22
 msgid "Current conditions and the forecast"
 msgstr ""
 
-#: lib/widgets/registry.js:29
+#: lib/widgets/registry.js:30
 msgid "The places saved in Weather, side by side"
 msgstr ""
 
-#: lib/widgets/registry.js:37
+#: lib/widgets/registry.js:38
 msgid "The time in the cities from Clocks"
 msgstr ""
 
-#: lib/widgets/registry.js:45
+#: lib/widgets/registry.js:46
 msgid "Your upcoming events"
 msgstr ""
 
-#: lib/widgets/registry.js:53
+#: lib/widgets/registry.js:54
 msgid "Add a time like “tomorrow 9am” to be notified; check to complete"
 msgstr ""
 
-#: lib/widgets/registry.js:61
+#: lib/widgets/registry.js:62
 msgid "Control the music or video that is playing"
 msgstr ""
 
-#: lib/widgets/registry.js:68 lib/widgets/stocks.js:157
+#: lib/widgets/registry.js:69 lib/widgets/stocks.js:157
 msgid "Stocks"
 msgstr ""
 
-#: lib/widgets/registry.js:69
+#: lib/widgets/registry.js:70
 msgid ""
 "Prices from Yahoo Finance (uses the internet); choose the symbols in "
 "Preferences"
 msgstr ""
 
-#: lib/widgets/registry.js:76 lib/widgets/system.js:77
+#: lib/widgets/registry.js:78
+msgid "Your Quick Settings toggles, at hand"
+msgstr ""
+
+#: lib/widgets/registry.js:85 lib/widgets/system.js:77
 msgid "System Monitor"
 msgstr ""
 
-#: lib/widgets/registry.js:77
+#: lib/widgets/registry.js:86
 msgid "Processor, memory, disk and network use"
 msgstr ""
 
-#: lib/widgets/registry.js:85
+#: lib/widgets/registry.js:94
 msgid "Charge of this computer and connected devices"
 msgstr ""
 
-#: lib/widgets/registry.js:93
+#: lib/widgets/registry.js:102
 msgid "Keep a quick note at hand"
 msgstr ""
 
-#: lib/widgets/registry.js:101
+#: lib/widgets/registry.js:110
 msgid "A picture from your Pictures folder"
 msgstr ""
 

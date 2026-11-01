@@ -2,6 +2,7 @@
 /* ── Light style overrides ─────────────────────────────────────────── */
 
 .gn-editor-empty,
+.gn-editor-hint,
 .gn-events-empty {
   color: rgba(0, 0, 0, 0.6);
 }
@@ -143,4 +144,12 @@
 
 .gn-reminders-preview {
   color: #e66100;
+}
+
+.gn-app-volume-icon.button:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.gn-app-volume-icon.button:checked {
+  background-color: rgba(0, 0, 0, 0.05);
 }

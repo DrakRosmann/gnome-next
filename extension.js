@@ -7,6 +7,8 @@ import {CalendarPopover} from './lib/calendar.js';
 import {Collapsible} from './lib/collapsible.js';
 import {Customization} from './lib/customization.js';
 import {DndMenu} from './lib/dnd.js';
+import {AppVolume} from './lib/mixer.js';
+import {PanelShortcuts} from './lib/panel.js';
 import {ReminderScheduler} from './lib/reminders.js';
 import {PillSliders} from './lib/sliders.js';
 import {VisibilityLock} from './lib/visibility.js';
@@ -18,6 +20,8 @@ const FEATURES = [
     {key: 'enable-calendar', Feature: CalendarPopover},
     {key: 'pill-sliders', Feature: PillSliders},
     {key: 'dnd-menu', Feature: DndMenu},
+    {key: 'app-volume', Feature: AppVolume},
+    {key: 'panel-shortcuts', Feature: PanelShortcuts},
 ];
 
 const READY_POLL_MS = 100;

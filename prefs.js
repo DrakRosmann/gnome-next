@@ -24,7 +24,7 @@ export default class GnomeNextPreferences extends ExtensionPreferences {
 
         const customization = switchRow(settings, 'enable-customization',
             _('Customization'),
-            _('Add an edit button to add and remove quick settings'));
+            _('Add an edit button to add, remove, move and resize quick settings'));
         quickSettings.add(customization);
 
         const a11y = switchRow(settings, 'hide-accessibility-menu',
@@ -36,7 +36,7 @@ export default class GnomeNextPreferences extends ExtensionPreferences {
 
         const reset = new Adw.ActionRow({
             title: _('Default Layout'),
-            subtitle: _('Restore the quick settings that were removed or added'),
+            subtitle: _('Restore the quick settings that were removed, added, moved or resized'),
         });
         const resetButton = new Gtk.Button({
             label: _('Reset'),
@@ -45,6 +45,8 @@ export default class GnomeNextPreferences extends ExtensionPreferences {
         resetButton.connect('clicked', () => {
             settings.reset('removed-toggles');
             settings.reset('added-toggles');
+            settings.reset('toggle-order');
+            settings.reset('small-toggles');
         });
         reset.add_suffix(resetButton);
         quickSettings.add(reset);
@@ -52,6 +54,14 @@ export default class GnomeNextPreferences extends ExtensionPreferences {
         quickSettings.add(switchRow(settings, 'pill-sliders',
             _('Pill Sliders'),
             _('Thick sliders with the icon inside the filled part')));
+
+        quickSettings.add(switchRow(settings, 'app-volume',
+            _('Volume of Each App'),
+            _('The menu of the volume slider lists the apps playing sound, each with a slider')));
+
+        quickSettings.add(switchRow(settings, 'panel-shortcuts',
+            _('Top Bar Shortcuts'),
+            _('Middle-click the volume icon to mute; scroll over the battery icon to change the brightness')));
 
         quickSettings.add(switchRow(settings, 'dnd-menu',
             _('Do Not Disturb Durations'),

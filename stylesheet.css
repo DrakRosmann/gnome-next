@@ -79,6 +79,36 @@
   icon-size: 14px;
 }
 
+/* Small tiles: half a column, the icon only (Android and iOS style) */
+.quick-toggle.gn-small,
+.quick-toggle-has-menu.gn-small {
+  min-width: 0;
+}
+
+.quick-toggle.gn-small > StBoxLayout,
+.quick-toggle-has-menu.gn-small .quick-toggle > StBoxLayout {
+  padding: 0;
+}
+
+.quick-toggle-has-menu.gn-small .quick-toggle {
+  border-radius: 999px;
+}
+
+.gn-editor-hint {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9em;
+  padding: 0 4px;
+}
+
+.gn-editor-current .gn-tile.gn-small > StBoxLayout {
+  padding: 0;
+}
+
+.gn-editor-current .gn-tile.dragging,
+.gn-editor-current .dragging .gn-tile {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+}
+
 .gn-editor-empty {
   color: rgba(255, 255, 255, 0.6);
   padding: 6px 0;
@@ -1311,4 +1341,54 @@
 .gn-clocks,
 .gn-weather {
   transition-duration: 180ms;
+}
+
+/* ── Volume of each app ────────────────────────────────────────────── */
+
+.gn-app-volume {
+  spacing: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.gn-app-volume-box {
+  spacing: 2px;
+}
+
+.gn-app-volume-name {
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.gn-app-volume-icon.button {
+  min-width: 0;
+  min-height: 0;
+  padding: 6px;
+  border-radius: 999px;
+  background-color: transparent;
+}
+
+.gn-app-volume-icon.button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.gn-app-volume-icon.button:checked {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.gn-app-volume-icon StIcon {
+  icon-size: 24px;
+}
+
+/* ── Controls widget ───────────────────────────────────────────────── */
+
+.gn-controls-grid {
+  padding-top: 8px;
+}
+
+.quick-toggle.gn-circle.gn-control {
+  min-width: 40px;
+  max-width: 40px;
+  width: 40px;
+  height: 40px;
 }
