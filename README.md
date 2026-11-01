@@ -7,7 +7,7 @@ A GNOME Shell 50/51 extension that implements three ideas from the
 |---|---|
 | [Quick Settings customization](https://gitlab.gnome.org/Teams/Design/os-mockups/-/blob/master/system-status/quick-settings/quick-toggles-customization-aday.png) | An **edit** (pencil) button in the Quick Settings system row. It closes the menu and reopens it as an editor: the top section shows the current toggles, which can be dragged into another order and clicked to make them small or large, with a **−** badge, and a categorized catalog below (Connectivity, Device, Personalization, Privacy, Accessibility, Extensions) shows the rest with a **+** badge. Toggles that are already in use appear dimmed. The top-bar accessibility menu is hidden, because the accessibility toggles can now be added to Quick Settings. |
 | [Collapsible Quick Settings/Notifications](https://gitlab.gnome.org/Teams/Design/os-mockups/-/blob/master/system-status/quick-settings/quick-toggles-notifications-collapsible-mpris.png) | Notifications and the media player (MPRIS) live in Quick Settings. By default the settings are expanded and only the newest notification shows, with a **“N More Notifications”** pill. Expanding the notifications collapses the toggles into a row of circles, makes the player compact and shows **“Expand Settings”**. Only one group is expanded at a time. |
-| [Calendar menu concept](https://gitlab.gnome.org/Teams/Design/os-mockups/-/blob/master/calendar/calendar-popover.png) | A calendar popover without notifications that scales with its content: calendar only → + world clocks → + weather. When the selected day has upcoming events, a left column shows the date, the weather and the events, and the popover height is still set by the calendar and clocks (the events scroll). With more than 4 clocks the list switches to a compact layout; with more than 6 it is paged. |
+| [Calendar menu concept](https://gitlab.gnome.org/Teams/Design/os-mockups/-/blob/master/calendar/calendar-popover.png) | A calendar popover without notifications that scales with its content: calendar only → + world clocks → + weather. When the selected day has upcoming events, a left column shows the date, the weather and the events (with the two-column layout and nothing left today, the events of the next days), and the popover height is still set by the calendar and clocks (the events scroll). With more than 4 clocks the list switches to a compact layout; with more than 6 it is paged. |
 
 Also:
 
@@ -20,7 +20,8 @@ Also:
 * **Android style** (as in Android 16): taller rounded tiles with the icon in
   its own rounded square and the arrow inside the tile, small tiles that are
   round while off and turn into rounded squares when on, thicker sliders, and
-  the media player with the album cover as its background. It can be turned
+  the media player with the album cover as its background and a wavy
+  progress bar that ripples while playing and flattens when paused. It can be turned
   off in Preferences to keep the GNOME look.
 * **Volume of each app** (as in the Windows mixer): the menu of the volume
   slider lists every app playing sound, each with its own slider; clicking the
@@ -151,6 +152,8 @@ lib/customization.js  Quick Settings editor
 lib/tiles.js          small and large tiles, tile order, right-click menus
 lib/mixer.js          volume of each app in the volume slider menu
 lib/panel.js          top bar shortcuts (mute, brightness)
+lib/shape.js          round ⇄ square morph of small tiles
+lib/wave.js           wavy media progress bar
 lib/androidStyle.js   Android style tiles (the look is in the stylesheet)
 lib/collapsible.js    settings ⇄ notifications switching, circle toggles
 lib/media.js          MPRIS player card

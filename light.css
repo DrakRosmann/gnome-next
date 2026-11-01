@@ -3,6 +3,7 @@
 
 .gn-editor-empty,
 .gn-editor-hint,
+.gn-upcoming-day,
 .gn-events-empty {
   color: rgba(0, 0, 0, 0.6);
 }
@@ -26,10 +27,6 @@
 
 .gn-editor-category {
   color: rgba(0, 0, 0, 0.55);
-}
-
-.gn-media-progress {
-  background-color: rgba(0, 0, 0, 0.12);
 }
 
 .gn-page-dot-mark {
@@ -172,4 +169,8 @@
 
 .gn-gallery-preview {
   background-color: rgba(0, 0, 0, 0.04);
+}
+
+.gn-wave-progress {
+  -gn-track-color: rgba(0, 0, 0, 0.12);
 }

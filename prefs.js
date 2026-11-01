@@ -14,13 +14,27 @@ function switchRow(settings, key, title, subtitle) {
 export default class GnomeNextPreferences extends ExtensionPreferences {
     fillPreferencesWindow(window) {
         const settings = this.getSettings();
-        const page = new Adw.PreferencesPage();
+        const page = new Adw.PreferencesPage({
+            title: _('Quick Settings'),
+            icon_name: 'view-grid-symbolic',
+        });
         window.add(page);
+        const calendarPage = new Adw.PreferencesPage({
+            title: _('Calendar'),
+            icon_name: 'x-office-calendar-symbolic',
+        });
+        window.add(calendarPage);
+        window.set_default_size(620, 720);
 
         const quickSettings = new Adw.PreferencesGroup({
-            title: _('Quick Settings'),
+            title: _('Tiles'),
+            description: _('Edit with the pencil in Quick Settings: drag to move, click to resize'),
         });
         page.add(quickSettings);
+        const controls = new Adw.PreferencesGroup({title: _('Controls')});
+        page.add(controls);
+        const notifications = new Adw.PreferencesGroup({title: _('Notifications')});
+        page.add(notifications);
 
         const customization = switchRow(settings, 'enable-customization',
             _('Customization'),
@@ -55,28 +69,33 @@ export default class GnomeNextPreferences extends ExtensionPreferences {
             _('Android Style Tiles'),
             _('Taller rounded tiles with the icon in a rounded square, as on Android 16')));
 
-        quickSettings.add(switchRow(settings, 'pill-sliders',
+        controls.add(switchRow(settings, 'pill-sliders',
             _('Pill Sliders'),
             _('Thick sliders with the icon inside the filled part')));
 
-        quickSettings.add(switchRow(settings, 'app-volume',
+        controls.add(switchRow(settings, 'app-volume',
             _('Volume of Each App'),
             _('The menu of the volume slider lists the apps playing sound, each with a slider')));
 
-        quickSettings.add(switchRow(settings, 'panel-shortcuts',
+        controls.add(switchRow(settings, 'panel-shortcuts',
             _('Top Bar Shortcuts'),
             _('Middle-click the volume icon to mute; scroll over the battery icon to change the brightness')));
 
-        quickSettings.add(switchRow(settings, 'dnd-menu',
+        controls.add(switchRow(settings, 'dnd-menu',
             _('Do Not Disturb Durations'),
             _('Turn on Do Not Disturb for an hour, until the evening or until tomorrow')));
 
-        quickSettings.add(switchRow(settings, 'enable-collapsible',
+        notifications.add(switchRow(settings, 'enable-collapsible',
             _('Notifications in Quick Settings'),
             _('Quick Settings and notifications collapse into each other, with a media player')));
 
         const calendar = new Adw.PreferencesGroup({title: _('Calendar')});
-        page.add(calendar);
+        calendarPage.add(calendar);
+        const widgetsGroup = new Adw.PreferencesGroup({
+            title: _('Widgets'),
+            description: _('Click Edit Widgets under the calendar to add, move and resize them'),
+        });
+        calendarPage.add(widgetsGroup);
 
         const popover = switchRow(settings, 'enable-calendar',
             _('Adaptive Calendar'),
@@ -112,7 +131,7 @@ export default class GnomeNextPreferences extends ExtensionPreferences {
             _('Widgets'),
             _('Weather, world clocks, events, media and more under the calendar'));
         popover.bind_property('active', widgets, 'sensitive', GObject.BindingFlags.SYNC_CREATE);
-        calendar.add(widgets);
+        widgetsGroup.add(widgets);
 
         const resetWidgets = new Adw.ActionRow({
             title: _('Default Widgets'),
@@ -130,7 +149,7 @@ export default class GnomeNextPreferences extends ExtensionPreferences {
         popover.connect('notify::active', syncResetWidgets);
         widgets.connect('notify::active', syncResetWidgets);
         syncResetWidgets();
-        calendar.add(resetWidgets);
+        widgetsGroup.add(resetWidgets);
 
         // Shows the symbols the widget uses; stays unset until edited
         const stocks = new Adw.EntryRow({
@@ -147,6 +166,6 @@ export default class GnomeNextPreferences extends ExtensionPreferences {
                 settings.reset('stock-symbols');
         });
         widgets.bind_property('active', stocks, 'sensitive', GObject.BindingFlags.SYNC_CREATE);
-        calendar.add(stocks);
+        widgetsGroup.add(stocks);
     }
 }

@@ -307,10 +307,13 @@
 }
 
 .gn-media-progress {
-  height: 3px;
-  margin-top: 12px;
-  border-radius: 2px;
-  background-color: rgba(255, 255, 255, 0.15);
+  height: 16px;
+  margin-top: 6px;
+}
+
+.gn-wave-progress {
+  color: -st-accent-color;
+  -gn-track-color: rgba(255, 255, 255, 0.15);
 }
 
 .gn-media-progress-fill {
@@ -367,6 +370,15 @@
 
 .gn-events-empty {
   color: rgba(255, 255, 255, 0.6);
+}
+
+/* Days of the upcoming events, when today has none left */
+.gn-upcoming-day {
+  font-size: 0.85em;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.55);
+  padding-top: 14px;
+  padding-bottom: 2px;
 }
 
 .gn-event {
@@ -1532,7 +1544,6 @@
   border-color: transparent;
   box-shadow: none;
   background-size: cover;
-  background-position: center;
 }
 
 .gn-android .gn-media.gn-artwork .gn-media-box {
@@ -1565,10 +1576,7 @@
   background-color: -st-accent-color;
 }
 
-.gn-android .gn-media.gn-artwork .gn-media-progress {
-  background-color: rgba(255, 255, 255, 0.25);
-}
-
-.gn-android .gn-media.gn-artwork .gn-media-progress-fill {
-  background-color: #ffffff;
+.gn-android .gn-media.gn-artwork .gn-wave-progress {
+  color: #ffffff;
+  -gn-track-color: rgba(255, 255, 255, 0.3);
 }
