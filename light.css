@@ -211,3 +211,21 @@
 .gn-live-time {
   color: rgba(0, 0, 0, 0.6);
 }
+
+/* The island's menu stays black, as the island */
+.gn-island-menu .gn-live-card {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.gn-island-menu .gn-live-card:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.gn-island-menu .gn-live-card.media .gn-live-detail,
+.gn-island-menu .gn-live-time {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.gn-island-menu .gn-live-progress {
+  -gn-track-color: rgba(255, 255, 255, 0.15);
+}

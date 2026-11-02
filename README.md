@@ -52,7 +52,10 @@ Also:
   equalizer bars that dance while it plays; it stays for a minute after a
   pause) show in an island in the middle of the top bar,
   which grows out of the clock, shows the first one and how many more there
-  are, and opens a menu with all of them. They are also cards at the top of
+  are, and opens a menu with all of them: the island itself grows into a
+  black card and shrinks back into it, as the Dynamic Island does. The music
+  takes the color of its cover (the equalizer, the bar and a glow on its
+  card). They are also cards at the top of
   Quick Settings, with a progress bar and buttons (pause, +1 minute, stop,
   stop recording; previous, play/pause and next for music — in Quick
   Settings the player card already does this, so it is not repeated). The
