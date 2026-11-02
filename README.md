@@ -84,7 +84,19 @@ Also:
   click pastes into the window you were in (Ctrl+Shift+V in terminals); pin
   items to keep them (Clear All leaves them), Delete or the bin removes one.
   The notification list keeps Super+M; the user's shortcut settings are left
-  alone.
+  alone. Pictures show their size in a corner, so a tiny or see-through one
+  does not look like an empty item.
+* **Emoji panel** (as Win+. on Windows): a second tab of the Super+V popup,
+  also on **Super+.**: categories (recent first), a grid and a search in
+  Portuguese or English, accents or not ("coracao" finds ❤️). The arrows move,
+  Tab goes to the next category, Enter or a click types the emoji into the
+  window you were in, through the clipboard, which gets back what it had
+  right after (and the history is left alone). IBus also uses Super+. for
+  its emoji typing mode and takes it first in text fields, so the extension
+  takes Super+. from IBus' emoji hotkeys (Super+; stays with IBus) and gives
+  it back when the popup is turned off or the shortcut changes. The emoji
+  list (`lib/emoji.json`) is built by `tools/emoji-data.py` from GTK's emoji
+  data and IBus' dictionaries.
 * **Connection details** under the toggle names (as on One UI): the shell
   names the Wi-Fi network and the Bluetooth device; this adds the speed of a
   wired connection (“Connected · 1 Gb/s”), the battery of the Bluetooth
@@ -253,6 +265,8 @@ lib/live.js           live activities: island in the top bar, Quick Settings car
 lib/subtitles.js      connection details under the toggle names
 lib/clipboard.js      clipboard history (text, pictures, pinned items)
 lib/clipboardPopup.js clipboard history popup on Super+V, pasting
+lib/emojiPanel.js     emoji tab of the popup (Super+.)
+tools/emoji-data.py   builds lib/emoji.json
 lib/lockPlayer.js     player on the lock screen
 lib/panel.js          top bar shortcuts (mute, brightness)
 lib/shape.js          round ⇄ square morph of small tiles

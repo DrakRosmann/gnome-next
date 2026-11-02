@@ -92,7 +92,7 @@
   background-color: rgba(0, 0, 0, 0.06);
 }
 
-.gn-board.editing .gn-widget-shield:hover {
+.gn-widget-shield:hover {
   background-color: rgba(0, 0, 0, 0.03);
 }
 
@@ -265,4 +265,18 @@
 
 .gn-clip-popup-empty {
   color: rgba(0, 0, 0, 0.6);
+}
+
+.gn-clip-popup-tab.button:hover,
+.gn-emoji-group.button:hover,
+.gn-emoji.button:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+.gn-emoji-group.button {
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.gn-emoji-title {
+  color: rgba(0, 0, 0, 0.55);
 }

@@ -109,6 +109,20 @@
       <summary>Shortcut for the clipboard history</summary>
       <description>Takes Super+V from the shortcut that opens the notification list, which keeps Super+M.</description>
     </key>
+    <key name="emoji-shortcut" type="as">
+      <default>['&lt;Super&gt;period']</default>
+      <summary>Shortcut for the emoji panel</summary>
+      <description>Opens the clipboard popup on its emoji tab, as Win+. does on Windows.</description>
+    </key>
+    <key name="ibus-hotkeys-taken" type="as">
+      <default>[]</default>
+      <summary>IBus emoji hotkeys taken for the emoji panel</summary>
+      <description>Given back to IBus when the clipboard popup is turned off or the emoji shortcut changes.</description>
+    </key>
+    <key name="recent-emoji" type="as">
+      <default>[]</default>
+      <summary>Emoji used lately</summary>
+    </key>
     <key name="timer-state" type="s">
       <default>'{}'</default>
       <summary>Timer and stopwatch</summary>

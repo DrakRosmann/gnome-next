@@ -131,8 +131,8 @@ export default class GnomeNextPreferences extends ExtensionPreferences {
             _('A large player with the cover under the clock while the screen is locked')));
 
         controls.add(switchRow(settings, 'clipboard-popup',
-            _('Clipboard History (Super+V)'),
-            _('Super+V shows what you copied lately to paste it; pinned items stay. Super+M still opens the notification list')));
+            _('Clipboard History and Emoji (Super+V, Super+.)'),
+            _('Super+V shows what you copied lately to paste it, Super+. the emoji; pinned items stay. Super+M still opens the notification list')));
 
         const apps = new Adw.PreferencesGroup({
             title: _('App Shortcuts'),

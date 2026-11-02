@@ -618,13 +618,11 @@
   spacing: 6px;
 }
 
-.gn-board.editing {
-  spacing: 10px;
-}
-
 .gn-board-header {
   spacing: 10px;
   padding: 2px 2px 0;
+  /* Only there while editing: the room editing had between header and grid */
+  margin-bottom: 4px;
 }
 
 .gn-board-hint {
@@ -668,18 +666,18 @@
   border-radius: 20px;
 }
 
-.gn-board.editing .gn-widget-shield:hover {
+.gn-widget-shield:hover {
   background-color: rgba(255, 255, 255, 0.04);
 }
 
 .gn-widget-badge.button {
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
   min-height: 0;
   min-width: 0;
   padding: 0;
-  /* St has no negative margins: the badge sits just inside the corner */
-  margin: 6px;
+  /* On the corner of the widget, which shrinks while editing */
+  margin: 0;
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.12);
   background-color: #5c5c62;
@@ -2343,4 +2341,106 @@
 .bms-popup-background-dark .gn-live-card,
 .bms-popup-background-transparent .gn-live-card {
   background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Clipboard popup tabs and the emoji panel */
+.gn-clip-popup-header {
+  spacing: 4px;
+}
+
+.gn-clip-popup-tab.button {
+  padding: 6px 12px;
+  min-height: 0;
+  border-radius: 999px;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+.gn-clip-popup-tab.button:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.gn-clip-popup-tab.button:checked {
+  color: -st-accent-fg-color;
+  background-color: -st-accent-color;
+}
+
+.gn-clip-popup-tab-box {
+  spacing: 6px;
+}
+
+.gn-clip-popup-tab-icon {
+  icon-size: 16px;
+}
+
+.gn-emoji-panel {
+  spacing: 6px;
+}
+
+.gn-emoji-groups {
+  spacing: 2px;
+}
+
+.gn-emoji-group.button {
+  padding: 7px 0;
+  min-height: 0;
+  border-radius: 10px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.gn-emoji-group.button:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.gn-emoji-group.button:checked {
+  color: -st-accent-color;
+  background-color: rgba(255, 255, 255, 0.06);
+  box-shadow: inset 0 -2px 0 0 -st-accent-color;
+}
+
+.gn-emoji-group StIcon {
+  icon-size: 16px;
+}
+
+.gn-emoji-title {
+  padding: 2px 4px 0;
+  font-size: 0.85em;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.gn-emoji-scroll {
+  height: 300px;
+}
+
+.gn-emoji.button {
+  padding: 0;
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  background-color: transparent;
+  font-size: 1.6em;
+  font-family: "Noto Color Emoji", sans-serif;
+}
+
+.gn-emoji.button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.gn-emoji.button:selected {
+  border-color: -st-accent-color;
+}
+
+/* Size of a copied picture, in its corner */
+.gn-clip-size {
+  margin: 5px;
+  padding: 1px 6px;
+  border-radius: 999px;
+  font-size: 0.75em;
+  font-weight: bold;
+  font-feature-settings: "tnum";
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.55);
 }

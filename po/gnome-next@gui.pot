@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-02 01:05-0300\n"
+"POT-Creation-Date: 2026-11-02 13:25-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: prefs.js:23 lib/customization.js:502
+#: prefs.js:23 lib/customization.js:510
 msgid "Quick Settings"
 msgstr ""
 
@@ -142,7 +142,7 @@ msgstr ""
 msgid "Show the wired speed and the Bluetooth battery under the toggle names"
 msgstr ""
 
-#: prefs.js:107 lib/live.js:977
+#: prefs.js:107 lib/live.js:991
 msgid "Live Activities"
 msgstr ""
 
@@ -187,13 +187,13 @@ msgid ""
 msgstr ""
 
 #: prefs.js:134
-msgid "Clipboard History (Super+V)"
+msgid "Clipboard History and Emoji (Super+V, Super+.)"
 msgstr ""
 
 #: prefs.js:135
 msgid ""
-"Super+V shows what you copied lately to paste it; pinned items stay. Super+M "
-"still opens the notification list"
+"Super+V shows what you copied lately to paste it, Super+. the emoji; pinned "
+"items stay. Super+M still opens the notification list"
 msgstr ""
 
 #: prefs.js:138
@@ -224,7 +224,7 @@ msgid ""
 "player"
 msgstr ""
 
-#: prefs.js:158 prefs.js:194 lib/widgets/gallery.js:163
+#: prefs.js:158 prefs.js:194 lib/widgets/gallery.js:167
 msgid "Widgets"
 msgstr ""
 
@@ -285,8 +285,8 @@ msgstr ""
 msgid "Add App…"
 msgstr ""
 
-#: prefs.js:268 prefs.js:385 lib/clipboardPopup.js:292
-#: lib/widgets/clipboard.js:130
+#: prefs.js:268 prefs.js:385 lib/clipboardPopup.js:414
+#: lib/widgets/clipboard.js:132
 msgid "Remove"
 msgstr ""
 
@@ -356,61 +356,72 @@ msgstr ""
 msgid "Go to today"
 msgstr ""
 
-#: lib/calendar.js:496 lib/widgets/events.js:121
+#: lib/calendar.js:509 lib/widgets/events.js:121
 msgid "All Day"
 msgstr ""
 
-#: lib/calendar.js:498 lib/dnd.js:34 lib/widgets/events.js:124
+#: lib/calendar.js:511 lib/dnd.js:34 lib/widgets/events.js:124
 #, javascript-format
 msgid "Until %s"
 msgstr ""
 
-#: lib/calendar.js:511
+#: lib/calendar.js:524
 msgid "%-d %B %Y"
 msgstr ""
 
-#: lib/calendar.js:531 lib/widgets/events.js:99
+#: lib/calendar.js:544 lib/widgets/events.js:99
 msgid "No more events today"
 msgstr ""
 
-#: lib/calendar.js:531
+#: lib/calendar.js:544
 msgid "No events"
 msgstr ""
 
-#: lib/calendar.js:569 lib/widgets/clocks.js:25 lib/widgets/events.js:91
+#: lib/calendar.js:582 lib/widgets/clocks.js:25 lib/widgets/events.js:91
 msgid "Tomorrow"
 msgstr ""
 
-#: lib/calendar.js:571
+#: lib/calendar.js:584
 msgid "%A, %-d"
 msgstr ""
 
-#: lib/clipboardPopup.js:124 lib/widgets/clipboard.js:21
-#: lib/widgets/clipboard.js:30 lib/widgets/registry.js:110
-msgid "Clipboard"
+#: lib/clipboardPopup.js:38
+msgid "Picture"
 msgstr ""
 
-#: lib/clipboardPopup.js:130
+#: lib/clipboardPopup.js:185
+msgid "History"
+msgstr ""
+
+#: lib/clipboardPopup.js:186
+msgid "Emoji"
+msgstr ""
+
+#: lib/clipboardPopup.js:204
 msgid "Clear All"
 msgstr ""
 
-#: lib/clipboardPopup.js:139
+#: lib/clipboardPopup.js:214 lib/clipboardPopup.js:289
 msgid "Search"
 msgstr ""
 
-#: lib/clipboardPopup.js:229
+#: lib/clipboardPopup.js:289
+msgid "Search emoji"
+msgstr ""
+
+#: lib/clipboardPopup.js:349
 msgid "Copy some text or a picture to see it here"
 msgstr ""
 
-#: lib/clipboardPopup.js:230
+#: lib/clipboardPopup.js:350
 msgid "Nothing matches"
 msgstr ""
 
-#: lib/clipboardPopup.js:282
+#: lib/clipboardPopup.js:404
 msgid "Unpin"
 msgstr ""
 
-#: lib/clipboardPopup.js:282
+#: lib/clipboardPopup.js:404
 msgid "Pin"
 msgstr ""
 
@@ -427,41 +438,41 @@ msgstr ""
 msgid "Expand Settings"
 msgstr ""
 
-#: lib/customization.js:191
+#: lib/customization.js:199
 msgid "Edit Quick Settings"
 msgstr ""
 
-#: lib/customization.js:525
+#: lib/customization.js:533
 msgid "Settings"
 msgstr ""
 
-#: lib/customization.js:533
+#: lib/customization.js:541
 msgid "Reset Layout"
 msgstr ""
 
-#: lib/customization.js:535 lib/widgets/board.js:228
+#: lib/customization.js:543 lib/widgets/board.js:252
 msgid "Done"
 msgstr ""
 
-#: lib/customization.js:615
+#: lib/customization.js:640
 msgid "Drag to move. Click or drag the corner to resize."
 msgstr ""
 
-#: lib/customization.js:624
+#: lib/customization.js:649
 msgid "Add quick settings from the list below"
 msgstr ""
 
-#: lib/customization.js:1001 lib/customization.js:1104 lib/widgets/board.js:182
+#: lib/customization.js:1065 lib/customization.js:1168 lib/widgets/board.js:201
 #, javascript-format
 msgid "Remove %s"
 msgstr ""
 
-#: lib/customization.js:1002 lib/widgets/gallery.js:120
+#: lib/customization.js:1066 lib/widgets/gallery.js:124
 #, javascript-format
 msgid "Add %s"
 msgstr ""
 
-#: lib/customization.js:1069
+#: lib/customization.js:1133
 #, javascript-format
 msgid "Change the size of %s"
 msgstr ""
@@ -493,6 +504,58 @@ msgstr ""
 msgid "Do Not Disturb"
 msgstr ""
 
+#: lib/emojiPanel.js:16
+msgid "Recent"
+msgstr ""
+
+#: lib/emojiPanel.js:17
+msgid "Smileys"
+msgstr ""
+
+#: lib/emojiPanel.js:18
+msgid "People"
+msgstr ""
+
+#: lib/emojiPanel.js:19
+msgid "Animals & Nature"
+msgstr ""
+
+#: lib/emojiPanel.js:20
+msgid "Food & Drink"
+msgstr ""
+
+#: lib/emojiPanel.js:21
+msgid "Travel & Places"
+msgstr ""
+
+#: lib/emojiPanel.js:22
+msgid "Activities"
+msgstr ""
+
+#: lib/emojiPanel.js:23
+msgid "Objects"
+msgstr ""
+
+#: lib/emojiPanel.js:24
+msgid "Symbols"
+msgstr ""
+
+#: lib/emojiPanel.js:25
+msgid "Flags"
+msgstr ""
+
+#: lib/emojiPanel.js:121
+msgid "Emoji you use show up here"
+msgstr ""
+
+#: lib/emojiPanel.js:134
+msgid "Results"
+msgstr ""
+
+#: lib/emojiPanel.js:137
+msgid "No emoji found"
+msgstr ""
+
 #: lib/extraSliders.js:22
 msgid "Night Light Warmth"
 msgstr ""
@@ -505,11 +568,11 @@ msgstr ""
 msgid "Keyboard Brightness"
 msgstr ""
 
-#: lib/header.js:61
+#: lib/header.js:62
 msgid "Open Calendar"
 msgstr ""
 
-#: lib/header.js:103
+#: lib/header.js:110
 msgid "%a, %-d %b"
 msgstr ""
 
@@ -787,35 +850,35 @@ msgstr ""
 msgid "No batteries"
 msgstr ""
 
-#: lib/widgets/board.js:20
+#: lib/widgets/board.js:23
 msgid "S"
 msgstr ""
 
-#: lib/widgets/board.js:21
+#: lib/widgets/board.js:24
 msgid "M"
 msgstr ""
 
-#: lib/widgets/board.js:22
+#: lib/widgets/board.js:25
 msgid "L"
 msgstr ""
 
-#: lib/widgets/board.js:26
+#: lib/widgets/board.js:29
 msgid "Small"
 msgstr ""
 
-#: lib/widgets/board.js:26
+#: lib/widgets/board.js:29
 msgid "Medium"
 msgstr ""
 
-#: lib/widgets/board.js:26
+#: lib/widgets/board.js:29
 msgid "Large"
 msgstr ""
 
-#: lib/widgets/board.js:220
+#: lib/widgets/board.js:244
 msgid "Drag to move, click to resize"
 msgstr ""
 
-#: lib/widgets/board.js:259
+#: lib/widgets/board.js:283
 msgid "Edit Widgets"
 msgstr ""
 
@@ -827,24 +890,29 @@ msgstr ""
 msgid "Add cities in Weather"
 msgstr ""
 
-#: lib/widgets/clipboard.js:34
+#: lib/widgets/clipboard.js:22 lib/widgets/clipboard.js:31
+#: lib/widgets/registry.js:110
+msgid "Clipboard"
+msgstr ""
+
+#: lib/widgets/clipboard.js:35
 msgid "Clear History"
 msgstr ""
 
-#: lib/widgets/clipboard.js:44
+#: lib/widgets/clipboard.js:45
 msgid "Copy some text to see it here"
 msgstr ""
 
-#: lib/widgets/clipboard.js:80
+#: lib/widgets/clipboard.js:81
 msgid "Copy Picture"
 msgstr ""
 
-#: lib/widgets/clipboard.js:80
+#: lib/widgets/clipboard.js:81
 #, javascript-format
 msgid "Copy “%s”"
 msgstr ""
 
-#: lib/widgets/clipboard.js:96 lib/widgets/clipboard.js:106
+#: lib/widgets/clipboard.js:98 lib/widgets/clipboard.js:108
 msgid "Copied"
 msgstr ""
 
@@ -873,11 +941,11 @@ msgstr ""
 msgid "Up Next"
 msgstr ""
 
-#: lib/widgets/gallery.js:46
+#: lib/widgets/gallery.js:50
 msgid "Added"
 msgstr ""
 
-#: lib/widgets/gallery.js:166
+#: lib/widgets/gallery.js:170
 msgid "Pick a size and click a widget to add it"
 msgstr ""
 
