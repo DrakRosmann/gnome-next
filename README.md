@@ -74,10 +74,16 @@ Also:
   wired connection (“Connected · 1 Gb/s”), the battery of the Bluetooth
   device and “Disconnected”, “Not Connected” or “No Devices” when nothing is
   connected.
+* **Time and date** at the top of Quick Settings (as on One UI): the time,
+  large, with the date under it, and the buttons gathered at the end; click
+  the time to open the calendar.
 * **Panel motion** (as in the iOS Control Center): Quick Settings springs open
   out of its top bar button and the controls follow in a wave from that
   corner; it shrinks back into the button when it closes; a slider grows a
-  little while it is dragged; a toggled tile pops. Tiles have a faint light
+  little while it is dragged; a toggled tile pops. When a control shows or
+  hides while it is open (the microphone slider while an app records, the
+  player when music starts), the others glide to their new places and the
+  panel eases to its new height. A new song's title and artist slide in. Tiles have a faint light
   along their top edge. It can be turned off in Preferences.
 * **Android style** (as in Android 16): taller rounded tiles with the icon in
   its own rounded square and the arrow inside the tile, small tiles that are
@@ -242,7 +248,8 @@ lib/widgets/          widget board under the calendar:
   *.js                one file per widget
 lib/sliders.js        pill-shaped sliders
 lib/animation.js      resize, fade, pop and FLIP animations
-lib/motion.js         Quick Settings opening, closing, wave and slider grab motion
+lib/motion.js         Quick Settings opening, closing, wave, layout glide, slider grab
+lib/header.js         time and date at the top of Quick Settings
 lib/morph.js          pill ⇄ circle toggle morph
 lib/spring.js         spring animations and press feedback
 ```

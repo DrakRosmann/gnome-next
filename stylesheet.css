@@ -2051,3 +2051,26 @@
 .quick-settings.popup-menu-content {
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35), 0 2px 6px rgba(0, 0, 0, 0.2);
 }
+
+/* ── Quick Settings header ─────────────────────────────────────────── */
+
+.gn-header-clock {
+  padding: 0 4px;
+  border-radius: 14px;
+}
+
+.gn-header-box {
+  spacing: 0;
+}
+
+.gn-header-time {
+  font-size: 1.6em;
+  font-weight: 800;
+  font-feature-settings: "tnum";
+}
+
+.gn-header-date {
+  font-size: 0.85em;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.65);
+}

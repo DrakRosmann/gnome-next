@@ -15,6 +15,7 @@ import {PillSliders} from './lib/sliders.js';
 import {ClipboardHistory, setClipboardHistory} from './lib/clipboard.js';
 import {LiveActivities} from './lib/live.js';
 import {PanelMotion} from './lib/motion.js';
+import {PanelHeader} from './lib/header.js';
 import {ToggleSubtitles} from './lib/subtitles.js';
 import {Timers, setTimers} from './lib/timers.js';
 import {VisibilityLock} from './lib/visibility.js';
@@ -32,6 +33,7 @@ const FEATURES = [
     {key: 'toggle-subtitles', Feature: ToggleSubtitles},
     {key: 'live-activities', Feature: LiveActivities},
     {key: 'panel-motion', Feature: PanelMotion},
+    {key: 'panel-clock', Feature: PanelHeader},
 ];
 
 const READY_POLL_MS = 100;
