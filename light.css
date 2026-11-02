@@ -243,3 +243,26 @@
 .gn-header-date {
   color: rgba(0, 0, 0, 0.6);
 }
+
+.gn-clip-popup {
+  border-color: rgba(0, 0, 0, 0.08);
+  background-color: #fafafb;
+  color: #222226;
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.2);
+}
+
+.gn-clip-popup-item.button {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.gn-clip-popup-item.button:selected {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.gn-clip-popup-action.button:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.gn-clip-popup-empty {
+  color: rgba(0, 0, 0, 0.6);
+}

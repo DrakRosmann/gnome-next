@@ -68,7 +68,23 @@ Also:
     in or the battery is full;
   * **notifications coming out of it**: banners grow out of the island (or
     the clock while it is hidden) and go back into it, which bounces; this can
-    be turned off in Preferences.
+    be turned off in Preferences;
+  * **volume and brightness**: the island stretches to show the icon, the
+    level and a bar instead of the popup in the middle of the screen (the
+    popup stays for full screen apps and for popups without a level);
+  * **its card on hover**: resting the pointer on the island opens its card,
+    which closes once the pointer has left both; a click keeps it open.
+* **Player on the lock screen** (as on iOS): a large player under the clock,
+  with the cover, a bar that can be dragged and previous, play/pause and next,
+  tinted with the cover's color, instead of the small one among the
+  notifications. While the screen is locked this is the only part of the
+  extension that runs (the timer and reminders keep going).
+* **Clipboard history on Super+V** (as on Windows): what you copied lately,
+  text and pictures, with a search; the arrows or the pointer pick, Enter or a
+  click pastes into the window you were in (Ctrl+Shift+V in terminals); pin
+  items to keep them (Clear All leaves them), Delete or the bin removes one.
+  The notification list keeps Super+M; the user's shortcut settings are left
+  alone.
 * **Connection details** under the toggle names (as on One UI): the shell
   names the Wi-Fi network and the Bluetooth device; this adds the speed of a
   wired connection (“Connected · 1 Gb/s”), the battery of the Bluetooth
@@ -230,7 +246,9 @@ lib/shortcuts.js      app shortcut and custom command toggles
 lib/timers.js         timer and stopwatch (kept through a lock), timer toggle
 lib/live.js           live activities: island in the top bar, Quick Settings cards
 lib/subtitles.js      connection details under the toggle names
-lib/clipboard.js      clipboard history for the clipboard widget
+lib/clipboard.js      clipboard history (text, pictures, pinned items)
+lib/clipboardPopup.js clipboard history popup on Super+V, pasting
+lib/lockPlayer.js     player on the lock screen
 lib/panel.js          top bar shortcuts (mute, brightness)
 lib/shape.js          round ⇄ square morph of small tiles
 lib/wave.js           wavy media progress bar

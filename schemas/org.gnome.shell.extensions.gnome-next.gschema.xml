@@ -84,6 +84,31 @@
       <summary>Notifications come out of the island</summary>
       <description>Notification banners grow out of the live activity island (or the clock) and go back into it, as on iOS.</description>
     </key>
+    <key name="island-osd" type="b">
+      <default>true</default>
+      <summary>Volume and brightness in the island</summary>
+      <description>Volume and brightness changes show in the live activity island, as on iOS, instead of the shell's popup.</description>
+    </key>
+    <key name="island-hover" type="b">
+      <default>true</default>
+      <summary>Open the island on hover</summary>
+      <description>Resting the pointer on the island opens its card; it closes when the pointer leaves.</description>
+    </key>
+    <key name="lock-player" type="b">
+      <default>true</default>
+      <summary>Player on the lock screen</summary>
+      <description>A large player with the cover under the lock screen clock, instead of the small one among the notifications.</description>
+    </key>
+    <key name="clipboard-popup" type="b">
+      <default>true</default>
+      <summary>Clipboard history popup</summary>
+      <description>A shortcut opens the clipboard history to paste from it, as Super+V does on Windows. History is kept while this or the clipboard widget is on.</description>
+    </key>
+    <key name="clipboard-shortcut" type="as">
+      <default>['&lt;Super&gt;v']</default>
+      <summary>Shortcut for the clipboard history</summary>
+      <description>Takes Super+V from the shortcut that opens the notification list, which keeps Super+M.</description>
+    </key>
     <key name="timer-state" type="s">
       <default>'{}'</default>
       <summary>Timer and stopwatch</summary>

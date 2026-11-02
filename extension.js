@@ -16,6 +16,8 @@ import {ClipboardHistory, setClipboardHistory} from './lib/clipboard.js';
 import {LiveActivities} from './lib/live.js';
 import {PanelMotion} from './lib/motion.js';
 import {PanelHeader} from './lib/header.js';
+import {ClipboardPopup} from './lib/clipboardPopup.js';
+import {LockScreenPlayer} from './lib/lockPlayer.js';
 import {ToggleSubtitles} from './lib/subtitles.js';
 import {Timers, setTimers} from './lib/timers.js';
 import {VisibilityLock} from './lib/visibility.js';
@@ -34,6 +36,9 @@ const FEATURES = [
     {key: 'live-activities', Feature: LiveActivities},
     {key: 'panel-motion', Feature: PanelMotion},
     {key: 'panel-clock', Feature: PanelHeader},
+    {key: 'clipboard-popup', Feature: ClipboardPopup},
+    // While the screen is locked only these run, and none of the others
+    {key: 'lock-player', Feature: LockScreenPlayer, lockScreen: true},
 ];
 
 const READY_POLL_MS = 100;
@@ -74,6 +79,7 @@ export default class GnomeNextExtension extends Extension {
         this._readyId = 0;
 
         this._settings.disconnectObject(this);
+        Main.sessionMode.disconnectObject(this);
 
         // Tear down in reverse order of creation
         [...this._active.keys()].reverse().forEach(key => this._stopFeature(key));
@@ -95,13 +101,17 @@ export default class GnomeNextExtension extends Extension {
     _start() {
         for (const {key} of FEATURES)
             this._settings.connectObject(`changed::${key}`, () => this._sync(), this);
+        // The extension stays on while locked (for the lock screen player)
+        Main.sessionMode.connectObject('updated', () => this._sync(), this);
         this._sync();
     }
 
     _sync() {
         // Restart everything after the changed feature so the stacking order
         // inside the menu stays the same
-        const wanted = FEATURES.map(({key}) => this._settings.get_boolean(key));
+        const locked = Main.sessionMode.isLocked;
+        const wanted = FEATURES.map(({key, lockScreen = false}) =>
+            lockScreen === locked && this._settings.get_boolean(key));
         const firstChange = FEATURES.findIndex(({key}, i) => wanted[i] !== this._active.has(key));
         if (firstChange < 0)
             return;

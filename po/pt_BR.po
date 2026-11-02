@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-next\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-02 00:49-0300\n"
+"POT-Creation-Date: 2026-11-02 01:05-0300\n"
 "PO-Revision-Date: 2026-10-20 12:00-0300\n"
 "Last-Translator: DrakRosmann\n"
 "Language-Team: Portuguese (Brazil)\n"
@@ -16,7 +16,7 @@ msgstr ""
 msgid "Quick Settings"
 msgstr "Configurações rápidas"
 
-#: prefs.js:28 prefs.js:135
+#: prefs.js:28 prefs.js:155
 msgid "Calendar"
 msgstr "Calendário"
 
@@ -68,7 +68,7 @@ msgstr ""
 "Restaura as configurações rápidas removidas, adicionadas, movidas ou "
 "redimensionadas"
 
-#: prefs.js:61 prefs.js:184
+#: prefs.js:61 prefs.js:204
 msgid "Reset"
 msgstr "Restaurar"
 
@@ -99,9 +99,7 @@ msgstr "Animações do painel"
 msgid ""
 "Quick Settings springs open from its button with the controls in a wave; "
 "sliders grow while dragged"
-msgstr ""
-"O painel abre com mola a partir do botão e os controles aparecem em onda; os "
-"sliders crescem ao arrastar"
+msgstr "O painel abre com mola a partir do botão e os controles aparecem em onda; os sliders crescem ao arrastar"
 
 #: prefs.js:87
 msgid "Pill Sliders"
@@ -149,11 +147,9 @@ msgstr "Detalhes da conexão"
 
 #: prefs.js:104
 msgid "Show the wired speed and the Bluetooth battery under the toggle names"
-msgstr ""
-"Mostra a velocidade da rede cabeada e a bateria do Bluetooth embaixo do nome "
-"dos botões"
+msgstr "Mostra a velocidade da rede cabeada e a bateria do Bluetooth embaixo do nome dos botões"
 
-#: prefs.js:107 lib/live.js:947
+#: prefs.js:107 lib/live.js:977
 msgid "Live Activities"
 msgstr "Atividades ao vivo"
 
@@ -161,9 +157,7 @@ msgstr "Atividades ao vivo"
 msgid ""
 "Timers, music, screen recordings and downloads in an island in the top bar "
 "and in Quick Settings"
-msgstr ""
-"Timers, música, gravações de tela e downloads numa ilha na barra superior e "
-"nas configurações rápidas"
+msgstr "Timers, música, gravações de tela e downloads numa ilha na barra superior e nas configurações rápidas"
 
 #: prefs.js:112
 msgid "Notifications From the Island"
@@ -174,32 +168,64 @@ msgid "Notifications grow out of the island and go back into it"
 msgstr "As notificações saem da ilha e voltam para ela"
 
 #: prefs.js:118
-msgid "App Shortcuts"
-msgstr "Atalhos de apps"
+msgid "Volume and Brightness in the Island"
+msgstr "Volume e brilho na ilha"
 
 #: prefs.js:119
 msgid ""
-"Apps that open from Quick Settings; your favorite apps are also offered in "
-"the editor"
-msgstr ""
-"Apps que abrem pelas configurações rápidas; seus apps favoritos também "
-"aparecem no editor"
+"The island shows the level instead of the popup in the middle of the screen"
+msgstr "A ilha mostra o nível no lugar do aviso no meio da tela"
+
+#: prefs.js:124
+msgid "Open the Island on Hover"
+msgstr "Abrir a ilha ao passar o mouse"
 
 #: prefs.js:125
+msgid "Resting the pointer on the island opens its card"
+msgstr "Parar o ponteiro sobre a ilha abre o cartão dela"
+
+#: prefs.js:130
+msgid "Player on the Lock Screen"
+msgstr "Player na tela de bloqueio"
+
+#: prefs.js:131
+msgid ""
+"A large player with the cover under the clock while the screen is locked"
+msgstr "Um player grande com a capa embaixo do relógio enquanto a tela está bloqueada"
+
+#: prefs.js:134
+msgid "Clipboard History (Super+V)"
+msgstr "Histórico da área de transferência (Super+V)"
+
+#: prefs.js:135
+msgid ""
+"Super+V shows what you copied lately to paste it; pinned items stay. Super+M "
+"still opens the notification list"
+msgstr "Super+V mostra o que você copiou recentemente para colar; itens fixados ficam. Super+M continua abrindo a lista de notificações"
+
+#: prefs.js:138
+msgid "App Shortcuts"
+msgstr "Atalhos de apps"
+
+#: prefs.js:139
+msgid ""
+"Apps that open from Quick Settings; your favorite apps are also offered in "
+"the editor"
+msgstr "Apps que abrem pelas configurações rápidas; seus apps favoritos também aparecem no editor"
+
+#: prefs.js:145
 msgid "Custom Commands"
 msgstr "Comandos personalizados"
 
-#: prefs.js:126
+#: prefs.js:146
 msgid "Toggles that run your commands, e.g. to start a VPN or a server"
-msgstr ""
-"Botões que executam seus comandos, por exemplo para ligar uma VPN ou um "
-"servidor"
+msgstr "Botões que executam seus comandos, por exemplo para ligar uma VPN ou um servidor"
 
-#: prefs.js:132
+#: prefs.js:152
 msgid "Notifications in Quick Settings"
 msgstr "Notificações nas Configurações rápidas"
 
-#: prefs.js:133
+#: prefs.js:153
 msgid ""
 "Quick Settings and notifications collapse into each other, with a media "
 "player"
@@ -207,138 +233,136 @@ msgstr ""
 "Configurações rápidas e notificações se recolhem uma na outra, com um player "
 "de mídia"
 
-#: prefs.js:138 prefs.js:174 lib/widgets/gallery.js:163
+#: prefs.js:158 prefs.js:194 lib/widgets/gallery.js:163
 msgid "Widgets"
 msgstr "Widgets"
 
-#: prefs.js:139
+#: prefs.js:159
 msgid "Click Edit Widgets under the calendar to add, move and resize them"
 msgstr ""
 "Clique em Editar widgets, embaixo do calendário, para adicionar, mover e "
 "redimensionar"
 
-#: prefs.js:144
+#: prefs.js:164
 msgid "Adaptive Calendar"
 msgstr "Calendário adaptável"
 
-#: prefs.js:145
+#: prefs.js:165
 msgid "A calendar popover that scales with events, world clocks and weather"
 msgstr "Um calendário que se adapta aos eventos, relógios mundiais e clima"
 
-#: prefs.js:150
+#: prefs.js:170
 msgid "Layout"
 msgstr "Layout"
 
-#: prefs.js:151
+#: prefs.js:171
 msgid ""
 "Two columns always shows the date, weather and events next to the calendar"
 msgstr ""
 "Duas colunas sempre mostra a data, o clima e os eventos ao lado do calendário"
 
-#: prefs.js:152
+#: prefs.js:172
 msgid "Adaptive"
 msgstr "Adaptável"
 
-#: prefs.js:152
+#: prefs.js:172
 msgid "Two Columns"
 msgstr "Duas colunas"
 
-#: prefs.js:168
+#: prefs.js:188
 msgid "Show Events"
 msgstr "Mostrar eventos"
 
-#: prefs.js:169
+#: prefs.js:189
 msgid "Show the remaining events of the day next to the calendar"
 msgstr "Mostra os próximos eventos do dia ao lado do calendário"
 
-#: prefs.js:175
+#: prefs.js:195
 msgid "Weather, world clocks, events, media and more under the calendar"
 msgstr "Clima, relógios mundiais, eventos, mídia e mais abaixo do calendário"
 
-#: prefs.js:180
+#: prefs.js:200
 msgid "Default Widgets"
 msgstr "Widgets padrão"
 
-#: prefs.js:181
+#: prefs.js:201
 msgid "Restore the widgets that were added, removed or resized"
 msgstr ""
 "Restaura os widgets que foram adicionados, removidos ou redimensionados"
 
-#: prefs.js:199
+#: prefs.js:219
 msgid "Stock Symbols (comma separated, e.g. PETR4.SA, AAPL, BTC-USD)"
 msgstr ""
 "Símbolos da bolsa (separados por vírgula, ex.: PETR4.SA, AAPL, BTC-USD)"
 
-#: prefs.js:232
+#: prefs.js:252
 msgid "Add App…"
 msgstr "Adicionar app…"
 
-#: prefs.js:248 prefs.js:365 lib/widgets/clipboard.js:127
+#: prefs.js:268 prefs.js:385 lib/clipboardPopup.js:292
+#: lib/widgets/clipboard.js:130
 msgid "Remove"
 msgstr "Remover"
 
-#: prefs.js:265
+#: prefs.js:285
 msgid "Add App"
 msgstr "Adicionar app"
 
-#: prefs.js:268
+#: prefs.js:288
 msgid "Search apps"
 msgstr "Pesquisar apps"
 
-#: prefs.js:336
+#: prefs.js:356
 msgid "Add Command…"
 msgstr "Adicionar comando…"
 
-#: prefs.js:347 lib/shortcuts.js:74
+#: prefs.js:367 lib/shortcuts.js:74
 msgid "Command"
 msgstr "Comando"
 
-#: prefs.js:355
+#: prefs.js:375
 msgid "Edit"
 msgstr "Editar"
 
-#: prefs.js:386
+#: prefs.js:406
 msgid "Edit Command"
 msgstr "Editar comando"
 
-#: prefs.js:386
+#: prefs.js:406
 msgid "New Command"
 msgstr "Novo comando"
 
-#: prefs.js:391
+#: prefs.js:411
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: prefs.js:394
+#: prefs.js:414
 msgid "Save"
 msgstr "Salvar"
 
-#: prefs.js:400
+#: prefs.js:420
 msgid ""
 "Commands run with /bin/sh. Without a command to turn it off, the toggle is a "
 "button. The command that checks the state exits with 0 while it is on."
-msgstr ""
-"Os comandos rodam com /bin/sh. Sem um comando para desligar, o botão só "
-"executa o comando. O comando que verifica o estado sai com 0 enquanto "
-"estiver ligado."
+msgstr "Os comandos rodam com /bin/sh. Sem um comando para desligar, o botão só executa o comando. O comando que verifica o estado sai com 0 enquanto estiver ligado."
 
-#: prefs.js:408
+#: prefs.js:428
 msgid "Name"
 msgstr "Nome"
 
-#: prefs.js:409
+#: prefs.js:429
 msgid "Icon Name (e.g. network-vpn-symbolic)"
 msgstr "Nome do ícone (ex.: network-vpn-symbolic)"
 
-#: prefs.js:410
+#: prefs.js:430
 msgid "Command to Turn On or Run"
 msgstr "Comando para ligar ou executar"
 
-#: prefs.js:411
+#: prefs.js:431
 msgid "Command to Turn Off (optional)"
 msgstr "Comando para desligar (opcional)"
 
-#: prefs.js:412
+#: prefs.js:432
 msgid "Command to Check if On (optional)"
 msgstr "Comando para saber se está ligado (opcional)"
 
@@ -374,6 +398,35 @@ msgstr "Amanhã"
 #: lib/calendar.js:571
 msgid "%A, %-d"
 msgstr "%A, %-d"
+
+#: lib/clipboardPopup.js:124 lib/widgets/clipboard.js:21
+#: lib/widgets/clipboard.js:30 lib/widgets/registry.js:110
+msgid "Clipboard"
+msgstr "Área de transferência"
+
+#: lib/clipboardPopup.js:130
+msgid "Clear All"
+msgstr "Limpar tudo"
+
+#: lib/clipboardPopup.js:139
+msgid "Search"
+msgstr "Pesquisar"
+
+#: lib/clipboardPopup.js:229
+msgid "Copy some text or a picture to see it here"
+msgstr "Copie um texto ou uma imagem para vê-lo aqui"
+
+#: lib/clipboardPopup.js:230
+msgid "Nothing matches"
+msgstr "Nada encontrado"
+
+#: lib/clipboardPopup.js:282
+msgid "Unpin"
+msgstr "Desafixar"
+
+#: lib/clipboardPopup.js:282
+msgid "Pin"
+msgstr "Fixar"
 
 #: lib/clocks.js:91 lib/widgets/clocks.js:38 lib/widgets/registry.js:38
 msgid "World Clocks"
@@ -788,11 +841,6 @@ msgstr "Clima em outras cidades"
 msgid "Add cities in Weather"
 msgstr "Adicione cidades no app Clima"
 
-#: lib/widgets/clipboard.js:21 lib/widgets/clipboard.js:30
-#: lib/widgets/registry.js:110
-msgid "Clipboard"
-msgstr "Área de transferência"
-
 #: lib/widgets/clipboard.js:34
 msgid "Clear History"
 msgstr "Limpar histórico"
@@ -801,16 +849,16 @@ msgstr "Limpar histórico"
 msgid "Copy some text to see it here"
 msgstr "Copie algum texto para vê-lo aqui"
 
-#: lib/widgets/clipboard.js:77
+#: lib/widgets/clipboard.js:80
 msgid "Copy Picture"
 msgstr "Copiar imagem"
 
-#: lib/widgets/clipboard.js:77
+#: lib/widgets/clipboard.js:80
 #, javascript-format
 msgid "Copy “%s”"
 msgstr "Copiar “%s”"
 
-#: lib/widgets/clipboard.js:93 lib/widgets/clipboard.js:103
+#: lib/widgets/clipboard.js:96 lib/widgets/clipboard.js:106
 msgid "Copied"
 msgstr "Copiado"
 
@@ -936,9 +984,7 @@ msgstr "Tenha uma anotação rápida à mão"
 msgid ""
 "Text you copied lately; click to copy it again (kept only while this widget "
 "is added)"
-msgstr ""
-"Textos copiados recentemente; clique para copiar de novo (guardados só "
-"enquanto este widget estiver adicionado)"
+msgstr "Textos copiados recentemente; clique para copiar de novo (guardados só enquanto este widget estiver adicionado)"
 
 #: lib/widgets/registry.js:119
 msgid "A picture from your Pictures folder"

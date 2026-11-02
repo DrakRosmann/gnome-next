@@ -114,6 +114,26 @@ export default class GnomeNextPreferences extends ExtensionPreferences {
         live.bind_property('active', islandNotifications, 'sensitive', GObject.BindingFlags.SYNC_CREATE);
         controls.add(islandNotifications);
 
+        const islandOsd = switchRow(settings, 'island-osd',
+            _('Volume and Brightness in the Island'),
+            _('The island shows the level instead of the popup in the middle of the screen'));
+        live.bind_property('active', islandOsd, 'sensitive', GObject.BindingFlags.SYNC_CREATE);
+        controls.add(islandOsd);
+
+        const islandHover = switchRow(settings, 'island-hover',
+            _('Open the Island on Hover'),
+            _('Resting the pointer on the island opens its card'));
+        live.bind_property('active', islandHover, 'sensitive', GObject.BindingFlags.SYNC_CREATE);
+        controls.add(islandHover);
+
+        controls.add(switchRow(settings, 'lock-player',
+            _('Player on the Lock Screen'),
+            _('A large player with the cover under the clock while the screen is locked')));
+
+        controls.add(switchRow(settings, 'clipboard-popup',
+            _('Clipboard History (Super+V)'),
+            _('Super+V shows what you copied lately to paste it; pinned items stay. Super+M still opens the notification list')));
+
         const apps = new Adw.PreferencesGroup({
             title: _('App Shortcuts'),
             description: _('Apps that open from Quick Settings; your favorite apps are also offered in the editor'),

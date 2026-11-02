@@ -2088,3 +2088,210 @@
 .gn-island-menu .gn-live-action.button:active {
   background-color: rgba(255, 255, 255, 0.3);
 }
+
+/* Volume and brightness in the island */
+.gn-island-level {
+  width: 84px;
+  height: 6px;
+  color: #ffffff;
+  -gn-track-color: rgba(255, 255, 255, 0.25);
+}
+
+.gn-island.level .gn-island-icon {
+  color: #ffffff;
+}
+
+.gn-island.level .gn-island-label {
+  min-width: 2.6em;
+  font-size: 0.9em;
+}
+
+/* ── Lock screen player ────────────────────────────────────────────── */
+
+.gn-lock-player {
+  width: 380px;
+  margin-top: 28px;
+  padding: 18px 20px 14px;
+  border-radius: 30px;
+  background-color: rgba(30, 30, 34, 0.55);
+  color: #ffffff;
+  spacing: 6px;
+}
+
+.gn-lock-player-row {
+  spacing: 14px;
+}
+
+.gn-lock-player-art {
+  width: 60px;
+  height: 60px;
+  border-radius: 14px;
+  background-size: cover;
+}
+
+.gn-lock-player-icon {
+  icon-size: 32px;
+  padding: 14px;
+  border-radius: 14px;
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.gn-lock-player-title {
+  font-size: 1.15em;
+  font-weight: 800;
+}
+
+.gn-lock-player-artist {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.gn-lock-player-progress.gn-live-progress {
+  margin-top: 8px;
+  color: #ffffff;
+  -gn-track-color: rgba(255, 255, 255, 0.25);
+}
+
+.gn-lock-player-time {
+  font-size: 0.8em;
+  font-feature-settings: "tnum";
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.gn-lock-player-controls {
+  spacing: 26px;
+  padding-top: 2px;
+}
+
+.gn-lock-player-button.button {
+  padding: 10px;
+  border-radius: 999px;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.gn-lock-player-button.button:hover {
+  background-color: rgba(255, 255, 255, 0.14);
+}
+
+.gn-lock-player-button StIcon {
+  icon-size: 22px;
+}
+
+.gn-lock-player-button.main StIcon {
+  icon-size: 30px;
+}
+
+/* ── Clipboard history popup ───────────────────────────────────────── */
+
+.gn-clip-popup {
+  width: 400px;
+  max-height: 560px;
+  padding: 14px;
+  spacing: 10px;
+  border-radius: 26px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background-color: #2a2a2e;
+  color: #ffffff;
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.45);
+}
+
+.gn-clip-popup-header {
+  spacing: 8px;
+  padding: 0 4px;
+}
+
+.gn-clip-popup-icon {
+  icon-size: 16px;
+  color: -st-accent-color;
+}
+
+.gn-clip-popup-title {
+  font-weight: 800;
+  font-size: 1.1em;
+}
+
+.gn-clip-popup-clear.button {
+  padding: 4px 12px;
+  min-height: 0;
+  border-radius: 999px;
+  font-size: 0.9em;
+}
+
+.gn-clip-popup-search {
+  padding: 8px 12px;
+  border-radius: 14px;
+}
+
+.gn-clip-popup-search-icon {
+  icon-size: 14px;
+  padding-right: 6px;
+}
+
+.gn-clip-popup-scroll {
+  max-height: 440px;
+}
+
+.gn-clip-popup-list {
+  spacing: 6px;
+}
+
+.gn-clip-popup-row {
+  spacing: 4px;
+}
+
+.gn-clip-popup-item.button {
+  padding: 10px 12px;
+  border-radius: 14px;
+  min-height: 0;
+  font-weight: normal;
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 2px solid transparent;
+}
+
+.gn-clip-popup-item.button:selected {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: -st-accent-color;
+}
+
+.gn-clip-popup-item.button.image {
+  padding: 0;
+}
+
+.gn-clip-popup-picture {
+  min-height: 90px;
+  border-radius: 12px;
+  background-size: cover;
+}
+
+.gn-clip-popup-text {
+  font-size: 0.95em;
+  max-height: 4.6em;
+}
+
+.gn-clip-popup-actions {
+  spacing: 2px;
+}
+
+.gn-clip-popup-action.button {
+  padding: 6px;
+  min-height: 0;
+  border-radius: 999px;
+  background-color: transparent;
+}
+
+.gn-clip-popup-action.button:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.gn-clip-popup-action.button:checked {
+  color: -st-accent-color;
+}
+
+.gn-clip-popup-action StIcon {
+  icon-size: 14px;
+}
+
+.gn-clip-popup-empty {
+  padding: 24px 0;
+  color: rgba(255, 255, 255, 0.6);
+}
