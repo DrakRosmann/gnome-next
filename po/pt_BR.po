@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-next\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-02 00:13-0300\n"
+"POT-Creation-Date: 2026-11-02 00:24-0300\n"
 "PO-Revision-Date: 2026-10-20 12:00-0300\n"
 "Last-Translator: DrakRosmann\n"
 "Language-Team: Portuguese (Brazil)\n"
@@ -16,7 +16,7 @@ msgstr ""
 msgid "Quick Settings"
 msgstr "Configurações rápidas"
 
-#: prefs.js:28 prefs.js:127
+#: prefs.js:28 prefs.js:131
 msgid "Calendar"
 msgstr "Calendário"
 
@@ -68,7 +68,7 @@ msgstr ""
 "Restaura as configurações rápidas removidas, adicionadas, movidas ou "
 "redimensionadas"
 
-#: prefs.js:61 prefs.js:176
+#: prefs.js:61 prefs.js:180
 msgid "Reset"
 msgstr "Restaurar"
 
@@ -84,18 +84,28 @@ msgstr ""
 "no Android 16"
 
 #: prefs.js:79
+msgid "Panel Animations"
+msgstr "Animações do painel"
+
+#: prefs.js:80
+msgid ""
+"Quick Settings springs open from its button with the controls in a wave; "
+"sliders grow while dragged"
+msgstr "O painel abre com mola a partir do botão e os controles aparecem em onda; os sliders crescem ao arrastar"
+
+#: prefs.js:83
 msgid "Pill Sliders"
 msgstr "Sliders em pílula"
 
-#: prefs.js:80
+#: prefs.js:84
 msgid "Thick sliders with the icon inside the filled part"
 msgstr "Sliders largos com o ícone dentro da parte preenchida"
 
-#: prefs.js:83
+#: prefs.js:87
 msgid "Volume of Each App"
 msgstr "Volume de cada aplicativo"
 
-#: prefs.js:84
+#: prefs.js:88
 msgid ""
 "The menu of the volume slider lists the apps playing sound, each with a "
 "slider"
@@ -103,11 +113,11 @@ msgstr ""
 "O menu do controle de volume lista os aplicativos que estão tocando som, "
 "cada um com seu controle"
 
-#: prefs.js:87
+#: prefs.js:91
 msgid "Top Bar Shortcuts"
 msgstr "Atalhos na barra superior"
 
-#: prefs.js:88
+#: prefs.js:92
 msgid ""
 "Middle-click the volume icon to mute; scroll over the battery icon to change "
 "the brightness"
@@ -115,63 +125,63 @@ msgstr ""
 "Botão do meio no ícone de volume deixa mudo; rolar sobre o ícone da bateria "
 "muda o brilho"
 
-#: prefs.js:91
+#: prefs.js:95
 msgid "Do Not Disturb Durations"
 msgstr "Durações do Não perturbe"
 
-#: prefs.js:92
+#: prefs.js:96
 msgid "Turn on Do Not Disturb for an hour, until the evening or until tomorrow"
 msgstr "Ativa o Não perturbe por uma hora, até a noite ou até amanhã"
 
-#: prefs.js:95
+#: prefs.js:99
 msgid "Connection Details"
 msgstr "Detalhes da conexão"
 
-#: prefs.js:96
+#: prefs.js:100
 msgid "Show the wired speed and the Bluetooth battery under the toggle names"
 msgstr "Mostra a velocidade da rede cabeada e a bateria do Bluetooth embaixo do nome dos botões"
 
-#: prefs.js:99 lib/live.js:794
+#: prefs.js:103 lib/live.js:947
 msgid "Live Activities"
 msgstr "Atividades ao vivo"
 
-#: prefs.js:100
+#: prefs.js:104
 msgid ""
 "Timers, music, screen recordings and downloads in an island in the top bar "
 "and in Quick Settings"
 msgstr "Timers, música, gravações de tela e downloads numa ilha na barra superior e nas configurações rápidas"
 
-#: prefs.js:104
+#: prefs.js:108
 msgid "Notifications From the Island"
 msgstr "Notificações saindo da ilha"
 
-#: prefs.js:105
+#: prefs.js:109
 msgid "Notifications grow out of the island and go back into it"
 msgstr "As notificações saem da ilha e voltam para ela"
 
-#: prefs.js:110
+#: prefs.js:114
 msgid "App Shortcuts"
 msgstr "Atalhos de apps"
 
-#: prefs.js:111
+#: prefs.js:115
 msgid ""
 "Apps that open from Quick Settings; your favorite apps are also offered in "
 "the editor"
 msgstr "Apps que abrem pelas configurações rápidas; seus apps favoritos também aparecem no editor"
 
-#: prefs.js:117
+#: prefs.js:121
 msgid "Custom Commands"
 msgstr "Comandos personalizados"
 
-#: prefs.js:118
+#: prefs.js:122
 msgid "Toggles that run your commands, e.g. to start a VPN or a server"
 msgstr "Botões que executam seus comandos, por exemplo para ligar uma VPN ou um servidor"
 
-#: prefs.js:124
+#: prefs.js:128
 msgid "Notifications in Quick Settings"
 msgstr "Notificações nas Configurações rápidas"
 
-#: prefs.js:125
+#: prefs.js:129
 msgid ""
 "Quick Settings and notifications collapse into each other, with a media "
 "player"
@@ -179,135 +189,135 @@ msgstr ""
 "Configurações rápidas e notificações se recolhem uma na outra, com um player "
 "de mídia"
 
-#: prefs.js:130 prefs.js:166 lib/widgets/gallery.js:163
+#: prefs.js:134 prefs.js:170 lib/widgets/gallery.js:163
 msgid "Widgets"
 msgstr "Widgets"
 
-#: prefs.js:131
+#: prefs.js:135
 msgid "Click Edit Widgets under the calendar to add, move and resize them"
 msgstr ""
 "Clique em Editar widgets, embaixo do calendário, para adicionar, mover e "
 "redimensionar"
 
-#: prefs.js:136
+#: prefs.js:140
 msgid "Adaptive Calendar"
 msgstr "Calendário adaptável"
 
-#: prefs.js:137
+#: prefs.js:141
 msgid "A calendar popover that scales with events, world clocks and weather"
 msgstr "Um calendário que se adapta aos eventos, relógios mundiais e clima"
 
-#: prefs.js:142
+#: prefs.js:146
 msgid "Layout"
 msgstr "Layout"
 
-#: prefs.js:143
+#: prefs.js:147
 msgid ""
 "Two columns always shows the date, weather and events next to the calendar"
 msgstr ""
 "Duas colunas sempre mostra a data, o clima e os eventos ao lado do calendário"
 
-#: prefs.js:144
+#: prefs.js:148
 msgid "Adaptive"
 msgstr "Adaptável"
 
-#: prefs.js:144
+#: prefs.js:148
 msgid "Two Columns"
 msgstr "Duas colunas"
 
-#: prefs.js:160
+#: prefs.js:164
 msgid "Show Events"
 msgstr "Mostrar eventos"
 
-#: prefs.js:161
+#: prefs.js:165
 msgid "Show the remaining events of the day next to the calendar"
 msgstr "Mostra os próximos eventos do dia ao lado do calendário"
 
-#: prefs.js:167
+#: prefs.js:171
 msgid "Weather, world clocks, events, media and more under the calendar"
 msgstr "Clima, relógios mundiais, eventos, mídia e mais abaixo do calendário"
 
-#: prefs.js:172
+#: prefs.js:176
 msgid "Default Widgets"
 msgstr "Widgets padrão"
 
-#: prefs.js:173
+#: prefs.js:177
 msgid "Restore the widgets that were added, removed or resized"
 msgstr ""
 "Restaura os widgets que foram adicionados, removidos ou redimensionados"
 
-#: prefs.js:191
+#: prefs.js:195
 msgid "Stock Symbols (comma separated, e.g. PETR4.SA, AAPL, BTC-USD)"
 msgstr ""
 "Símbolos da bolsa (separados por vírgula, ex.: PETR4.SA, AAPL, BTC-USD)"
 
-#: prefs.js:224
+#: prefs.js:228
 msgid "Add App…"
 msgstr "Adicionar app…"
 
-#: prefs.js:240 prefs.js:357 lib/widgets/clipboard.js:127
+#: prefs.js:244 prefs.js:361 lib/widgets/clipboard.js:127
 msgid "Remove"
 msgstr "Remover"
 
-#: prefs.js:257
+#: prefs.js:261
 msgid "Add App"
 msgstr "Adicionar app"
 
-#: prefs.js:260
+#: prefs.js:264
 msgid "Search apps"
 msgstr "Pesquisar apps"
 
-#: prefs.js:328
+#: prefs.js:332
 msgid "Add Command…"
 msgstr "Adicionar comando…"
 
-#: prefs.js:339 lib/shortcuts.js:74
+#: prefs.js:343 lib/shortcuts.js:74
 msgid "Command"
 msgstr "Comando"
 
-#: prefs.js:347
+#: prefs.js:351
 msgid "Edit"
 msgstr "Editar"
 
-#: prefs.js:378
+#: prefs.js:382
 msgid "Edit Command"
 msgstr "Editar comando"
 
-#: prefs.js:378
+#: prefs.js:382
 msgid "New Command"
 msgstr "Novo comando"
 
-#: prefs.js:383
+#: prefs.js:387
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: prefs.js:386
+#: prefs.js:390
 msgid "Save"
 msgstr "Salvar"
 
-#: prefs.js:392
+#: prefs.js:396
 msgid ""
 "Commands run with /bin/sh. Without a command to turn it off, the toggle is a "
 "button. The command that checks the state exits with 0 while it is on."
 msgstr "Os comandos rodam com /bin/sh. Sem um comando para desligar, o botão só executa o comando. O comando que verifica o estado sai com 0 enquanto estiver ligado."
 
-#: prefs.js:400
+#: prefs.js:404
 msgid "Name"
 msgstr "Nome"
 
-#: prefs.js:401
+#: prefs.js:405
 msgid "Icon Name (e.g. network-vpn-symbolic)"
 msgstr "Nome do ícone (ex.: network-vpn-symbolic)"
 
-#: prefs.js:402
+#: prefs.js:406
 msgid "Command to Turn On or Run"
 msgstr "Comando para ligar ou executar"
 
-#: prefs.js:403
+#: prefs.js:407
 msgid "Command to Turn Off (optional)"
 msgstr "Comando para desligar (opcional)"
 
-#: prefs.js:404
+#: prefs.js:408
 msgid "Command to Check if On (optional)"
 msgstr "Comando para saber se está ligado (opcional)"
 
@@ -349,7 +359,7 @@ msgstr "Relógios mundiais"
 msgid "Page %d"
 msgstr "Página %d"
 
-#: lib/collapsible.js:123
+#: lib/collapsible.js:126
 msgid "Expand Settings"
 msgstr "Expandir configurações"
 
@@ -415,7 +425,7 @@ msgstr "Até amanhã (%s)"
 msgid "Until I Turn It Off"
 msgstr "Até eu desativar"
 
-#: lib/dnd.js:139 lib/live.js:405
+#: lib/dnd.js:139 lib/live.js:478
 msgid "Do Not Disturb"
 msgstr "Não perturbe"
 
@@ -431,83 +441,83 @@ msgstr "Luz noturna"
 msgid "Keyboard Brightness"
 msgstr "Brilho do teclado"
 
-#: lib/live.js:94
+#: lib/live.js:96
 msgid "In Progress"
 msgstr "Em andamento"
 
-#: lib/live.js:136
+#: lib/live.js:138
 msgid "Screen Recording"
 msgstr "Gravação de tela"
 
-#: lib/live.js:142
+#: lib/live.js:144
 msgid "Stop Recording"
 msgstr "Parar gravação"
 
-#: lib/live.js:170 lib/timers.js:197 lib/timers.js:230 lib/timers.js:232
+#: lib/live.js:172 lib/timers.js:197 lib/timers.js:230 lib/timers.js:232
 msgid "Timer"
 msgstr "Timer"
 
-#: lib/live.js:171 lib/live.js:191 lib/timers.js:269
+#: lib/live.js:173 lib/live.js:193 lib/timers.js:269
 msgid "Paused"
 msgstr "Pausado"
 
-#: lib/live.js:176
+#: lib/live.js:178
 msgid "Add a Minute"
 msgstr "Mais um minuto"
 
-#: lib/live.js:178 lib/live.js:196
+#: lib/live.js:180 lib/live.js:198
 msgid "Resume"
 msgstr "Continuar"
 
-#: lib/live.js:179 lib/live.js:197 lib/live.js:375
+#: lib/live.js:181 lib/live.js:199 lib/live.js:448
 msgid "Pause"
 msgstr "Pausar"
 
-#: lib/live.js:180 lib/live.js:198
+#: lib/live.js:182 lib/live.js:200
 msgid "Stop"
 msgstr "Parar"
 
-#: lib/live.js:190
+#: lib/live.js:192
 msgid "Stopwatch"
 msgstr "Cronômetro"
 
-#: lib/live.js:352 lib/toggles.js:327
+#: lib/live.js:423 lib/toggles.js:327
 msgid "Media"
 msgstr "Mídia"
 
-#: lib/live.js:373
+#: lib/live.js:446
 msgid "Previous"
 msgstr "Anterior"
 
-#: lib/live.js:376
+#: lib/live.js:449
 msgid "Play"
 msgstr "Tocar"
 
-#: lib/live.js:377
+#: lib/live.js:450
 msgid "Next"
 msgstr "Próxima"
 
-#: lib/live.js:406
+#: lib/live.js:479
 msgid "On"
 msgstr "Ligado"
 
-#: lib/live.js:406
+#: lib/live.js:479
 msgid "Off"
 msgstr "Desligado"
 
-#: lib/live.js:456
+#: lib/live.js:529
 msgid "Charging"
 msgstr "Carregando"
 
-#: lib/live.js:463
+#: lib/live.js:536
 msgid "Fully Charged"
 msgstr "Carga completa"
 
-#: lib/live.js:482
+#: lib/live.js:555
 msgid "Camera in use"
 msgstr "Câmera em uso"
 
-#: lib/live.js:484
+#: lib/live.js:557
 msgid "Microphone in use"
 msgstr "Microfone em uso"
 

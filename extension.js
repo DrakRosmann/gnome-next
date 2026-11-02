@@ -14,6 +14,7 @@ import {ReminderScheduler} from './lib/reminders.js';
 import {PillSliders} from './lib/sliders.js';
 import {ClipboardHistory, setClipboardHistory} from './lib/clipboard.js';
 import {LiveActivities} from './lib/live.js';
+import {PanelMotion} from './lib/motion.js';
 import {ToggleSubtitles} from './lib/subtitles.js';
 import {Timers, setTimers} from './lib/timers.js';
 import {VisibilityLock} from './lib/visibility.js';
@@ -30,6 +31,7 @@ const FEATURES = [
     {key: 'android-tiles', Feature: AndroidStyle},
     {key: 'toggle-subtitles', Feature: ToggleSubtitles},
     {key: 'live-activities', Feature: LiveActivities},
+    {key: 'panel-motion', Feature: PanelMotion},
 ];
 
 const READY_POLL_MS = 100;

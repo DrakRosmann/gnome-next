@@ -75,6 +75,10 @@ export default class GnomeNextPreferences extends ExtensionPreferences {
             _('Android Style Tiles'),
             _('Taller rounded tiles with the icon in a rounded square, as on Android 16')));
 
+        controls.add(switchRow(settings, 'panel-motion',
+            _('Panel Animations'),
+            _('Quick Settings springs open from its button with the controls in a wave; sliders grow while dragged')));
+
         controls.add(switchRow(settings, 'pill-sliders',
             _('Pill Sliders'),
             _('Thick sliders with the icon inside the filled part')));

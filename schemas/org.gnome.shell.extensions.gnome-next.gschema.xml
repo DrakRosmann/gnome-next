@@ -89,6 +89,11 @@
       <summary>Timer and stopwatch</summary>
       <description>JSON state of the running timer and stopwatch, so they go on through a lock.</description>
     </key>
+    <key name="panel-motion" type="b">
+      <default>true</default>
+      <summary>Quick Settings motion</summary>
+      <description>Quick Settings springs open out of its button with the controls following in a wave, shrinks back when it closes, and sliders grow while dragged.</description>
+    </key>
     <key name="enable-collapsible" type="b">
       <default>true</default>
       <summary>Collapsible Quick Settings and notifications</summary>

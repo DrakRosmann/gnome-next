@@ -2031,3 +2031,23 @@
   border-radius: 12px;
   background-size: cover;
 }
+
+/* ── Depth ─────────────────────────────────────────────────────────── */
+
+/* A faint light along the top edge of tiles, stronger when on */
+.quick-settings .quick-toggle,
+.quick-settings .quick-toggle-menu-button,
+.quick-settings .gn-circle {
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.05);
+}
+
+.quick-settings .quick-toggle:checked,
+.quick-settings .quick-toggle-menu-button:checked,
+.quick-settings .gn-circle:checked {
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+}
+
+/* The panel itself: a softer, deeper shadow */
+.quick-settings.popup-menu-content {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35), 0 2px 6px rgba(0, 0, 0, 0.2);
+}
