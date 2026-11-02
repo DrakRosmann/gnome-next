@@ -73,7 +73,7 @@ Also:
     level and a bar instead of the popup in the middle of the screen (the
     popup stays for full screen apps and for popups without a level);
   * **its card on hover**: resting the pointer on the island opens its card,
-    which closes once the pointer has left both; a click keeps it open.
+    which closes once the pointer has left both (or with a click).
 * **Player on the lock screen** (as on iOS): a large player under the clock,
   with the cover, a bar that can be dragged and previous, play/pause and next,
   tinted with the cover's color, instead of the small one among the
