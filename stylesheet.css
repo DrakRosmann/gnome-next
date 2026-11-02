@@ -259,12 +259,25 @@
   padding: 2px;
 }
 
+.gn-media.square .gn-media-title {
+  max-height: 2.8em;
+}
+
 .gn-media.square .gn-media-controls {
   spacing: 2px;
+  padding-top: 4px;
+}
+
+.quick-settings .gn-media.square .gn-media-button.button {
+  padding: 7px;
 }
 
 .quick-settings .gn-media.square .gn-media-button.button.play {
-  padding: 9px 14px;
+  padding: 7px 14px;
+}
+
+.gn-android .gn-media.square.gn-artwork .gn-media-box {
+  padding: 12px 14px;
 }
 
 /* ── Collapsible Quick Settings / notifications ────────────────────── */
@@ -1616,14 +1629,15 @@
 }
 
 /* Thicker sliders */
+/* As tall as the tiles, so sliders line up with them in the grid */
 .gn-android .gn-pill-slider .slider {
-  -barlevel-height: 46px;
-  min-height: 46px;
+  -barlevel-height: 60px;
+  min-height: 60px;
 }
 
 .gn-android .quick-slider.gn-pill-slider .gn-slider-icon,
 .gn-android .quick-slider.gn-pill-slider .gn-slider-menu {
-  min-height: 46px;
+  min-height: 60px;
   padding: 0 16px;
 }
 
@@ -1735,6 +1749,33 @@
 .gn-island-label {
   font-weight: bold;
   font-feature-settings: "tnum";
+}
+
+.gn-island-label {
+  max-width: 160px;
+}
+
+/* Music: the cover in color and equalizer bars */
+.gn-island.media .gn-island-icon {
+  icon-size: 16px;
+  color: #ffffff;
+}
+
+.gn-island-bars {
+  width: 13px;
+  height: 12px;
+  color: -st-accent-color;
+}
+
+.gn-live-card.media .gn-live-icon.app {
+  icon-size: 44px;
+  padding: 0;
+}
+
+.gn-live-card.media .gn-live-detail {
+  font-size: 0.9em;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .gn-island-more {
@@ -1883,4 +1924,9 @@
 .gn-clipboard-clear StIcon,
 .gn-clipboard-remove StIcon {
   icon-size: 12px;
+}
+
+/* Night Light warmth while Night Light is off */
+.quick-slider .slider.gn-off {
+  -barlevel-active-background-color: rgba(255, 255, 255, 0.28);
 }

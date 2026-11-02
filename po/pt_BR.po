@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-next\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-01 18:27-0300\n"
+"POT-Creation-Date: 2026-11-02 00:02-0300\n"
 "PO-Revision-Date: 2026-10-20 12:00-0300\n"
 "Last-Translator: DrakRosmann\n"
 "Language-Team: Portuguese (Brazil)\n"
@@ -131,7 +131,7 @@ msgstr "Detalhes da conexão"
 msgid "Show the wired speed and the Bluetooth battery under the toggle names"
 msgstr "Mostra a velocidade da rede cabeada e a bateria do Bluetooth embaixo do nome dos botões"
 
-#: prefs.js:99 lib/live.js:359
+#: prefs.js:99 lib/live.js:522
 msgid "Live Activities"
 msgstr "Atividades ao vivo"
 
@@ -419,49 +419,65 @@ msgstr "Temperatura da luz noturna"
 msgid "Night Light"
 msgstr "Luz noturna"
 
-#: lib/extraSliders.js:68 lib/extraSliders.js:69 lib/toggles.js:305
+#: lib/extraSliders.js:69 lib/extraSliders.js:70 lib/toggles.js:305
 msgid "Keyboard Brightness"
 msgstr "Brilho do teclado"
 
-#: lib/live.js:90
+#: lib/live.js:91
 msgid "In Progress"
 msgstr "Em andamento"
 
-#: lib/live.js:132
+#: lib/live.js:133
 msgid "Screen Recording"
 msgstr "Gravação de tela"
 
-#: lib/live.js:138
+#: lib/live.js:139
 msgid "Stop Recording"
 msgstr "Parar gravação"
 
-#: lib/live.js:166 lib/timers.js:197 lib/timers.js:230 lib/timers.js:232
+#: lib/live.js:167 lib/timers.js:197 lib/timers.js:230 lib/timers.js:232
 msgid "Timer"
 msgstr "Timer"
 
-#: lib/live.js:167 lib/live.js:187 lib/timers.js:269
+#: lib/live.js:168 lib/live.js:188 lib/timers.js:269
 msgid "Paused"
 msgstr "Pausado"
 
-#: lib/live.js:172
+#: lib/live.js:173
 msgid "Add a Minute"
 msgstr "Mais um minuto"
 
-#: lib/live.js:174 lib/live.js:192
+#: lib/live.js:175 lib/live.js:193
 msgid "Resume"
 msgstr "Continuar"
 
-#: lib/live.js:175 lib/live.js:193
+#: lib/live.js:176 lib/live.js:194 lib/live.js:292
 msgid "Pause"
 msgstr "Pausar"
 
-#: lib/live.js:176 lib/live.js:194
+#: lib/live.js:177 lib/live.js:195
 msgid "Stop"
 msgstr "Parar"
 
-#: lib/live.js:186
+#: lib/live.js:187
 msgid "Stopwatch"
 msgstr "Cronômetro"
+
+#: lib/live.js:276 lib/toggles.js:327
+msgid "Media"
+msgstr "Mídia"
+
+#: lib/live.js:290
+msgid "Previous"
+msgstr "Anterior"
+
+#: lib/live.js:293
+msgid "Play"
+msgstr "Tocar"
+
+#: lib/live.js:294
+msgid "Next"
+msgstr "Próxima"
 
 #: lib/mixer.js:39
 msgid "Unknown App"
@@ -644,10 +660,6 @@ msgstr "Volume"
 #: lib/toggles.js:302
 msgid "Brightness"
 msgstr "Brilho"
-
-#: lib/toggles.js:327
-msgid "Media"
-msgstr "Mídia"
 
 #: lib/widgets/batteries.js:37
 msgid "This Computer"

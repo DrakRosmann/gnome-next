@@ -46,13 +46,16 @@ Also:
     durations from 1 to 60 minutes and the stopwatch. A notification with a
     sound comes when the time is up, even when it ran out while locked.
 * **Live activities** (as on iOS and in the live updates of Android 16): the
-  timer, the stopwatch, screen recordings and the progress apps report for
+  timer, the stopwatch, screen recordings, the progress apps report for
   their icon (downloads in browsers, file copies, torrents — the Unity
-  LauncherEntry API docks use) show in an island in the middle of the top bar,
+  LauncherEntry API docks use) and the music playing (cover, title and
+  equalizer bars that dance while it plays; it stays for a minute after a
+  pause) show in an island in the middle of the top bar,
   which grows out of the clock, shows the first one and how many more there
   are, and opens a menu with all of them. They are also cards at the top of
   Quick Settings, with a progress bar and buttons (pause, +1 minute, stop,
-  stop recording). The island takes the place of the shell's recording
+  stop recording; previous, play/pause and next for music — in Quick
+  Settings the player card already does this, so it is not repeated). The island takes the place of the shell's recording
   indicator.
 * **Connection details** under the toggle names (as on One UI): the shell
   names the Wi-Fi network and the Bluetooth device; this adds the speed of a

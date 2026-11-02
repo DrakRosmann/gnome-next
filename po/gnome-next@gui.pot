@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-01 18:27-0300\n"
+"POT-Creation-Date: 2026-11-02 00:02-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -124,7 +124,7 @@ msgstr ""
 msgid "Show the wired speed and the Bluetooth battery under the toggle names"
 msgstr ""
 
-#: prefs.js:99 lib/live.js:359
+#: prefs.js:99 lib/live.js:522
 msgid "Live Activities"
 msgstr ""
 
@@ -405,48 +405,64 @@ msgstr ""
 msgid "Night Light"
 msgstr ""
 
-#: lib/extraSliders.js:68 lib/extraSliders.js:69 lib/toggles.js:305
+#: lib/extraSliders.js:69 lib/extraSliders.js:70 lib/toggles.js:305
 msgid "Keyboard Brightness"
 msgstr ""
 
-#: lib/live.js:90
+#: lib/live.js:91
 msgid "In Progress"
 msgstr ""
 
-#: lib/live.js:132
+#: lib/live.js:133
 msgid "Screen Recording"
 msgstr ""
 
-#: lib/live.js:138
+#: lib/live.js:139
 msgid "Stop Recording"
 msgstr ""
 
-#: lib/live.js:166 lib/timers.js:197 lib/timers.js:230 lib/timers.js:232
+#: lib/live.js:167 lib/timers.js:197 lib/timers.js:230 lib/timers.js:232
 msgid "Timer"
 msgstr ""
 
-#: lib/live.js:167 lib/live.js:187 lib/timers.js:269
+#: lib/live.js:168 lib/live.js:188 lib/timers.js:269
 msgid "Paused"
 msgstr ""
 
-#: lib/live.js:172
+#: lib/live.js:173
 msgid "Add a Minute"
 msgstr ""
 
-#: lib/live.js:174 lib/live.js:192
+#: lib/live.js:175 lib/live.js:193
 msgid "Resume"
 msgstr ""
 
-#: lib/live.js:175 lib/live.js:193
+#: lib/live.js:176 lib/live.js:194 lib/live.js:292
 msgid "Pause"
 msgstr ""
 
-#: lib/live.js:176 lib/live.js:194
+#: lib/live.js:177 lib/live.js:195
 msgid "Stop"
 msgstr ""
 
-#: lib/live.js:186
+#: lib/live.js:187
 msgid "Stopwatch"
+msgstr ""
+
+#: lib/live.js:276 lib/toggles.js:327
+msgid "Media"
+msgstr ""
+
+#: lib/live.js:290
+msgid "Previous"
+msgstr ""
+
+#: lib/live.js:293
+msgid "Play"
+msgstr ""
+
+#: lib/live.js:294
+msgid "Next"
 msgstr ""
 
 #: lib/mixer.js:39
@@ -629,10 +645,6 @@ msgstr ""
 
 #: lib/toggles.js:302
 msgid "Brightness"
-msgstr ""
-
-#: lib/toggles.js:327
-msgid "Media"
 msgstr ""
 
 #: lib/widgets/batteries.js:37
