@@ -161,11 +161,11 @@
 }
 
 .gn-android .quick-toggle-has-menu .quick-toggle-menu-button {
-  background-color: st-mix(#222226, #fafafb, 12%);
+  background-color: rgba(34, 34, 38, 0.12);
 }
 
 .gn-android .quick-toggle-has-menu .quick-toggle-menu-button:hover {
-  background-color: st-darken(st-mix(#222226, #fafafb, 12%), 4%);
+  background-color: rgba(34, 34, 38, 0.17);
 }
 
 .gn-android .quick-toggle .quick-toggle-icon {

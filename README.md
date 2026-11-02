@@ -226,6 +226,11 @@ sources the stock calendar uses.
 
 ## Notes
 
+* **Blur my Shell**: with its popup blur on, Quick Settings, the island's
+  card (dark glass, as on iOS), the clipboard popup and the notifications
+  coming out of the island are blurred, and the blur follows their springs.
+  Tile parts are see-through so the blur shows through them evenly. Without
+  Blur my Shell they look as before.
 * It conflicts with other extensions that rebuild Quick Settings or the date
   menu (e.g. Sanket); enable only one of them.
 * Translations: `po/` (pt_BR included). Regenerate the template with

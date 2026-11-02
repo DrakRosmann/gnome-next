@@ -1561,7 +1561,9 @@
 
 .gn-android .quick-toggle-has-menu .quick-toggle-menu-button {
   padding: 0 14px 0 4px;
-  background-color: st-mix(#ffffff, #36363a, 9%);
+  /* Over the panel this is the same gray as a mix would be, and with Blur
+   * my Shell the blur shows through it as through the rest of the tile */
+  background-color: rgba(255, 255, 255, 0.09);
 }
 
 .gn-android .quick-toggle-has-menu .quick-toggle-menu-button:ltr {
@@ -1574,7 +1576,7 @@
 }
 
 .gn-android .quick-toggle-has-menu .quick-toggle-menu-button:hover {
-  background-color: st-lighten(st-mix(#ffffff, #36363a, 9%), 4%);
+  background-color: rgba(255, 255, 255, 0.14);
 }
 
 .gn-android .quick-toggle-has-menu .quick-toggle-menu-button:checked {
@@ -2294,4 +2296,51 @@
 .gn-clip-popup-empty {
   padding: 24px 0;
   color: rgba(255, 255, 255, 0.6);
+}
+
+/* ── Blur my Shell ─────────────────────────────────────────────────── */
+/* It marks the shell with these classes while it blurs popups; it sets
+ * their corner radius itself */
+
+/* The island's card turns into dark glass, as on iOS */
+.bms-popup-background-dark .popup-menu-content.gn-island-menu,
+.bms-popup-background-light .popup-menu-content.gn-island-menu,
+.bms-popup-background-transparent .popup-menu-content.gn-island-menu {
+  background-color: rgba(0, 0, 0, 0.45);
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: none;
+}
+
+.bms-popup-background-dark .gn-island-menu .gn-live-card,
+.bms-popup-background-light .gn-island-menu .gn-live-card,
+.bms-popup-background-transparent .gn-island-menu .gn-live-card {
+  border-radius: 14px;
+  background-color: rgba(255, 255, 255, 0.07);
+}
+
+/* The clipboard popup too, dark or light */
+.bms-popup-background-dark .popup-menu-content.gn-clip-popup,
+.bms-popup-background-transparent .popup-menu-content.gn-clip-popup {
+  background-color: rgba(30, 30, 34, 0.55);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.bms-popup-background-light .popup-menu-content.gn-clip-popup {
+  background-color: rgba(250, 250, 251, 0.6);
+}
+
+.bms-popup-background-dark .gn-clip-popup-item.button,
+.bms-popup-background-transparent .gn-clip-popup-item.button {
+  background-color: rgba(255, 255, 255, 0.07);
+}
+
+.bms-popup-background-dark .gn-clip-popup-item.button:selected,
+.bms-popup-background-transparent .gn-clip-popup-item.button:selected {
+  background-color: rgba(255, 255, 255, 0.13);
+}
+
+/* Cards in Quick Settings, as see-through as its tiles */
+.bms-popup-background-dark .gn-live-card,
+.bms-popup-background-transparent .gn-live-card {
+  background-color: rgba(255, 255, 255, 0.08);
 }
