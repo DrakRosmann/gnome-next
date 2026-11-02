@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-next\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-02 00:38-0300\n"
+"POT-Creation-Date: 2026-11-02 00:49-0300\n"
 "PO-Revision-Date: 2026-10-20 12:00-0300\n"
 "Last-Translator: DrakRosmann\n"
 "Language-Team: Portuguese (Brazil)\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: prefs.js:23 lib/customization.js:495
+#: prefs.js:23 lib/customization.js:502
 msgid "Quick Settings"
 msgstr "Configurações rápidas"
 
@@ -99,7 +99,9 @@ msgstr "Animações do painel"
 msgid ""
 "Quick Settings springs open from its button with the controls in a wave; "
 "sliders grow while dragged"
-msgstr "O painel abre com mola a partir do botão e os controles aparecem em onda; os sliders crescem ao arrastar"
+msgstr ""
+"O painel abre com mola a partir do botão e os controles aparecem em onda; os "
+"sliders crescem ao arrastar"
 
 #: prefs.js:87
 msgid "Pill Sliders"
@@ -147,7 +149,9 @@ msgstr "Detalhes da conexão"
 
 #: prefs.js:104
 msgid "Show the wired speed and the Bluetooth battery under the toggle names"
-msgstr "Mostra a velocidade da rede cabeada e a bateria do Bluetooth embaixo do nome dos botões"
+msgstr ""
+"Mostra a velocidade da rede cabeada e a bateria do Bluetooth embaixo do nome "
+"dos botões"
 
 #: prefs.js:107 lib/live.js:947
 msgid "Live Activities"
@@ -157,7 +161,9 @@ msgstr "Atividades ao vivo"
 msgid ""
 "Timers, music, screen recordings and downloads in an island in the top bar "
 "and in Quick Settings"
-msgstr "Timers, música, gravações de tela e downloads numa ilha na barra superior e nas configurações rápidas"
+msgstr ""
+"Timers, música, gravações de tela e downloads numa ilha na barra superior e "
+"nas configurações rápidas"
 
 #: prefs.js:112
 msgid "Notifications From the Island"
@@ -175,7 +181,9 @@ msgstr "Atalhos de apps"
 msgid ""
 "Apps that open from Quick Settings; your favorite apps are also offered in "
 "the editor"
-msgstr "Apps que abrem pelas configurações rápidas; seus apps favoritos também aparecem no editor"
+msgstr ""
+"Apps que abrem pelas configurações rápidas; seus apps favoritos também "
+"aparecem no editor"
 
 #: prefs.js:125
 msgid "Custom Commands"
@@ -183,7 +191,9 @@ msgstr "Comandos personalizados"
 
 #: prefs.js:126
 msgid "Toggles that run your commands, e.g. to start a VPN or a server"
-msgstr "Botões que executam seus comandos, por exemplo para ligar uma VPN ou um servidor"
+msgstr ""
+"Botões que executam seus comandos, por exemplo para ligar uma VPN ou um "
+"servidor"
 
 #: prefs.js:132
 msgid "Notifications in Quick Settings"
@@ -307,7 +317,10 @@ msgstr "Salvar"
 msgid ""
 "Commands run with /bin/sh. Without a command to turn it off, the toggle is a "
 "button. The command that checks the state exits with 0 while it is on."
-msgstr "Os comandos rodam com /bin/sh. Sem um comando para desligar, o botão só executa o comando. O comando que verifica o estado sai com 0 enquanto estiver ligado."
+msgstr ""
+"Os comandos rodam com /bin/sh. Sem um comando para desligar, o botão só "
+"executa o comando. O comando que verifica o estado sai com 0 enquanto "
+"estiver ligado."
 
 #: prefs.js:408
 msgid "Name"
@@ -332,6 +345,10 @@ msgstr "Comando para saber se está ligado (opcional)"
 #: lib/calendar.js:249
 msgid "Go to today"
 msgstr "Ir para hoje"
+
+#: lib/calendar.js:496 lib/widgets/events.js:121
+msgid "All Day"
+msgstr "Dia inteiro"
 
 #: lib/calendar.js:498 lib/dnd.js:34 lib/widgets/events.js:124
 #, javascript-format
@@ -371,41 +388,41 @@ msgstr "Página %d"
 msgid "Expand Settings"
 msgstr "Expandir configurações"
 
-#: lib/customization.js:184
+#: lib/customization.js:191
 msgid "Edit Quick Settings"
 msgstr "Editar configurações rápidas"
 
-#: lib/customization.js:518
+#: lib/customization.js:525
 msgid "Settings"
 msgstr "Configurações"
 
-#: lib/customization.js:526
+#: lib/customization.js:533
 msgid "Reset Layout"
 msgstr "Restaurar layout"
 
-#: lib/customization.js:528 lib/widgets/board.js:228
+#: lib/customization.js:535 lib/widgets/board.js:228
 msgid "Done"
 msgstr "Concluído"
 
-#: lib/customization.js:608
+#: lib/customization.js:615
 msgid "Drag to move. Click or drag the corner to resize."
 msgstr "Arraste para mover. Clique ou arraste o canto para redimensionar."
 
-#: lib/customization.js:617
+#: lib/customization.js:624
 msgid "Add quick settings from the list below"
 msgstr "Adicione configurações rápidas da lista abaixo"
 
-#: lib/customization.js:994 lib/customization.js:1097 lib/widgets/board.js:182
+#: lib/customization.js:1001 lib/customization.js:1104 lib/widgets/board.js:182
 #, javascript-format
 msgid "Remove %s"
 msgstr "Remover %s"
 
-#: lib/customization.js:995 lib/widgets/gallery.js:120
+#: lib/customization.js:1002 lib/widgets/gallery.js:120
 #, javascript-format
 msgid "Add %s"
 msgstr "Adicionar %s"
 
-#: lib/customization.js:1062
+#: lib/customization.js:1069
 #, javascript-format
 msgid "Change the size of %s"
 msgstr "Mudar o tamanho de %s"
@@ -453,7 +470,7 @@ msgstr "Brilho do teclado"
 msgid "Open Calendar"
 msgstr "Abrir calendário"
 
-#: lib/header.js:102
+#: lib/header.js:103
 msgid "%a, %-d %b"
 msgstr "%a, %-d de %b"
 
@@ -566,7 +583,7 @@ msgstr "Limpar"
 msgid "Clear all notifications"
 msgstr "Limpar todas as notificações"
 
-#: lib/notifications.js:338
+#: lib/notifications.js:339
 #, javascript-format
 msgid "%d More Notification"
 msgid_plural "%d More Notifications"
@@ -822,10 +839,6 @@ msgstr "Nenhum controle"
 msgid "Up Next"
 msgstr "A seguir"
 
-#: lib/widgets/events.js:121
-msgid "All Day"
-msgstr "Dia inteiro"
-
 #: lib/widgets/gallery.js:46
 msgid "Added"
 msgstr "Adicionado"
@@ -850,11 +863,11 @@ msgstr "Nota"
 msgid "Write something…"
 msgstr "Escreva algo…"
 
-#: lib/widgets/photo.js:111 lib/widgets/registry.js:118
+#: lib/widgets/photo.js:109 lib/widgets/registry.js:118
 msgid "Photo"
 msgstr "Foto"
 
-#: lib/widgets/photo.js:117
+#: lib/widgets/photo.js:115
 msgid "Add pictures to your Pictures folder"
 msgstr "Adicione imagens à sua pasta Imagens"
 
@@ -923,7 +936,9 @@ msgstr "Tenha uma anotação rápida à mão"
 msgid ""
 "Text you copied lately; click to copy it again (kept only while this widget "
 "is added)"
-msgstr "Textos copiados recentemente; clique para copiar de novo (guardados só enquanto este widget estiver adicionado)"
+msgstr ""
+"Textos copiados recentemente; clique para copiar de novo (guardados só "
+"enquanto este widget estiver adicionado)"
 
 #: lib/widgets/registry.js:119
 msgid "A picture from your Pictures folder"

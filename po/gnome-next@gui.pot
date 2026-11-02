@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-02 00:38-0300\n"
+"POT-Creation-Date: 2026-11-02 00:49-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: prefs.js:23 lib/customization.js:495
+#: prefs.js:23 lib/customization.js:502
 msgid "Quick Settings"
 msgstr ""
 
@@ -319,6 +319,10 @@ msgstr ""
 msgid "Go to today"
 msgstr ""
 
+#: lib/calendar.js:496 lib/widgets/events.js:121
+msgid "All Day"
+msgstr ""
+
 #: lib/calendar.js:498 lib/dnd.js:34 lib/widgets/events.js:124
 #, javascript-format
 msgid "Until %s"
@@ -357,41 +361,41 @@ msgstr ""
 msgid "Expand Settings"
 msgstr ""
 
-#: lib/customization.js:184
+#: lib/customization.js:191
 msgid "Edit Quick Settings"
 msgstr ""
 
-#: lib/customization.js:518
+#: lib/customization.js:525
 msgid "Settings"
 msgstr ""
 
-#: lib/customization.js:526
+#: lib/customization.js:533
 msgid "Reset Layout"
 msgstr ""
 
-#: lib/customization.js:528 lib/widgets/board.js:228
+#: lib/customization.js:535 lib/widgets/board.js:228
 msgid "Done"
 msgstr ""
 
-#: lib/customization.js:608
+#: lib/customization.js:615
 msgid "Drag to move. Click or drag the corner to resize."
 msgstr ""
 
-#: lib/customization.js:617
+#: lib/customization.js:624
 msgid "Add quick settings from the list below"
 msgstr ""
 
-#: lib/customization.js:994 lib/customization.js:1097 lib/widgets/board.js:182
+#: lib/customization.js:1001 lib/customization.js:1104 lib/widgets/board.js:182
 #, javascript-format
 msgid "Remove %s"
 msgstr ""
 
-#: lib/customization.js:995 lib/widgets/gallery.js:120
+#: lib/customization.js:1002 lib/widgets/gallery.js:120
 #, javascript-format
 msgid "Add %s"
 msgstr ""
 
-#: lib/customization.js:1062
+#: lib/customization.js:1069
 #, javascript-format
 msgid "Change the size of %s"
 msgstr ""
@@ -439,7 +443,7 @@ msgstr ""
 msgid "Open Calendar"
 msgstr ""
 
-#: lib/header.js:102
+#: lib/header.js:103
 msgid "%a, %-d %b"
 msgstr ""
 
@@ -552,7 +556,7 @@ msgstr ""
 msgid "Clear all notifications"
 msgstr ""
 
-#: lib/notifications.js:338
+#: lib/notifications.js:339
 #, javascript-format
 msgid "%d More Notification"
 msgid_plural "%d More Notifications"
@@ -808,10 +812,6 @@ msgstr ""
 msgid "Up Next"
 msgstr ""
 
-#: lib/widgets/events.js:121
-msgid "All Day"
-msgstr ""
-
 #: lib/widgets/gallery.js:46
 msgid "Added"
 msgstr ""
@@ -836,11 +836,11 @@ msgstr ""
 msgid "Write something…"
 msgstr ""
 
-#: lib/widgets/photo.js:111 lib/widgets/registry.js:118
+#: lib/widgets/photo.js:109 lib/widgets/registry.js:118
 msgid "Photo"
 msgstr ""
 
-#: lib/widgets/photo.js:117
+#: lib/widgets/photo.js:115
 msgid "Add pictures to your Pictures folder"
 msgstr ""
 

@@ -2049,7 +2049,7 @@
 
 /* The panel itself: a softer, deeper shadow */
 .quick-settings.popup-menu-content {
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35), 0 2px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.38);
 }
 
 /* ── Quick Settings header ─────────────────────────────────────────── */
@@ -2073,4 +2073,18 @@
   font-size: 0.85em;
   font-weight: bold;
   color: rgba(255, 255, 255, 0.65);
+}
+
+/* Buttons on the island's black card, in both styles */
+.gn-island-menu .gn-live-action.button {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.14);
+}
+
+.gn-island-menu .gn-live-action.button:hover {
+  background-color: rgba(255, 255, 255, 0.24);
+}
+
+.gn-island-menu .gn-live-action.button:active {
+  background-color: rgba(255, 255, 255, 0.3);
 }

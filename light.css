@@ -237,7 +237,7 @@
 }
 
 .quick-settings.popup-menu-content {
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18), 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
 }
 
 .gn-header-date {
