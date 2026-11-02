@@ -207,3 +207,7 @@
 .quick-slider .slider.gn-off {
   -barlevel-active-background-color: rgba(0, 0, 0, 0.22);
 }
+
+.gn-live-time {
+  color: rgba(0, 0, 0, 0.6);
+}

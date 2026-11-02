@@ -79,6 +79,11 @@
       <summary>Live activities</summary>
       <description>Timers, the stopwatch, screen recordings and the progress apps report show in an island in the top bar and at the top of Quick Settings.</description>
     </key>
+    <key name="island-notifications" type="b">
+      <default>true</default>
+      <summary>Notifications come out of the island</summary>
+      <description>Notification banners grow out of the live activity island (or the clock) and go back into it, as on iOS.</description>
+    </key>
     <key name="timer-state" type="s">
       <default>'{}'</default>
       <summary>Timer and stopwatch</summary>

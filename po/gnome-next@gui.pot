@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-02 00:02-0300\n"
+"POT-Creation-Date: 2026-11-02 00:13-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,7 @@ msgstr ""
 msgid "Quick Settings"
 msgstr ""
 
-#: prefs.js:28 prefs.js:120
+#: prefs.js:28 prefs.js:127
 msgid "Calendar"
 msgstr ""
 
@@ -67,7 +67,7 @@ msgstr ""
 msgid "Restore the quick settings that were removed, added, moved or resized"
 msgstr ""
 
-#: prefs.js:61 prefs.js:169
+#: prefs.js:61 prefs.js:176
 msgid "Reset"
 msgstr ""
 
@@ -124,168 +124,176 @@ msgstr ""
 msgid "Show the wired speed and the Bluetooth battery under the toggle names"
 msgstr ""
 
-#: prefs.js:99 lib/live.js:522
+#: prefs.js:99 lib/live.js:794
 msgid "Live Activities"
 msgstr ""
 
 #: prefs.js:100
 msgid ""
-"Timers, screen recordings and downloads in an island in the top bar and in "
-"Quick Settings"
-msgstr ""
-
-#: prefs.js:103
-msgid "App Shortcuts"
+"Timers, music, screen recordings and downloads in an island in the top bar "
+"and in Quick Settings"
 msgstr ""
 
 #: prefs.js:104
+msgid "Notifications From the Island"
+msgstr ""
+
+#: prefs.js:105
+msgid "Notifications grow out of the island and go back into it"
+msgstr ""
+
+#: prefs.js:110
+msgid "App Shortcuts"
+msgstr ""
+
+#: prefs.js:111
 msgid ""
 "Apps that open from Quick Settings; your favorite apps are also offered in "
 "the editor"
 msgstr ""
 
-#: prefs.js:110
+#: prefs.js:117
 msgid "Custom Commands"
 msgstr ""
 
-#: prefs.js:111
+#: prefs.js:118
 msgid "Toggles that run your commands, e.g. to start a VPN or a server"
 msgstr ""
 
-#: prefs.js:117
+#: prefs.js:124
 msgid "Notifications in Quick Settings"
 msgstr ""
 
-#: prefs.js:118
+#: prefs.js:125
 msgid ""
 "Quick Settings and notifications collapse into each other, with a media "
 "player"
 msgstr ""
 
-#: prefs.js:123 prefs.js:159 lib/widgets/gallery.js:163
+#: prefs.js:130 prefs.js:166 lib/widgets/gallery.js:163
 msgid "Widgets"
 msgstr ""
 
-#: prefs.js:124
+#: prefs.js:131
 msgid "Click Edit Widgets under the calendar to add, move and resize them"
 msgstr ""
 
-#: prefs.js:129
+#: prefs.js:136
 msgid "Adaptive Calendar"
 msgstr ""
 
-#: prefs.js:130
+#: prefs.js:137
 msgid "A calendar popover that scales with events, world clocks and weather"
 msgstr ""
 
-#: prefs.js:135
+#: prefs.js:142
 msgid "Layout"
 msgstr ""
 
-#: prefs.js:136
+#: prefs.js:143
 msgid ""
 "Two columns always shows the date, weather and events next to the calendar"
 msgstr ""
 
-#: prefs.js:137
+#: prefs.js:144
 msgid "Adaptive"
 msgstr ""
 
-#: prefs.js:137
+#: prefs.js:144
 msgid "Two Columns"
 msgstr ""
 
-#: prefs.js:153
+#: prefs.js:160
 msgid "Show Events"
 msgstr ""
 
-#: prefs.js:154
+#: prefs.js:161
 msgid "Show the remaining events of the day next to the calendar"
 msgstr ""
 
-#: prefs.js:160
+#: prefs.js:167
 msgid "Weather, world clocks, events, media and more under the calendar"
 msgstr ""
 
-#: prefs.js:165
+#: prefs.js:172
 msgid "Default Widgets"
 msgstr ""
 
-#: prefs.js:166
+#: prefs.js:173
 msgid "Restore the widgets that were added, removed or resized"
 msgstr ""
 
-#: prefs.js:184
+#: prefs.js:191
 msgid "Stock Symbols (comma separated, e.g. PETR4.SA, AAPL, BTC-USD)"
 msgstr ""
 
-#: prefs.js:217
+#: prefs.js:224
 msgid "Add App…"
 msgstr ""
 
-#: prefs.js:233 prefs.js:350 lib/widgets/clipboard.js:100
+#: prefs.js:240 prefs.js:357 lib/widgets/clipboard.js:127
 msgid "Remove"
 msgstr ""
 
-#: prefs.js:250
+#: prefs.js:257
 msgid "Add App"
 msgstr ""
 
-#: prefs.js:253
+#: prefs.js:260
 msgid "Search apps"
 msgstr ""
 
-#: prefs.js:321
+#: prefs.js:328
 msgid "Add Command…"
 msgstr ""
 
-#: prefs.js:332 lib/shortcuts.js:74
+#: prefs.js:339 lib/shortcuts.js:74
 msgid "Command"
 msgstr ""
 
-#: prefs.js:340
+#: prefs.js:347
 msgid "Edit"
 msgstr ""
 
-#: prefs.js:371
+#: prefs.js:378
 msgid "Edit Command"
 msgstr ""
 
-#: prefs.js:371
+#: prefs.js:378
 msgid "New Command"
 msgstr ""
 
-#: prefs.js:376
+#: prefs.js:383
 msgid "Cancel"
 msgstr ""
 
-#: prefs.js:379
+#: prefs.js:386
 msgid "Save"
 msgstr ""
 
-#: prefs.js:385
+#: prefs.js:392
 msgid ""
 "Commands run with /bin/sh. Without a command to turn it off, the toggle is a "
 "button. The command that checks the state exits with 0 while it is on."
 msgstr ""
 
-#: prefs.js:393
+#: prefs.js:400
 msgid "Name"
 msgstr ""
 
-#: prefs.js:394
+#: prefs.js:401
 msgid "Icon Name (e.g. network-vpn-symbolic)"
 msgstr ""
 
-#: prefs.js:395
+#: prefs.js:402
 msgid "Command to Turn On or Run"
 msgstr ""
 
-#: prefs.js:396
+#: prefs.js:403
 msgid "Command to Turn Off (optional)"
 msgstr ""
 
-#: prefs.js:397
+#: prefs.js:404
 msgid "Command to Check if On (optional)"
 msgstr ""
 
@@ -393,7 +401,7 @@ msgstr ""
 msgid "Until I Turn It Off"
 msgstr ""
 
-#: lib/dnd.js:139
+#: lib/dnd.js:139 lib/live.js:405
 msgid "Do Not Disturb"
 msgstr ""
 
@@ -409,60 +417,84 @@ msgstr ""
 msgid "Keyboard Brightness"
 msgstr ""
 
-#: lib/live.js:91
+#: lib/live.js:94
 msgid "In Progress"
 msgstr ""
 
-#: lib/live.js:133
+#: lib/live.js:136
 msgid "Screen Recording"
 msgstr ""
 
-#: lib/live.js:139
+#: lib/live.js:142
 msgid "Stop Recording"
 msgstr ""
 
-#: lib/live.js:167 lib/timers.js:197 lib/timers.js:230 lib/timers.js:232
+#: lib/live.js:170 lib/timers.js:197 lib/timers.js:230 lib/timers.js:232
 msgid "Timer"
 msgstr ""
 
-#: lib/live.js:168 lib/live.js:188 lib/timers.js:269
+#: lib/live.js:171 lib/live.js:191 lib/timers.js:269
 msgid "Paused"
 msgstr ""
 
-#: lib/live.js:173
+#: lib/live.js:176
 msgid "Add a Minute"
 msgstr ""
 
-#: lib/live.js:175 lib/live.js:193
+#: lib/live.js:178 lib/live.js:196
 msgid "Resume"
 msgstr ""
 
-#: lib/live.js:176 lib/live.js:194 lib/live.js:292
+#: lib/live.js:179 lib/live.js:197 lib/live.js:375
 msgid "Pause"
 msgstr ""
 
-#: lib/live.js:177 lib/live.js:195
+#: lib/live.js:180 lib/live.js:198
 msgid "Stop"
 msgstr ""
 
-#: lib/live.js:187
+#: lib/live.js:190
 msgid "Stopwatch"
 msgstr ""
 
-#: lib/live.js:276 lib/toggles.js:327
+#: lib/live.js:352 lib/toggles.js:327
 msgid "Media"
 msgstr ""
 
-#: lib/live.js:290
+#: lib/live.js:373
 msgid "Previous"
 msgstr ""
 
-#: lib/live.js:293
+#: lib/live.js:376
 msgid "Play"
 msgstr ""
 
-#: lib/live.js:294
+#: lib/live.js:377
 msgid "Next"
+msgstr ""
+
+#: lib/live.js:406
+msgid "On"
+msgstr ""
+
+#: lib/live.js:406
+msgid "Off"
+msgstr ""
+
+#: lib/live.js:456
+msgid "Charging"
+msgstr ""
+
+#: lib/live.js:463
+msgid "Fully Charged"
+msgstr ""
+
+#: lib/live.js:482
+msgid "Camera in use"
+msgstr ""
+
+#: lib/live.js:484
+msgid "Microphone in use"
 msgstr ""
 
 #: lib/mixer.js:39
@@ -699,25 +731,29 @@ msgstr ""
 msgid "Add cities in Weather"
 msgstr ""
 
-#: lib/widgets/clipboard.js:20 lib/widgets/clipboard.js:29
+#: lib/widgets/clipboard.js:21 lib/widgets/clipboard.js:30
 #: lib/widgets/registry.js:110
 msgid "Clipboard"
 msgstr ""
 
-#: lib/widgets/clipboard.js:33
+#: lib/widgets/clipboard.js:34
 msgid "Clear History"
 msgstr ""
 
-#: lib/widgets/clipboard.js:43
+#: lib/widgets/clipboard.js:44
 msgid "Copy some text to see it here"
 msgstr ""
 
-#: lib/widgets/clipboard.js:70
+#: lib/widgets/clipboard.js:77
+msgid "Copy Picture"
+msgstr ""
+
+#: lib/widgets/clipboard.js:77
 #, javascript-format
 msgid "Copy “%s”"
 msgstr ""
 
-#: lib/widgets/clipboard.js:90
+#: lib/widgets/clipboard.js:93 lib/widgets/clipboard.js:103
 msgid "Copied"
 msgstr ""
 

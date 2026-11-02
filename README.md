@@ -55,8 +55,17 @@ Also:
   are, and opens a menu with all of them. They are also cards at the top of
   Quick Settings, with a progress bar and buttons (pause, +1 minute, stop,
   stop recording; previous, play/pause and next for music — in Quick
-  Settings the player card already does this, so it is not repeated). The island takes the place of the shell's recording
-  indicator.
+  Settings the player card already does this, so it is not repeated). The
+  song's card has a bar that can be dragged to move in the song, with the
+  time played and left. The island takes the place of the shell's recording
+  indicator, and also shows:
+  * an orange dot while an app uses the microphone and a green one for the
+    camera, as on iOS;
+  * short notices when Do Not Disturb turns on or off, a charger is plugged
+    in or the battery is full;
+  * **notifications coming out of it**: banners grow out of the island (or
+    the clock while it is hidden) and go back into it, which bounces; this can
+    be turned off in Preferences.
 * **Connection details** under the toggle names (as on One UI): the shell
   names the Wi-Fi network and the Bluetooth device; this adds the speed of a
   wired connection (“Connected · 1 Gb/s”), the battery of the Bluetooth
@@ -99,10 +108,11 @@ Also:
   * **Controls** — your Quick Settings toggles as round buttons, in the order set
     in the editor (as in the iOS Control Center); clicking the card opens Quick Settings
   * **Note** — a sticky note, saved in the extension settings
-  * **Clipboard** — the text you copied lately; click an item to copy it again,
-    × to forget it. History is only kept while the widget is on the board,
-    skips what password managers copy, and is saved to a file only you can
-    read (`~/.cache/gnome-next/clipboard.json`); removing the widget clears it
+  * **Clipboard** — the text and pictures you copied lately; click an item to
+    copy it again, × to forget it. History is only kept while the widget is on
+    the board, skips what password managers copy, and is saved to files only
+    you can read (`~/.cache/gnome-next/clipboard.json` and
+    `~/.cache/gnome-next/clipboard/`); removing the widget clears it
   * **Photo** — a random picture from your Pictures folder, a new one each time
 * **Unread dot in Quick Settings:** with notifications in Quick Settings, the
   unread-notifications dot moves from the clock to the Quick Settings

@@ -95,9 +95,16 @@ export default class GnomeNextPreferences extends ExtensionPreferences {
             _('Connection Details'),
             _('Show the wired speed and the Bluetooth battery under the toggle names')));
 
-        controls.add(switchRow(settings, 'live-activities',
+        const live = switchRow(settings, 'live-activities',
             _('Live Activities'),
-            _('Timers, screen recordings and downloads in an island in the top bar and in Quick Settings')));
+            _('Timers, music, screen recordings and downloads in an island in the top bar and in Quick Settings'));
+        controls.add(live);
+
+        const islandNotifications = switchRow(settings, 'island-notifications',
+            _('Notifications From the Island'),
+            _('Notifications grow out of the island and go back into it'));
+        live.bind_property('active', islandNotifications, 'sensitive', GObject.BindingFlags.SYNC_CREATE);
+        controls.add(islandNotifications);
 
         const apps = new Adw.PreferencesGroup({
             title: _('App Shortcuts'),

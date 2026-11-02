@@ -1930,3 +1930,77 @@
 .quick-slider .slider.gn-off {
   -barlevel-active-background-color: rgba(255, 255, 255, 0.28);
 }
+
+/* Copied pictures, cropped to fill their row */
+.gn-clipboard-item.button.image {
+  padding: 0;
+}
+
+.gn-clipboard-picture {
+  min-height: 52px;
+  border-radius: 10px;
+  background-size: cover;
+}
+
+.gn-clipboard-widget.small .gn-clipboard-picture {
+  min-height: 0;
+}
+
+.gn-clipboard-picture-copied {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: bold;
+  color: -st-accent-fg-color;
+  background-color: -st-accent-color;
+}
+
+/* Island: privacy dots, notices */
+.gn-island-dots {
+  spacing: 4px;
+}
+
+.gn-island-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+}
+
+.gn-island-dot.microphone {
+  background-color: #ff9f0a;
+}
+
+.gn-island-dot.camera {
+  background-color: #30d158;
+}
+
+.gn-island.dots-only {
+  padding: 0 8px;
+}
+
+.gn-island.notice.dnd .gn-island-icon {
+  color: #bf5af2;
+}
+
+.gn-island.notice.charging .gn-island-icon {
+  color: #30d158;
+}
+
+.gn-island.notice .gn-island-icon {
+  color: #ffffff;
+}
+
+/* Song position: a bar that can be dragged, with the times under it */
+.gn-live-progress.seekable {
+  height: 18px;
+  margin-top: 4px;
+}
+
+.gn-live-times {
+  margin-top: 2px;
+}
+
+.gn-live-time {
+  font-size: 0.8em;
+  font-feature-settings: "tnum";
+  color: rgba(255, 255, 255, 0.65);
+}
