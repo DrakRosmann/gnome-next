@@ -158,16 +158,19 @@ Also:
   * **Photo** — a random picture from your Pictures folder, a new one each time
 
   **On the desktop:** any widget can also live on the desktop, over the
-  wallpaper and under the windows. In the editor, the pin badge on a widget
-  moves it there, and **Desktop** in the gallery adds one straight to it.
-  Right-click a widget on the desktop to change its size, move it back under
-  the calendar or remove it; **Edit Widgets** there (or **Edit Desktop
-  Widgets** in the desktop's right-click menu) brings the widgets over the
-  windows to drag them anywhere (they snap to a 12 px grid) and click them to
-  change their size — Done, Escape or a click outside ends it. **Add
-  Widgets…** in the desktop menu opens the editor under the calendar. Their
-  places are kept relative to the primary monitor's work area. Unlike under
-  the calendar, widgets with nothing to show stay, with their placeholder.
+  wallpaper and under the windows — under the calendar, on the desktop or in
+  both places at once (copies of a widget show the same thing; a note typed
+  in one shows in the other). In the editor, the pin badge on a widget adds
+  it to the desktop as well, and **Desktop** in the gallery adds one straight
+  to it. Right-click a widget on the desktop to change its size, add it under
+  the calendar too or remove it from the desktop; **Edit Widgets** there (or
+  **Edit Desktop Widgets** in the desktop's right-click menu) brings the
+  widgets over the windows to drag them anywhere (they snap to a 12 px grid)
+  and click them to change their size — Done, Escape or a click outside ends
+  it. **Add Widgets…** in the desktop menu opens the editor under the
+  calendar. Their places are kept relative to the primary monitor's work
+  area. Unlike under the calendar, widgets with nothing to show stay, with
+  their placeholder.
 * **Unread dot in Quick Settings:** with notifications in Quick Settings, the
   unread-notifications dot moves from the clock to the Quick Settings
   indicators, and notifications count as seen once Quick Settings shows them.

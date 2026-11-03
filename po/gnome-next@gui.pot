@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-03 11:51-0300\n"
+"POT-Creation-Date: 2026-11-03 15:57-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -240,7 +240,7 @@ msgid ""
 "player"
 msgstr ""
 
-#: prefs.js:166 prefs.js:202 lib/widgets/gallery.js:199
+#: prefs.js:166 prefs.js:202 lib/widgets/gallery.js:207
 msgid "Widgets"
 msgstr ""
 
@@ -302,7 +302,7 @@ msgid "Add App…"
 msgstr ""
 
 #: prefs.js:279 prefs.js:396 lib/clipboardPopup.js:453
-#: lib/widgets/clipboard.js:132 lib/widgets/desktop.js:372
+#: lib/widgets/clipboard.js:132 lib/widgets/desktop.js:369
 msgid "Remove"
 msgstr ""
 
@@ -372,32 +372,32 @@ msgstr ""
 msgid "Go to today"
 msgstr ""
 
-#: lib/calendar.js:602 lib/widgets/events.js:121
+#: lib/calendar.js:603 lib/widgets/events.js:121
 msgid "All Day"
 msgstr ""
 
-#: lib/calendar.js:604 lib/dnd.js:34 lib/widgets/events.js:124
+#: lib/calendar.js:605 lib/dnd.js:34 lib/widgets/events.js:124
 #, javascript-format
 msgid "Until %s"
 msgstr ""
 
-#: lib/calendar.js:617
+#: lib/calendar.js:618
 msgid "%-d %B %Y"
 msgstr ""
 
-#: lib/calendar.js:637 lib/widgets/events.js:99
+#: lib/calendar.js:638 lib/widgets/events.js:99
 msgid "No more events today"
 msgstr ""
 
-#: lib/calendar.js:637
+#: lib/calendar.js:638
 msgid "No events"
 msgstr ""
 
-#: lib/calendar.js:675 lib/widgets/clocks.js:25 lib/widgets/events.js:91
+#: lib/calendar.js:676 lib/widgets/clocks.js:25 lib/widgets/events.js:91
 msgid "Tomorrow"
 msgstr ""
 
-#: lib/calendar.js:677
+#: lib/calendar.js:678
 msgid "%A, %-d"
 msgstr ""
 
@@ -470,7 +470,7 @@ msgstr ""
 msgid "Reset Layout"
 msgstr ""
 
-#: lib/customization.js:543 lib/widgets/board.js:277 lib/widgets/desktop.js:404
+#: lib/customization.js:543 lib/widgets/board.js:287 lib/widgets/desktop.js:401
 msgid "Done"
 msgstr ""
 
@@ -482,7 +482,7 @@ msgstr ""
 msgid "Add quick settings from the list below"
 msgstr ""
 
-#: lib/customization.js:1065 lib/customization.js:1168 lib/widgets/board.js:202
+#: lib/customization.js:1065 lib/customization.js:1168 lib/widgets/board.js:208
 #: lib/widgets/desktop.js:132
 #, javascript-format
 msgid "Remove %s"
@@ -895,16 +895,16 @@ msgstr ""
 msgid "Large"
 msgstr ""
 
-#: lib/widgets/board.js:219
+#: lib/widgets/board.js:225 lib/widgets/gallery.js:86
 #, javascript-format
-msgid "Move %s to the Desktop"
+msgid "Add %s to the Desktop"
 msgstr ""
 
-#: lib/widgets/board.js:269 lib/widgets/desktop.js:418
+#: lib/widgets/board.js:279 lib/widgets/desktop.js:415
 msgid "Drag to move, click to resize"
 msgstr ""
 
-#: lib/widgets/board.js:308 lib/widgets/desktop.js:369
+#: lib/widgets/board.js:318 lib/widgets/desktop.js:365
 msgid "Edit Widgets"
 msgstr ""
 
@@ -963,15 +963,15 @@ msgstr ""
 msgid "No controls"
 msgstr ""
 
-#: lib/widgets/desktop.js:370 lib/widgets/desktop.js:563
+#: lib/widgets/desktop.js:366 lib/widgets/desktop.js:582
 msgid "Add Widgets…"
 msgstr ""
 
-#: lib/widgets/desktop.js:371
-msgid "Move to Calendar"
+#: lib/widgets/desktop.js:368
+msgid "Add to Calendar"
 msgstr ""
 
-#: lib/widgets/desktop.js:564
+#: lib/widgets/desktop.js:583
 msgid "Edit Desktop Widgets"
 msgstr ""
 
@@ -979,7 +979,7 @@ msgstr ""
 msgid "Up Next"
 msgstr ""
 
-#: lib/widgets/gallery.js:50 lib/widgets/gallery.js:181
+#: lib/widgets/gallery.js:50 lib/widgets/gallery.js:189
 msgid "Added"
 msgstr ""
 
@@ -987,16 +987,15 @@ msgstr ""
 msgid "Desktop"
 msgstr ""
 
-#: lib/widgets/gallery.js:86
-#, javascript-format
-msgid "Add %s to the Desktop"
+#: lib/widgets/gallery.js:185
+msgid "Added to Both"
 msgstr ""
 
-#: lib/widgets/gallery.js:181
+#: lib/widgets/gallery.js:187
 msgid "On the Desktop"
 msgstr ""
 
-#: lib/widgets/gallery.js:202
+#: lib/widgets/gallery.js:210
 msgid "Pick a size and click a widget to add it"
 msgstr ""
 
