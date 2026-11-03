@@ -91,6 +91,12 @@ msgstr "Hora e data"
 msgid "The time and date at the top of Quick Settings, as on One UI"
 msgstr "A hora e a data no topo das configurações rápidas, como no One UI"
 
+msgid "Weather in the Top Bar"
+msgstr "Clima na barra superior"
+
+msgid "The weather icon and temperature next to the date"
+msgstr "O ícone do clima e a temperatura ao lado da data"
+
 #: prefs.js:83
 msgid "Panel Animations"
 msgstr "Animações do painel"

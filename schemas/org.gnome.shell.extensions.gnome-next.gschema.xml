@@ -133,6 +133,11 @@
       <summary>Time and date in Quick Settings</summary>
       <description>The time, large, and the date at the start of the Quick Settings system row, as on One UI; its buttons gather at the end. On laptops the battery stays in the top bar only.</description>
     </key>
+    <key name="panel-weather" type="b">
+      <default>true</default>
+      <summary>Weather in the top bar</summary>
+      <description>The weather icon and temperature next to the date in the top bar, for the calendar's first location.</description>
+    </key>
     <key name="panel-motion" type="b">
       <default>true</default>
       <summary>Quick Settings motion</summary>

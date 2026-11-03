@@ -2444,3 +2444,17 @@
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.55);
 }
+
+.gn-menu-scroll.vfade {
+  -st-vfade-offset: 24px;
+}
+
+/* Weather next to the date in the top bar */
+.gn-panel-weather {
+  spacing: 4px;
+  margin-right: 2px;
+}
+
+.gn-panel-weather-temp {
+  font-weight: bold;
+}

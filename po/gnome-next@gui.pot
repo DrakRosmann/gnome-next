@@ -84,6 +84,12 @@ msgstr ""
 msgid "Time and Date"
 msgstr ""
 
+msgid "Weather in the Top Bar"
+msgstr ""
+
+msgid "The weather icon and temperature next to the date"
+msgstr ""
+
 #: prefs.js:80
 msgid "The time and date at the top of Quick Settings, as on One UI"
 msgstr ""

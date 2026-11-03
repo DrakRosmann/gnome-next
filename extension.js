@@ -16,14 +16,18 @@ import {ClipboardHistory, setClipboardHistory} from './lib/clipboard.js';
 import {LiveActivities} from './lib/live.js';
 import {PanelMotion} from './lib/motion.js';
 import {PanelHeader} from './lib/header.js';
+import {PanelWeather} from './lib/panelWeather.js';
 import {ClipboardPopup} from './lib/clipboardPopup.js';
 import {LockScreenPlayer} from './lib/lockPlayer.js';
+import {MenuFit} from './lib/menuFit.js';
 import {ToggleSubtitles} from './lib/subtitles.js';
 import {Timers, setTimers} from './lib/timers.js';
 import {VisibilityLock} from './lib/visibility.js';
 
 // Order matters: the editor hides whatever Collapsible added to the menu
 const FEATURES = [
+    // Always on: no setting turns it off
+    {key: 'menu-fit', Feature: MenuFit, always: true},
     {key: 'enable-collapsible', Feature: Collapsible},
     {key: 'enable-customization', Feature: Customization},
     {key: 'enable-calendar', Feature: CalendarPopover},
@@ -36,6 +40,7 @@ const FEATURES = [
     {key: 'live-activities', Feature: LiveActivities},
     {key: 'panel-motion', Feature: PanelMotion},
     {key: 'panel-clock', Feature: PanelHeader},
+    {key: 'panel-weather', Feature: PanelWeather},
     {key: 'clipboard-popup', Feature: ClipboardPopup},
     // While the screen is locked only these run, and none of the others
     {key: 'lock-player', Feature: LockScreenPlayer, lockScreen: true},
@@ -99,7 +104,7 @@ export default class GnomeNextExtension extends Extension {
     }
 
     _start() {
-        for (const {key} of FEATURES)
+        for (const {key} of FEATURES.filter(f => !f.always))
             this._settings.connectObject(`changed::${key}`, () => this._sync(), this);
         // The extension stays on while locked (for the lock screen player)
         Main.sessionMode.connectObject('updated', () => this._sync(), this);
@@ -110,8 +115,8 @@ export default class GnomeNextExtension extends Extension {
         // Restart everything after the changed feature so the stacking order
         // inside the menu stays the same
         const locked = Main.sessionMode.isLocked;
-        const wanted = FEATURES.map(({key, lockScreen = false}) =>
-            lockScreen === locked && this._settings.get_boolean(key));
+        const wanted = FEATURES.map(({key, lockScreen = false, always = false}) =>
+            lockScreen === locked && (always || this._settings.get_boolean(key)));
         const firstChange = FEATURES.findIndex(({key}, i) => wanted[i] !== this._active.has(key));
         if (firstChange < 0)
             return;

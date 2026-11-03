@@ -79,6 +79,10 @@ export default class GnomeNextPreferences extends ExtensionPreferences {
             _('Time and Date'),
             _('The time and date at the top of Quick Settings, as on One UI')));
 
+        controls.add(switchRow(settings, 'panel-weather',
+            _('Weather in the Top Bar'),
+            _('The weather icon and temperature next to the date')));
+
         controls.add(switchRow(settings, 'panel-motion',
             _('Panel Animations'),
             _('Quick Settings springs open from its button with the controls in a wave; sliders grow while dragged')));
