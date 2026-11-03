@@ -156,6 +156,18 @@ Also:
     you can read (`~/.cache/gnome-next/clipboard.json` and
     `~/.cache/gnome-next/clipboard/`); removing the widget clears it
   * **Photo** — a random picture from your Pictures folder, a new one each time
+
+  **On the desktop:** any widget can also live on the desktop, over the
+  wallpaper and under the windows. In the editor, the pin badge on a widget
+  moves it there, and **Desktop** in the gallery adds one straight to it.
+  Right-click a widget on the desktop to change its size, move it back under
+  the calendar or remove it; **Edit Widgets** there (or **Edit Desktop
+  Widgets** in the desktop's right-click menu) brings the widgets over the
+  windows to drag them anywhere (they snap to a 12 px grid) and click them to
+  change their size — Done, Escape or a click outside ends it. **Add
+  Widgets…** in the desktop menu opens the editor under the calendar. Their
+  places are kept relative to the primary monitor's work area. Unlike under
+  the calendar, widgets with nothing to show stay, with their placeholder.
 * **Unread dot in Quick Settings:** with notifications in Quick Settings, the
   unread-notifications dot moves from the clock to the Quick Settings
   indicators, and notifications count as seen once Quick Settings shows them.
@@ -280,6 +292,7 @@ lib/clocks.js         world clocks with analog faces and paging
 lib/widgets/          widget board under the calendar:
   board.js            grid, edit mode, drag and resize
   gallery.js          widget gallery shown while editing
+  desktop.js          widgets on the desktop, and the desktop menu items
   registry.js         the list of widgets and how they are saved
   base.js, drawing.js widget base class, rings, clock faces, sparkline
   *.js                one file per widget

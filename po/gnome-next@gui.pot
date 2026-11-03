@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-02 13:25-0300\n"
+"POT-Creation-Date: 2026-11-03 11:51-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,7 @@ msgstr ""
 msgid "Quick Settings"
 msgstr ""
 
-#: prefs.js:28 prefs.js:155
+#: prefs.js:28 prefs.js:163
 msgid "Calendar"
 msgstr ""
 
@@ -67,7 +67,7 @@ msgstr ""
 msgid "Restore the quick settings that were removed, added, moved or resized"
 msgstr ""
 
-#: prefs.js:61 prefs.js:204
+#: prefs.js:61 prefs.js:212
 msgid "Reset"
 msgstr ""
 
@@ -84,350 +84,364 @@ msgstr ""
 msgid "Time and Date"
 msgstr ""
 
-msgid "Weather in the Top Bar"
-msgstr ""
-
-msgid "The weather icon and temperature next to the date"
-msgstr ""
-
 #: prefs.js:80
 msgid "The time and date at the top of Quick Settings, as on One UI"
 msgstr ""
 
 #: prefs.js:83
-msgid "Panel Animations"
+msgid "Weather in the Top Bar"
 msgstr ""
 
 #: prefs.js:84
+msgid "The weather icon and temperature next to the date"
+msgstr ""
+
+#: prefs.js:87
+msgid "Panel Animations"
+msgstr ""
+
+#: prefs.js:88
 msgid ""
 "Quick Settings springs open from its button with the controls in a wave; "
 "sliders grow while dragged"
 msgstr ""
 
-#: prefs.js:87
+#: prefs.js:91
 msgid "Pill Sliders"
 msgstr ""
 
-#: prefs.js:88
+#: prefs.js:92
 msgid "Thick sliders with the icon inside the filled part"
 msgstr ""
 
-#: prefs.js:91
+#: prefs.js:95
 msgid "Volume of Each App"
 msgstr ""
 
-#: prefs.js:92
+#: prefs.js:96
 msgid ""
 "The menu of the volume slider lists the apps playing sound, each with a "
 "slider"
 msgstr ""
 
-#: prefs.js:95
+#: prefs.js:99
 msgid "Top Bar Shortcuts"
 msgstr ""
 
-#: prefs.js:96
+#: prefs.js:100
 msgid ""
 "Middle-click the volume icon to mute; scroll over the battery icon to change "
 "the brightness"
 msgstr ""
 
-#: prefs.js:99
+#: prefs.js:103
 msgid "Do Not Disturb Durations"
 msgstr ""
 
-#: prefs.js:100
+#: prefs.js:104
 msgid "Turn on Do Not Disturb for an hour, until the evening or until tomorrow"
 msgstr ""
 
-#: prefs.js:103
+#: prefs.js:107
 msgid "Connection Details"
 msgstr ""
 
-#: prefs.js:104
+#: prefs.js:108
 msgid "Show the wired speed and the Bluetooth battery under the toggle names"
 msgstr ""
 
-#: prefs.js:107 lib/live.js:991
+#: prefs.js:111 lib/live.js:991
 msgid "Live Activities"
 msgstr ""
 
-#: prefs.js:108
+#: prefs.js:112
 msgid ""
 "Timers, music, screen recordings and downloads in an island in the top bar "
 "and in Quick Settings"
 msgstr ""
 
-#: prefs.js:112
+#: prefs.js:116
 msgid "Notifications From the Island"
 msgstr ""
 
-#: prefs.js:113
+#: prefs.js:117
 msgid "Notifications grow out of the island and go back into it"
 msgstr ""
 
-#: prefs.js:118
+#: prefs.js:122
 msgid "Volume and Brightness in the Island"
 msgstr ""
 
-#: prefs.js:119
+#: prefs.js:123
 msgid ""
 "The island shows the level instead of the popup in the middle of the screen"
 msgstr ""
 
-#: prefs.js:124
+#: prefs.js:128
 msgid "Open the Island on Hover"
 msgstr ""
 
-#: prefs.js:125
+#: prefs.js:129
 msgid "Resting the pointer on the island opens its card"
 msgstr ""
 
-#: prefs.js:130
+#: prefs.js:134
 msgid "Player on the Lock Screen"
 msgstr ""
 
-#: prefs.js:131
+#: prefs.js:135
 msgid ""
 "A large player with the cover under the clock while the screen is locked"
 msgstr ""
 
-#: prefs.js:134
+#: prefs.js:138
 msgid "Clipboard History and Emoji (Super+V, Super+.)"
 msgstr ""
 
-#: prefs.js:135
+#: prefs.js:139
 msgid ""
 "Super+V shows what you copied lately to paste it, Super+. the emoji; pinned "
 "items stay. Super+M still opens the notification list"
 msgstr ""
 
-#: prefs.js:138
+#: prefs.js:142
+msgid "Clipboard Button in the Top Bar"
+msgstr ""
+
+#: prefs.js:143
+msgid "Opens the clipboard history with a click"
+msgstr ""
+
+#: prefs.js:146
 msgid "App Shortcuts"
 msgstr ""
 
-#: prefs.js:139
+#: prefs.js:147
 msgid ""
 "Apps that open from Quick Settings; your favorite apps are also offered in "
 "the editor"
 msgstr ""
 
-#: prefs.js:145
+#: prefs.js:153
 msgid "Custom Commands"
 msgstr ""
 
-#: prefs.js:146
+#: prefs.js:154
 msgid "Toggles that run your commands, e.g. to start a VPN or a server"
 msgstr ""
 
-#: prefs.js:152
+#: prefs.js:160
 msgid "Notifications in Quick Settings"
 msgstr ""
 
-#: prefs.js:153
+#: prefs.js:161
 msgid ""
 "Quick Settings and notifications collapse into each other, with a media "
 "player"
 msgstr ""
 
-#: prefs.js:158 prefs.js:194 lib/widgets/gallery.js:167
+#: prefs.js:166 prefs.js:202 lib/widgets/gallery.js:199
 msgid "Widgets"
 msgstr ""
 
-#: prefs.js:159
+#: prefs.js:167
 msgid "Click Edit Widgets under the calendar to add, move and resize them"
 msgstr ""
 
-#: prefs.js:164
+#: prefs.js:172
 msgid "Adaptive Calendar"
 msgstr ""
 
-#: prefs.js:165
+#: prefs.js:173
 msgid "A calendar popover that scales with events, world clocks and weather"
 msgstr ""
 
-#: prefs.js:170
+#: prefs.js:178
 msgid "Layout"
 msgstr ""
 
-#: prefs.js:171
+#: prefs.js:179
 msgid ""
 "Two columns always shows the date, weather and events next to the calendar"
 msgstr ""
 
-#: prefs.js:172
+#: prefs.js:180
 msgid "Adaptive"
 msgstr ""
 
-#: prefs.js:172
+#: prefs.js:180
 msgid "Two Columns"
 msgstr ""
 
-#: prefs.js:188
+#: prefs.js:196
 msgid "Show Events"
 msgstr ""
 
-#: prefs.js:189
+#: prefs.js:197
 msgid "Show the remaining events of the day next to the calendar"
 msgstr ""
 
-#: prefs.js:195
+#: prefs.js:203
 msgid "Weather, world clocks, events, media and more under the calendar"
 msgstr ""
 
-#: prefs.js:200
+#: prefs.js:208
 msgid "Default Widgets"
 msgstr ""
 
-#: prefs.js:201
+#: prefs.js:209
 msgid "Restore the widgets that were added, removed or resized"
 msgstr ""
 
-#: prefs.js:219
+#: prefs.js:230
 msgid "Stock Symbols (comma separated, e.g. PETR4.SA, AAPL, BTC-USD)"
 msgstr ""
 
-#: prefs.js:252
+#: prefs.js:263
 msgid "Add App…"
 msgstr ""
 
-#: prefs.js:268 prefs.js:385 lib/clipboardPopup.js:414
-#: lib/widgets/clipboard.js:132
+#: prefs.js:279 prefs.js:396 lib/clipboardPopup.js:453
+#: lib/widgets/clipboard.js:132 lib/widgets/desktop.js:372
 msgid "Remove"
 msgstr ""
 
-#: prefs.js:285
+#: prefs.js:296
 msgid "Add App"
 msgstr ""
 
-#: prefs.js:288
+#: prefs.js:299
 msgid "Search apps"
 msgstr ""
 
-#: prefs.js:356
+#: prefs.js:367
 msgid "Add Command…"
 msgstr ""
 
-#: prefs.js:367 lib/shortcuts.js:74
+#: prefs.js:378 lib/shortcuts.js:74
 msgid "Command"
 msgstr ""
 
-#: prefs.js:375
+#: prefs.js:386
 msgid "Edit"
 msgstr ""
 
-#: prefs.js:406
+#: prefs.js:417
 msgid "Edit Command"
 msgstr ""
 
-#: prefs.js:406
+#: prefs.js:417
 msgid "New Command"
 msgstr ""
 
-#: prefs.js:411
+#: prefs.js:422
 msgid "Cancel"
 msgstr ""
 
-#: prefs.js:414
+#: prefs.js:425
 msgid "Save"
 msgstr ""
 
-#: prefs.js:420
+#: prefs.js:431
 msgid ""
 "Commands run with /bin/sh. Without a command to turn it off, the toggle is a "
 "button. The command that checks the state exits with 0 while it is on."
 msgstr ""
 
-#: prefs.js:428
+#: prefs.js:439
 msgid "Name"
 msgstr ""
 
-#: prefs.js:429
+#: prefs.js:440
 msgid "Icon Name (e.g. network-vpn-symbolic)"
 msgstr ""
 
-#: prefs.js:430
+#: prefs.js:441
 msgid "Command to Turn On or Run"
 msgstr ""
 
-#: prefs.js:431
+#: prefs.js:442
 msgid "Command to Turn Off (optional)"
 msgstr ""
 
-#: prefs.js:432
+#: prefs.js:443
 msgid "Command to Check if On (optional)"
 msgstr ""
 
-#: lib/calendar.js:249
+#: lib/calendar.js:252
 msgid "Go to today"
 msgstr ""
 
-#: lib/calendar.js:509 lib/widgets/events.js:121
+#: lib/calendar.js:602 lib/widgets/events.js:121
 msgid "All Day"
 msgstr ""
 
-#: lib/calendar.js:511 lib/dnd.js:34 lib/widgets/events.js:124
+#: lib/calendar.js:604 lib/dnd.js:34 lib/widgets/events.js:124
 #, javascript-format
 msgid "Until %s"
 msgstr ""
 
-#: lib/calendar.js:524
+#: lib/calendar.js:617
 msgid "%-d %B %Y"
 msgstr ""
 
-#: lib/calendar.js:544 lib/widgets/events.js:99
+#: lib/calendar.js:637 lib/widgets/events.js:99
 msgid "No more events today"
 msgstr ""
 
-#: lib/calendar.js:544
+#: lib/calendar.js:637
 msgid "No events"
 msgstr ""
 
-#: lib/calendar.js:582 lib/widgets/clocks.js:25 lib/widgets/events.js:91
+#: lib/calendar.js:675 lib/widgets/clocks.js:25 lib/widgets/events.js:91
 msgid "Tomorrow"
 msgstr ""
 
-#: lib/calendar.js:584
+#: lib/calendar.js:677
 msgid "%A, %-d"
 msgstr ""
 
-#: lib/clipboardPopup.js:38
+#: lib/clipboardPopup.js:39
 msgid "Picture"
 msgstr ""
 
-#: lib/clipboardPopup.js:185
+#: lib/clipboardPopup.js:81
+msgid "Clipboard History"
+msgstr ""
+
+#: lib/clipboardPopup.js:224
 msgid "History"
 msgstr ""
 
-#: lib/clipboardPopup.js:186
+#: lib/clipboardPopup.js:225
 msgid "Emoji"
 msgstr ""
 
-#: lib/clipboardPopup.js:204
+#: lib/clipboardPopup.js:243
 msgid "Clear All"
 msgstr ""
 
-#: lib/clipboardPopup.js:214 lib/clipboardPopup.js:289
+#: lib/clipboardPopup.js:253 lib/clipboardPopup.js:328
 msgid "Search"
 msgstr ""
 
-#: lib/clipboardPopup.js:289
+#: lib/clipboardPopup.js:328
 msgid "Search emoji"
 msgstr ""
 
-#: lib/clipboardPopup.js:349
+#: lib/clipboardPopup.js:388
 msgid "Copy some text or a picture to see it here"
 msgstr ""
 
-#: lib/clipboardPopup.js:350
+#: lib/clipboardPopup.js:389
 msgid "Nothing matches"
 msgstr ""
 
-#: lib/clipboardPopup.js:404
+#: lib/clipboardPopup.js:443
 msgid "Unpin"
 msgstr ""
 
-#: lib/clipboardPopup.js:404
+#: lib/clipboardPopup.js:443
 msgid "Pin"
 msgstr ""
 
@@ -456,7 +470,7 @@ msgstr ""
 msgid "Reset Layout"
 msgstr ""
 
-#: lib/customization.js:543 lib/widgets/board.js:252
+#: lib/customization.js:543 lib/widgets/board.js:277 lib/widgets/desktop.js:404
 msgid "Done"
 msgstr ""
 
@@ -468,12 +482,13 @@ msgstr ""
 msgid "Add quick settings from the list below"
 msgstr ""
 
-#: lib/customization.js:1065 lib/customization.js:1168 lib/widgets/board.js:201
+#: lib/customization.js:1065 lib/customization.js:1168 lib/widgets/board.js:202
+#: lib/widgets/desktop.js:132
 #, javascript-format
 msgid "Remove %s"
 msgstr ""
 
-#: lib/customization.js:1066 lib/widgets/gallery.js:124
+#: lib/customization.js:1066 lib/widgets/gallery.js:143
 #, javascript-format
 msgid "Add %s"
 msgstr ""
@@ -880,11 +895,16 @@ msgstr ""
 msgid "Large"
 msgstr ""
 
-#: lib/widgets/board.js:244
+#: lib/widgets/board.js:219
+#, javascript-format
+msgid "Move %s to the Desktop"
+msgstr ""
+
+#: lib/widgets/board.js:269 lib/widgets/desktop.js:418
 msgid "Drag to move, click to resize"
 msgstr ""
 
-#: lib/widgets/board.js:283
+#: lib/widgets/board.js:308 lib/widgets/desktop.js:369
 msgid "Edit Widgets"
 msgstr ""
 
@@ -943,15 +963,40 @@ msgstr ""
 msgid "No controls"
 msgstr ""
 
+#: lib/widgets/desktop.js:370 lib/widgets/desktop.js:563
+msgid "Add Widgets…"
+msgstr ""
+
+#: lib/widgets/desktop.js:371
+msgid "Move to Calendar"
+msgstr ""
+
+#: lib/widgets/desktop.js:564
+msgid "Edit Desktop Widgets"
+msgstr ""
+
 #: lib/widgets/events.js:28 lib/widgets/registry.js:46
 msgid "Up Next"
 msgstr ""
 
-#: lib/widgets/gallery.js:50
+#: lib/widgets/gallery.js:50 lib/widgets/gallery.js:181
 msgid "Added"
 msgstr ""
 
-#: lib/widgets/gallery.js:170
+#: lib/widgets/gallery.js:82
+msgid "Desktop"
+msgstr ""
+
+#: lib/widgets/gallery.js:86
+#, javascript-format
+msgid "Add %s to the Desktop"
+msgstr ""
+
+#: lib/widgets/gallery.js:181
+msgid "On the Desktop"
+msgstr ""
+
+#: lib/widgets/gallery.js:202
 msgid "Pick a size and click a widget to add it"
 msgstr ""
 
@@ -1128,13 +1173,4 @@ msgstr ""
 
 #: lib/widgets/weather.js:218
 msgid "Now"
-msgstr ""
-
-msgid "Clipboard Button in the Top Bar"
-msgstr ""
-
-msgid "Opens the clipboard history with a click"
-msgstr ""
-
-msgid "Clipboard History"
 msgstr ""

@@ -181,6 +181,11 @@
       <summary>Widgets under the calendar, in order</summary>
       <description>Each entry is "id:size", where size is small, medium or large.</description>
     </key>
+    <key name="desktop-widgets" type="as">
+      <default>[]</default>
+      <summary>Widgets on the desktop</summary>
+      <description>Each entry is "id:size:x:y", where size is small, medium or large and x and y are the position from the top left corner of the primary monitor's work area.</description>
+    </key>
     <key name="reminders" type="as">
       <default>[]</default>
       <summary>Reminders of the reminders widget, in order</summary>

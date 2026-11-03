@@ -212,7 +212,10 @@ export default class GnomeNextPreferences extends ExtensionPreferences {
             label: _('Reset'),
             valign: Gtk.Align.CENTER,
         });
-        resetWidgetsButton.connect('clicked', () => settings.reset('widgets'));
+        resetWidgetsButton.connect('clicked', () => {
+            settings.reset('widgets');
+            settings.reset('desktop-widgets');
+        });
         resetWidgets.add_suffix(resetWidgetsButton);
         const syncResetWidgets = () => {
             resetWidgets.sensitive = popover.active && widgets.active;
