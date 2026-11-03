@@ -138,6 +138,10 @@ export default class GnomeNextPreferences extends ExtensionPreferences {
             _('Clipboard History and Emoji (Super+V, Super+.)'),
             _('Super+V shows what you copied lately to paste it, Super+. the emoji; pinned items stay. Super+M still opens the notification list')));
 
+        controls.add(switchRow(settings, 'clipboard-panel-button',
+            _('Clipboard Button in the Top Bar'),
+            _('Opens the clipboard history with a click')));
+
         const apps = new Adw.PreferencesGroup({
             title: _('App Shortcuts'),
             description: _('Apps that open from Quick Settings; your favorite apps are also offered in the editor'),

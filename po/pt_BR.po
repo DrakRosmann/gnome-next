@@ -210,6 +210,15 @@ msgstr ""
 msgid "Clipboard History and Emoji (Super+V, Super+.)"
 msgstr "Histórico da área de transferência e emojis (Super+V, Super+.)"
 
+msgid "Clipboard Button in the Top Bar"
+msgstr "Botão da área de transferência na barra superior"
+
+msgid "Opens the clipboard history with a click"
+msgstr "Abre o histórico da área de transferência com um clique"
+
+msgid "Clipboard History"
+msgstr "Histórico da área de transferência"
+
 #: prefs.js:135
 msgid ""
 "Super+V shows what you copied lately to paste it, Super+. the emoji; pinned "

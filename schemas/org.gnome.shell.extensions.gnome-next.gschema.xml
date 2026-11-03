@@ -104,6 +104,11 @@
       <summary>Clipboard history popup</summary>
       <description>A shortcut opens the clipboard history to paste from it, as Super+V does on Windows. History is kept while this or the clipboard widget is on.</description>
     </key>
+    <key name="clipboard-panel-button" type="b">
+      <default>true</default>
+      <summary>Clipboard history button in the top bar</summary>
+      <description>A button in the top bar opens the clipboard history, as the shortcut does.</description>
+    </key>
     <key name="clipboard-shortcut" type="as">
       <default>['&lt;Super&gt;v']</default>
       <summary>Shortcut for the clipboard history</summary>

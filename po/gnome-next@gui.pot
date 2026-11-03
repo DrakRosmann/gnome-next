@@ -1129,3 +1129,12 @@ msgstr ""
 #: lib/widgets/weather.js:218
 msgid "Now"
 msgstr ""
+
+msgid "Clipboard Button in the Top Bar"
+msgstr ""
+
+msgid "Opens the clipboard history with a click"
+msgstr ""
+
+msgid "Clipboard History"
+msgstr ""
